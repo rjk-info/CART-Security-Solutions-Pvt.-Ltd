@@ -1,0 +1,989 @@
+/* ==========================================================================
+   CART SECURITY SOLUTIONS PVT. LTD. - ABOUT HERO CUSTOM STYLES
+   ========================================================================== */
+
+/* Section Height Constraints (Controlled Inner Banner Height) */
+.cart-about-hero-section {
+  min-height: 480px;
+  background-color: #1e3421;
+}
+
+/* HTML Image Presentation & Focal Point Control */
+.cart-about-hero-image {
+  object-fit: cover;
+  object-position: center right;
+  z-index: 0;
+}
+
+/* Directional Gradient Overlay: Stronger on the left for contrast, open on right */
+.cart-about-hero-overlay {
+  background: linear-gradient(
+    90deg, 
+    rgba(30, 52, 33, 0.96) 0%, 
+    rgba(30, 52, 33, 0.88) 45%, 
+    rgba(30, 52, 33, 0.45) 85%, 
+    rgba(30, 52, 33, 0.25) 100%
+  );
+  z-index: 1;
+}
+
+/* Breadcrumb Typography & Coloring */
+.cart-about-hero-breadcrumb .breadcrumb-item,
+.cart-about-hero-breadcrumb .breadcrumb-item a {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.8125rem;
+  color: #f3efda;
+  opacity: 0.75;
+  transition: opacity 0.2s ease;
+}
+
+.cart-about-hero-breadcrumb .breadcrumb-item a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.cart-about-hero-breadcrumb .breadcrumb-item.active {
+  color: #f3efda;
+  opacity: 0.95;
+}
+
+.cart-about-hero-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  color: rgba(243, 239, 218, 0.5);
+}
+
+/* Label & Editorial Line */
+.cart-about-hero-line {
+  width: 24px;
+  height: 2px;
+  background-color: #f3efda;
+  opacity: 0.8;
+}
+
+.cart-about-hero-label {
+  font-family: 'Manrope', sans-serif;
+  color: #f3efda;
+  font-size: 0.8125rem;
+  letter-spacing: 0.14em;
+  opacity: 0.9;
+}
+
+/* Headings & Text */
+.cart-about-hero-title {
+  font-family: 'Libre Baskerville', serif;
+  color: #f3efda;
+  font-weight: 700;
+  font-size: clamp(1.875rem, 3.5vw, 2.75rem);
+  line-height: 1.25;
+  max-width: 720px;
+}
+
+.cart-about-hero-text {
+  font-family: 'Manrope', sans-serif;
+  color: #f3efda;
+  font-size: clamp(0.9375rem, 1.2vw, 1.0625rem);
+  line-height: 1.65;
+  opacity: 0.88;
+  max-width: 600px;
+}
+
+/* Bottom Subtle Accent Border */
+.cart-about-hero-bottom-accent {
+  height: 3px;
+  background: linear-gradient(90deg, #f3efda 0%, rgba(243, 239, 218, 0) 100%);
+  opacity: 0.4;
+  z-index: 1;
+}
+
+/* Responsive Refinements */
+@media (max-width: 991.98px) {
+  .cart-about-hero-section {
+    min-height: 400px;
+  }
+  
+  .cart-about-hero-overlay {
+    background: linear-gradient(
+      180deg, 
+      rgba(30, 52, 33, 0.92) 0%, 
+      rgba(30, 52, 33, 0.75) 60%, 
+      rgba(30, 52, 33, 0.95) 100%
+    );
+  }
+}
+
+@media (max-width: 575.98px) {
+  .cart-about-hero-section {
+    min-height: 360px;
+  }
+
+  .cart-about-hero-image {
+    object-position: 70% center;
+  }
+
+  .cart-about-hero-overlay {
+    background: rgba(30, 52, 33, 0.88);
+  }
+}
+
+
+
+/* ==========================================================================
+   CART SECURITY SOLUTIONS PVT. LTD. - WHO WE ARE CUSTOM STYLES
+   ========================================================================== */
+
+/* Section Base */
+.cart-who-section {
+  background-color: #ffffff;
+}
+
+/* Image Presentation & Subtle Brand Framing */
+.cart-who-image-wrap {
+  z-index: 1;
+}
+
+.cart-who-image-frame {
+  border-radius: 6px !important;
+  background-color: #1e3421;
+  z-index: 2;
+}
+
+.cart-who-image {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.cart-who-image-wrap:hover .cart-who-image {
+  transform: scale(1.03);
+}
+
+/* Subtle Cream Backdrop Offset Panel */
+.cart-who-backdrop {
+  top: 14px;
+  left: -14px;
+  width: 100%;
+  height: 100%;
+  background-color: #f3efda;
+  border: 1px solid rgba(49, 90, 55, 0.15);
+  border-radius: 6px !important;
+  z-index: -1;
+}
+
+/* Section Label & Editorial Prefix Line */
+.cart-who-line {
+  width: 24px;
+  height: 2px;
+  background-color: #315a37;
+}
+
+.cart-who-label {
+  font-family: 'Manrope', sans-serif;
+  color: #315a37;
+  font-size: 0.8125rem;
+  letter-spacing: 0.14em;
+}
+
+/* Headings & Text */
+.cart-who-title {
+  font-family: 'Libre Baskerville', serif;
+  color: #1e3421;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.cart-who-text {
+  font-family: 'Manrope', sans-serif;
+  color: #315a37;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+/* Key Highlights Structure */
+.cart-who-highlight-item {
+  background-color: #fbfaf4;
+  border: 1px solid rgba(49, 90, 55, 0.12);
+  transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.cart-who-highlight-item:hover {
+  background-color: #f3efda;
+  border-color: rgba(49, 90, 55, 0.25);
+}
+
+.cart-who-icon-box {
+  width: 38px;
+  height: 38px;
+  background-color: #1e3421;
+  border-radius: 4px !important;
+}
+
+.cart-who-icon {
+  color: #f3efda;
+  font-size: 1.15rem;
+}
+
+.cart-who-highlight-title {
+  font-family: 'Manrope', sans-serif;
+  color: #1e3421;
+  font-size: 0.9375rem;
+}
+
+/* ==========================================================================
+   CART SECURITY SOLUTIONS PVT. LTD. - MISSION & VISION CUSTOM STYLES
+   ========================================================================== */
+
+/* Outer Section */
+.cart-mv-section {
+  background-color: #ffffff;
+}
+
+/* Header & Intro */
+.cart-mv-header {
+  max-width: 680px;
+}
+
+.cart-mv-label {
+  font-family: 'Manrope', sans-serif;
+  color: #315a37;
+  font-size: 0.8125rem;
+  letter-spacing: 0.14em;
+}
+
+.cart-mv-header-line {
+  width: 28px;
+  height: 2px;
+  background-color: #315a37;
+}
+
+.cart-mv-title {
+  font-family: 'Libre Baskerville', serif;
+  color: #1e3421;
+  font-weight: 700;
+  line-height: 1.3;
+  font-size: clamp(1.65rem, 3vw, 2.35rem);
+}
+
+.cart-mv-desc {
+  font-family: 'Manrope', sans-serif;
+  color: #315a37;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Main Horizontal Panel Base */
+.cart-mv-panel {
+  border-radius: 8px !important;
+}
+
+/* Large Decorative Editorial Numbers (01 / 02) */
+.cart-mv-number {
+  font-family: 'Libre Baskerville', serif;
+  font-size: clamp(5rem, 9vw, 8rem);
+  font-weight: 700;
+  line-height: 0.75;
+  top: 15px;
+  left: 20px;
+  color: rgba(49, 90, 55, 0.08);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.cart-mv-number-light {
+  color: rgba(243, 239, 218, 0.07);
+}
+
+/* Common Text & Lines within Panels */
+.cart-mv-panel-line {
+  width: 24px;
+  height: 2px;
+  background-color: #315a37;
+}
+
+.cart-mv-panel-line-light {
+  background-color: #f3efda;
+}
+
+.cart-mv-panel-title {
+  font-family: 'Libre Baskerville', serif;
+  color: #1e3421;
+  font-weight: 700;
+  line-height: 1.35;
+  font-size: clamp(1.25rem, 2.2vw, 1.65rem);
+}
+
+.cart-mv-panel-title-light {
+  color: #f3efda;
+}
+
+.cart-mv-text {
+  font-family: 'Manrope', sans-serif;
+  color: #315a37;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.cart-mv-text-light {
+  color: #f3efda;
+  opacity: 0.88;
+}
+
+/* Icon Circles & Feature Item Styling */
+.cart-mv-icon-circle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.cart-mv-icon-circle-dark {
+  background-color: #1e3421;
+  color: #f3efda;
+  font-size: 0.85rem;
+}
+
+.cart-mv-icon-circle-light {
+  background-color: #f3efda;
+  color: #1e3421;
+  font-size: 0.85rem;
+}
+
+.cart-mv-feature-text {
+  font-family: 'Manrope', sans-serif;
+  color: #1e3421;
+  font-size: 0.8125rem;
+  line-height: 1.35;
+}
+
+.cart-mv-feature-text-light {
+  color: #f3efda;
+  opacity: 0.92;
+}
+
+/* Panel 1: Mission Theme */
+.cart-mv-mission {
+  background-color: #f3efda;
+  border: 1px solid rgba(49, 90, 55, 0.15);
+}
+
+.cart-mv-tag {
+  font-family: 'Manrope', sans-serif;
+  color: #315a37;
+  font-size: 0.8125rem;
+  letter-spacing: 0.12em;
+}
+
+.cart-mv-border {
+  border-top-color: rgba(49, 90, 55, 0.15) !important;
+}
+
+/* Panel 2: Vision Theme */
+.cart-mv-vision {
+  background-color: #1e3421;
+  border: 1px solid rgba(30, 52, 33, 0.6);
+}
+
+.cart-mv-tag-light {
+  color: #f3efda;
+  font-size: 0.8125rem;
+  letter-spacing: 0.12em;
+  opacity: 0.88;
+}
+
+.cart-mv-border-light {
+  border-top-color: rgba(243, 239, 218, 0.15) !important;
+}
+
+/* Image Presentation & Blending Overlays */
+.cart-mv-img {
+  object-fit: cover;
+  min-height: 100%;
+}
+
+/* Desktop Gradients: Blends the image edge into the background */
+@media (min-width: 992px) {
+  .cart-mv-blend-mission {
+    background: linear-gradient(90deg, #f3efda 0%, rgba(243, 239, 218, 0.1) 40%, rgba(243, 239, 218, 0) 100%);
+  }
+
+  .cart-mv-blend-vision {
+    background: linear-gradient(270deg, #1e3421 0%, rgba(30, 52, 33, 0.1) 40%, rgba(30, 52, 33, 0) 100%);
+  }
+}
+
+/* Mobile & Tablet Responsiveness */
+@media (max-width: 991.98px) {
+  .cart-mv-image-col {
+    height: 250px;
+  }
+
+  .cart-mv-blend-mission {
+    background: linear-gradient(180deg, rgba(243, 239, 218, 0) 60%, #f3efda 100%);
+  }
+
+  .cart-mv-blend-vision {
+    background: linear-gradient(180deg, rgba(30, 52, 33, 0) 60%, #1e3421 100%);
+  }
+
+  .cart-mv-number {
+    top: 5px;
+    left: 15px;
+  }
+}
+
+
+
+/* ==========================================================================
+   CART SECURITY SOLUTIONS PVT. LTD. - OUR CORE VALUES CUSTOM STYLES
+   ========================================================================== */
+
+/* Section Base */
+.cart-values-section {
+  background-color: #ffffff;
+}
+
+/* Subtle Security Shield Watermark */
+.cart-values-watermark {
+  top: 10%;
+  left: 20%;
+  font-size: 28rem;
+  line-height: 1;
+  color: rgba(49, 90, 55, 0.035);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Section Header Typography */
+.cart-values-line {
+  width: 24px;
+  height: 2px;
+  background-color: #315a37;
+}
+
+.cart-values-label {
+  font-family: 'Manrope', sans-serif;
+  color: #315a37;
+  font-size: 0.8125rem;
+  letter-spacing: 0.14em;
+}
+
+.cart-values-title {
+  font-family: 'Libre Baskerville', serif;
+  color: #1e3421;
+  font-weight: 700;
+  line-height: 1.25;
+  font-size: clamp(1.75rem, 3.2vw, 2.5rem);
+  max-width: 620px;
+}
+
+.cart-values-desc {
+  font-family: 'Manrope', sans-serif;
+  color: #315a37;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-width: 580px;
+}
+
+/* 3x2 Editorial Grid Borders (Desktop & Tablet) */
+@media (min-width: 768px) {
+  .border-end-md {
+    border-right: 1px solid rgba(49, 90, 55, 0.12);
+  }
+  .border-bottom-md {
+    border-bottom: 1px solid rgba(49, 90, 55, 0.12);
+  }
+}
+
+/* Value Items & Icon Circle */
+.cart-values-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background-color: #f3efda;
+  color: #1e3421;
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+
+.cart-values-item:hover .cart-values-icon {
+  background-color: #1e3421;
+  color: #f3efda;
+  transform: scale(1.05);
+}
+
+.cart-values-number {
+  font-family: 'Libre Baskerville', serif;
+  color: #315a37;
+  font-size: 1.25rem;
+  opacity: 0.85;
+}
+
+.cart-values-item-title {
+  font-family: 'Libre Baskerville', serif;
+  color: #1e3421;
+  font-weight: 700;
+}
+
+.cart-values-divider {
+  width: 22px;
+  height: 1.5px;
+  background-color: #315a37;
+  opacity: 0.6;
+}
+
+.cart-values-item-desc {
+  font-family: 'Manrope', sans-serif;
+  color: #315a37;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+/* Right-Side Image Styling */
+.cart-values-image-wrap {
+  min-height: 480px;
+  background-color: #1e3421;
+  border-radius: 6px !important;
+}
+
+.cart-values-image {
+  object-fit: cover;
+  object-position: center top;
+}
+
+.cart-values-image-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(30, 52, 33, 0) 65%,
+    rgba(30, 52, 33, 0.4) 100%
+  );
+  pointer-events: none;
+}
+
+/* Bottom-Right Angled Dark-Green Decorative Shape */
+.cart-values-decoration {
+  width: 220px;
+  height: 140px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.cart-values-decoration-inner {
+  width: 100%;
+  height: 100%;
+  background-color: #1e3421;
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  position: relative;
+}
+
+.cart-values-decoration-inner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 3px solid #f3efda;
+  opacity: 0.5;
+}
+
+/* Mobile & Tablet Responsiveness */
+@media (max-width: 991.98px) {
+  .cart-values-image-wrap {
+    min-height: 320px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .cart-values-col {
+    border-bottom: 1px solid rgba(49, 90, 55, 0.1);
+  }
+  
+  .cart-values-col:last-child {
+    border-bottom: none;
+  }
+  
+  .cart-values-icon {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+
+/* ==========================================================================
+   CART SECURITY SOLUTIONS PVT. LTD. - OUR APPROACH CUSTOM STYLES
+   ========================================================================== */
+
+/* Section Base */
+.cart-approach-section {
+  background-color: #fbfaf5;
+}
+
+/* Watermark Shield */
+.cart-approach-watermark {
+  top: 5%;
+  font-size: 26rem;
+  line-height: 1;
+  color: rgba(49, 90, 55, 0.035);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Header & Typography */
+.cart-approach-label {
+  font-family: 'Manrope', sans-serif;
+  color: #1e3421;
+  font-size: 0.8125rem;
+  letter-spacing: 0.14em;
+}
+
+.cart-approach-label-line {
+  width: 32px;
+  height: 2px;
+  background-color: #1e3421;
+}
+
+.cart-approach-title {
+  font-family: 'Libre Baskerville', serif;
+  color: #1e3421;
+  font-weight: 700;
+  line-height: 1.25;
+  font-size: clamp(1.85rem, 3.4vw, 2.65rem);
+}
+
+.cart-approach-desc {
+  font-family: 'Manrope', sans-serif;
+  color: #315a37;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  max-width: 500px;
+}
+
+/* Upper-Right Image Blend */
+.cart-approach-image-wrap {
+  max-width: 440px;
+}
+
+.cart-approach-image {
+  object-fit: cover;
+  object-position: center top;
+  max-height: 380px;
+}
+
+.cart-approach-image-blend {
+  background: radial-gradient(circle at 75% 40%, rgba(251, 250, 245, 0) 50%, rgba(251, 250, 245, 0.85) 85%, #fbfaf5 100%);
+  pointer-events: none;
+}
+
+/* Horizontal Timeline Rail (Desktop) */
+.cart-approach-line-rail {
+  top: 76px;
+  height: 2px;
+  background-color: #1e3421;
+  opacity: 0.85;
+  z-index: 0;
+}
+
+/* Timeline Markers */
+.cart-approach-number {
+  width: 34px;
+  height: 34px;
+  background-color: #1e3421;
+  color: #f3efda;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 0.8125rem;
+  z-index: 2;
+}
+
+.cart-approach-icon {
+  width: 90px;
+  height: 90px;
+  background-color: #f3efda;
+  border: 2px solid #e7e2c9;
+  color: #1e3421;
+  z-index: 2;
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.cart-approach-step:hover .cart-approach-icon {
+  transform: scale(1.04);
+  background-color: #ffffff;
+}
+
+/* Step Content Typography */
+.cart-approach-step-title {
+  font-family: 'Libre Baskerville', serif;
+  color: #1e3421;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.cart-approach-step-desc {
+  font-family: 'Manrope', sans-serif;
+  color: #315a37;
+  font-size: 0.8125rem;
+  line-height: 1.55;
+}
+
+/* Bottom Dark-Green Curvature Finish */
+.cart-approach-bottom {
+  background-color: #1e3421;
+  border-top: 1px solid rgba(243, 239, 218, 0.2);
+  display: none;
+}
+
+.cart-approach-badge-shield {
+  top: -19px;
+  width: 38px;
+  height: 38px;
+  background-color: #1e3421;
+  border: 1px solid #f3efda;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  z-index: 2;
+}
+
+.cart-approach-badge-icon {
+  color: #f3efda;
+  font-size: 1rem;
+}
+
+.cart-approach-tagline {
+  font-family: 'Libre Baskerville', serif;
+  color: #f3efda;
+  letter-spacing: 0.08em;
+  font-size: 0.9375rem;
+}
+
+.cart-approach-accent-line {
+  width: 40px;
+  height: 1px;
+  background-color: #f3efda;
+  opacity: 0.45;
+}
+
+/* Mobile & Tablet Vertical Timeline Adaptations */
+@media (max-width: 991.98px) {
+  .cart-approach-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+
+  .cart-approach-marker-wrap {
+    flex-shrink: 0;
+    margin-bottom: 0 !important;
+  }
+
+  .cart-approach-icon {
+    width: 68px;
+    height: 68px;
+  }
+
+  .cart-approach-icon i {
+    font-size: 1.4rem !important;
+  }
+
+  .cart-approach-number {
+    width: 28px;
+    height: 28px;
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .cart-approach-v-line {
+    position: absolute;
+    top: 105px;
+    bottom: -32px;
+    width: 2px;
+    background-color: #1e3421;
+    opacity: 0.35;
+    z-index: 0;
+  }
+
+  .cart-approach-content {
+    padding-top: 0.5rem;
+  }
+}
+
+
+/* ==========================================================================
+   CART SECURITY SOLUTIONS PVT. LTD. - OUR PEOPLE / STANDARDS CUSTOM STYLES
+   ========================================================================== */
+
+/* Section Base */
+.cart-people-section {
+  background-color: #fbfaf5;
+}
+
+/* Watermark Shield Backdrop */
+.cart-people-watermark {
+  top: 5%;
+  font-size: 26rem;
+  line-height: 1;
+  color: rgba(49, 90, 55, 0.035);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Header & Typography */
+.cart-people-label {
+  font-family: 'Manrope', sans-serif;
+  color: #1e3421;
+  font-size: 0.8125rem;
+  letter-spacing: 0.14em;
+}
+
+.cart-people-label-line {
+  width: 32px;
+  height: 2px;
+  background-color: #1e3421;
+}
+
+.cart-people-title {
+  font-family: 'Libre Baskerville', serif;
+  color: #1e3421;
+  font-weight: 700;
+  line-height: 1.25;
+  font-size: clamp(1.85rem, 3.4vw, 2.65rem);
+}
+
+.cart-people-intro {
+  font-family: 'Manrope', sans-serif;
+  color: #315a37;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  max-width: 520px;
+}
+
+/* Upper Right Guard Image & Gradient Blend */
+.cart-people-image-wrap {
+  max-width: 480px;
+}
+
+.cart-people-image {
+  object-fit: cover;
+  object-position: center top;
+  max-height: 440px;
+}
+
+.cart-people-image-blend {
+  background: radial-gradient(circle at 75% 40%, rgba(251, 250, 245, 0) 50%, rgba(251, 250, 245, 0.85) 85%, #fbfaf5 100%);
+  pointer-events: none;
+}
+
+/* Feature Icon Circles */
+.cart-people-icon {
+  width: 76px;
+  height: 76px;
+  background-color: #f3efda;
+  border: 2px solid #e7e2c9;
+  color: #1e3421;
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.cart-people-feature:hover .cart-people-icon {
+  transform: scale(1.04);
+  background-color: #ffffff;
+}
+
+/* Feature Typography & Dividers */
+.cart-people-feature-title {
+  font-family: 'Libre Baskerville', serif;
+  color: #1e3421;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.cart-people-feature-divider {
+  width: 24px;
+  height: 1.5px;
+  background-color: #315a37;
+  opacity: 0.6;
+}
+
+.cart-people-feature-desc {
+  font-family: 'Manrope', sans-serif;
+  color: #315a37;
+  font-size: 0.8125rem;
+  line-height: 1.6;
+}
+
+/* Desktop Vertical Separators */
+@media (min-width: 992px) {
+  .cart-people-separator {
+    border-left: 1px solid rgba(49, 90, 55, 0.15);
+  }
+}
+
+/* Lower Dark-Green Standards Panel */
+.cart-people-standards {
+  background-color: #1e3421;
+  border-top: 1px solid rgba(243, 239, 218, 0.15);
+}
+
+.cart-people-standards-border {
+  border-bottom-color: rgba(243, 239, 218, 0.15) !important;
+}
+
+.cart-people-standards-badge {
+  width: 52px;
+  height: 52px;
+  background-color: transparent;
+  border: 1px solid #f3efda;
+  color: #f3efda;
+}
+
+.cart-people-standards-heading {
+  font-family: 'Libre Baskerville', serif;
+  color: #f3efda;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.cart-people-standards-desc {
+  font-family: 'Manrope', sans-serif;
+  color: #f3efda;
+  opacity: 0.85;
+  font-size: 0.875rem;
+  line-height: 1.55;
+}
+
+/* Lower Sub-points */
+.cart-people-sub-icon {
+  width: 32px;
+  height: 32px;
+  background-color: #f3efda;
+  color: #1e3421;
+  font-size: 0.9rem;
+}
+
+.cart-people-sub-text {
+  font-family: 'Manrope', sans-serif;
+  color: #f3efda;
+  font-size: 0.875rem;
+}
+
+/* Angled Finishing Decoration on Bottom-Right */
+.cart-people-decoration {
+  width: 140px;
+  height: 60px;
+  background: linear-gradient(135deg, transparent 50%, rgba(49, 90, 55, 0.4) 50%);
+  pointer-events: none;
+}
+
+/* Mobile & Tablet Adjustments */
+@media (max-width: 991.98px) {
+  .cart-people-image-wrap {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  .cart-people-image {
+    max-height: 320px;
+    margin: 0 auto;
+  }
+
+  .cart-people-icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .cart-people-icon i {
+    font-size: 1.4rem !important;
+  }
+}
