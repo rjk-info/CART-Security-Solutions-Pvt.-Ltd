@@ -1,0 +1,174 @@
+/* ==========================================================================
+   CART SECURITY SOLUTIONS PVT. LTD. - CONTACT US CUSTOM STYLES
+   ========================================================================== */
+
+/* Page Base */
+.cart-contact-page {
+  background-color: #fbfaf5;
+}
+
+/* Background Shield Watermark */
+.cart-contact-watermark {
+  top: 3%;
+  font-size: 26rem;
+  line-height: 1;
+  color: rgba(49, 90, 55, 0.035);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Intro Typography & Label */
+.cart-contact-label {
+  font-family: 'Manrope', sans-serif;
+  color: #1e3421;
+  font-size: 0.8125rem;
+  letter-spacing: 0.14em;
+}
+
+.cart-contact-label-line {
+  width: 32px;
+  height: 2px;
+  background-color: #1e3421;
+}
+
+.cart-contact-title {
+  font-family: 'Libre Baskerville', serif;
+  color: #1e3421;
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: clamp(2rem, 3.8vw, 3rem);
+}
+
+.cart-contact-desc {
+  font-family: 'Manrope', sans-serif;
+  color: #315a37;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  max-width: 520px;
+}
+
+/* Intro Guard Image & Soft Fade */
+.cart-contact-image-wrap {
+  max-width: 440px;
+}
+
+.cart-contact-image {
+  object-fit: cover;
+  object-position: center top;
+  max-height: 380px;
+}
+
+.cart-contact-image-blend {
+  background: radial-gradient(circle at 75% 40%, rgba(251, 250, 245, 0) 50%, rgba(251, 250, 245, 0.85) 85%, #fbfaf5 100%);
+  pointer-events: none;
+}
+
+/* Contact Method Cards */
+.cart-contact-card {
+  background-color: #ffffff;
+  border: 1px solid rgba(49, 90, 55, 0.12);
+  border-radius: 6px !important;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cart-contact-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(49, 90, 55, 0.35);
+  box-shadow: 0 8px 20px rgba(30, 52, 33, 0.08) !important;
+}
+
+.cart-contact-icon {
+  width: 48px;
+  height: 48px;
+  background-color: #f3efda;
+  color: #1e3421;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.cart-contact-card:hover .cart-contact-icon {
+  background-color: #1e3421;
+  color: #f3efda;
+}
+
+.cart-contact-method-name {
+  font-family: 'Manrope', sans-serif;
+  color: #1e3421;
+  font-size: 0.9375rem;
+}
+
+.cart-contact-method-val {
+  font-family: 'Manrope', sans-serif;
+  color: #315a37;
+}
+
+/* Map & Form Panels */
+.cart-contact-panel {
+  border: 1px solid rgba(49, 90, 55, 0.15);
+  background-color: #ffffff;
+  border-radius: 6px !important;
+}
+
+.cart-contact-panel-header {
+  background-color: #1e3421;
+  font-family: 'Libre Baskerville', serif;
+  color: #f3efda;
+}
+
+.cart-contact-location-info {
+  background-color: #fbfaf5 !important;
+  font-family: 'Manrope', sans-serif;
+}
+
+.cart-contact-map-wrap {
+  min-height: 420px;
+}
+
+.cart-contact-map {
+  min-height: 100%;
+}
+
+/* Form Fallback Styles */
+.cart-contact-input {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.875rem;
+  border-color: rgba(49, 90, 55, 0.2);
+  border-radius: 4px;
+}
+
+.cart-contact-input:focus {
+  border-color: #1e3421;
+  box-shadow: 0 0 0 0.2rem rgba(30, 52, 33, 0.15);
+}
+
+.cart-contact-submit {
+  font-family: 'Manrope', sans-serif;
+  background-color: #1e3421;
+  color: #f3efda;
+  border: 1px solid #1e3421;
+  border-radius: 4px;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.cart-contact-submit:hover,
+.cart-contact-submit:focus {
+  background-color: #315a37;
+  color: #ffffff;
+  border-color: #315a37;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+  .cart-contact-image-wrap {
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  
+  .cart-contact-image {
+    max-height: 300px;
+    margin: 0 auto;
+  }
+
+  .cart-contact-map-wrap {
+    min-height: 320px;
+  }
+}
