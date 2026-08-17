@@ -1,0 +1,2044 @@
+:root {
+  --cart-cream: #f3efda;
+  --cart-green: #1e3421;
+  --cart-green-soft: #315a37;
+  --cart-text: #315a37;
+  --cart-border: rgba(30, 52, 33, 0.14);
+  --cart-shadow: 0 12px 30px rgba(30, 52, 33, 0.08);
+}
+
+/* Footer styles - CART Security Solutions Pvt. Ltd. */
+/* Use Libre Baskerville for headings and Manrope for body text. */
+
+
+body {
+  min-width: 320px;
+  background: var(--cart-cream);
+  color: var(--cart-text);
+  font-family: "Manrope", Inter, Lato, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.site-header {
+  background: var(--cart-cream);
+  border-bottom: 1px solid var(--cart-border);
+  transition: box-shadow 0.25s ease, border-color 0.25s ease;
+  z-index: 1030;
+}
+
+.site-header.is-scrolled {
+  border-color: rgba(30, 52, 33, 0.08);
+  box-shadow: var(--cart-shadow);
+}
+
+.navbar {
+  min-height: 82px;
+  padding-block: 0.85rem;
+}
+
+.brand-lockup {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.85rem;
+  min-width: 0;
+  margin-right: 1.25rem;
+  color: var(--cart-green);
+  text-decoration: none;
+}
+
+.brand-lockup:hover,
+.brand-lockup:focus {
+  color: var(--cart-green);
+}
+
+.brand-emblem {
+  position: relative;
+  display: inline-flex;
+  flex: 0 0 auto;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border: 1px solid rgba(30, 52, 33, 0.18);
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 6px 16px rgba(30, 52, 33, 0.08);
+}
+
+.brand-emblem img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 160px;
+  max-width: none;
+  height: auto;
+  transform: translate(-50%, -50%);
+}
+
+.brand-copy {
+  display: grid;
+  line-height: 1.05;
+}
+
+.brand-title,
+.brand-subtitle {
+  font-family: "Libre Baskerville", Georgia, serif;
+  color: var(--cart-green);
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.brand-title {
+  font-size: 1.12rem;
+}
+
+.brand-subtitle {
+  margin-top: 0.22rem;
+  font-size: 0.68rem;
+}
+
+.navbar-nav .nav-link {
+  position: relative;
+  padding: 0.65rem 0.85rem;
+  color: var(--cart-text);
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link::after {
+  position: absolute;
+  right: 0.85rem;
+  bottom: 0.34rem;
+  left: 0.85rem;
+  height: 2px;
+  content: "";
+  background: var(--cart-green);
+  border-radius: 999px;
+  opacity: 0;
+  transform: scaleX(0.45);
+  transform-origin: center;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link.active {
+  color: var(--cart-green);
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link:focus::after,
+.navbar-nav .nav-link.active::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.enquire-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  min-height: 44px;
+  padding: 0.7rem 1.15rem;
+  color: #fff;
+  font-size: 0.92rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  background: var(--cart-green);
+  border: 1px solid var(--cart-green);
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(30, 52, 33, 0.14);
+  transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.enquire-btn:hover,
+.enquire-btn:focus {
+  color: #fff;
+  background: var(--cart-green-soft);
+  border-color: var(--cart-green-soft);
+  box-shadow: 0 12px 24px rgba(30, 52, 33, 0.18);
+  transform: translateY(-1px);
+}
+
+.enquire-btn .bi {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.navbar-toggler {
+  width: 46px;
+  height: 42px;
+  padding: 0;
+  border: 1px solid rgba(30, 52, 33, 0.22);
+  border-radius: 8px;
+}
+
+.navbar-toggler:focus,
+.nav-link:focus-visible,
+.enquire-btn:focus-visible,
+.brand-lockup:focus-visible {
+  outline: 3px solid rgba(49, 90, 55, 0.28);
+  outline-offset: 3px;
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  width: 1.25em;
+  height: 1.25em;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2830, 52, 33, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2.2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Home hero slider: Bootstrap carousel shell with project-specific visual treatment. */
+.cart-hero-slider {
+  position: relative;
+  overflow: hidden;
+  background: var(--cart-green);
+}
+
+/* Slider images: full-cover local images, ready to swap for final banner assets. */
+.cart-hero-slider .carousel-inner,
+.cart-hero-slide {
+  min-height: clamp(650px, calc(100vh - 82px), 740px);
+}
+
+.cart-hero-slide {
+  position: relative;
+}
+
+.cart-hero-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 68% center;
+}
+
+/* Overlay: darker behind left-side text and lighter over the image detail. */
+.cart-hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(30, 52, 33, 0.94) 0%, rgba(30, 52, 33, 0.82) 38%, rgba(30, 52, 33, 0.48) 68%, rgba(30, 52, 33, 0.18) 100%),
+    linear-gradient(180deg, rgba(30, 52, 33, 0.18) 0%, rgba(30, 52, 33, 0.08) 48%, rgba(30, 52, 33, 0.28) 100%);
+}
+
+/* Hero text: HTML content stays editable, responsive and search-friendly. */
+.cart-hero-content {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  padding: clamp(3.8rem, 7vw, 5.8rem) 0 6rem;
+  color: var(--cart-cream);
+}
+
+.cart-hero-label {
+  display: inline-flex;
+  align-items: center;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  color: rgba(243, 239, 218, 0.92);
+  font-size: clamp(0.88rem, 0.9vw, 1rem);
+  font-weight: 800;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.cart-hero-label::before {
+  flex: 0 0 44px;
+  width: 44px;
+  height: 2px;
+  margin-right: 0.78rem;
+  content: "";
+  background: var(--cart-cream);
+  border-radius: 999px;
+  opacity: 0.9;
+}
+
+.cart-hero-title {
+  max-width: 760px;
+  margin: 0;
+  color: #fff9eb;
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: clamp(3.25rem, 5.4vw, 4.3rem);
+  font-weight: 700;
+  line-height: 1.06;
+  overflow-wrap: break-word;
+}
+
+.cart-hero-description {
+  max-width: 560px;
+  margin: 1.35rem 0 0;
+  color: rgba(255, 249, 235, 0.88);
+  font-size: clamp(1.06rem, 1.25vw, 1.24rem);
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+/* CTA buttons: primary cream action and secondary outlined action. */
+.cart-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 2.15rem;
+}
+
+.cart-hero-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0.86rem 1.55rem;
+  font-family: "Manrope", system-ui, sans-serif;
+  font-size: 0.96rem;
+  font-weight: 800;
+  line-height: 1.1;
+  border-radius: 8px;
+  transition: background-color 0.22s ease, border-color 0.22s ease, color 0.22s ease, transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.cart-hero-btn-primary {
+  color: var(--cart-green);
+  background: var(--cart-cream);
+  border-color: var(--cart-cream);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.16);
+}
+
+.cart-hero-btn-primary:hover,
+.cart-hero-btn-primary:focus {
+  color: var(--cart-green);
+  background: #fff9eb;
+  border-color: #fff9eb;
+  transform: translateY(-2px);
+  box-shadow: 0 18px 34px rgba(0, 0, 0, 0.2);
+}
+
+.cart-hero-btn-secondary {
+  color: var(--cart-cream);
+  background: rgba(30, 52, 33, 0.08);
+  border-color: rgba(243, 239, 218, 0.74);
+}
+
+.cart-hero-btn-secondary:hover,
+.cart-hero-btn-secondary:focus {
+  color: var(--cart-cream);
+  background: var(--cart-green-soft);
+  border-color: var(--cart-green-soft);
+  transform: translateY(-2px);
+}
+
+.cart-hero-btn:focus-visible,
+.cart-hero-control:focus-visible {
+  outline: 3px solid rgba(243, 239, 218, 0.44);
+  outline-offset: 4px;
+  box-shadow: none;
+}
+
+/* Indicators: compact Bootstrap indicators customized for the hero section only. */
+.cart-hero-indicators {
+  z-index: 4;
+  gap: 0.46rem;
+  margin-bottom: 2rem;
+}
+
+.cart-hero-indicators [data-bs-target] {
+  width: 34px;
+  height: 4px;
+  margin: 0;
+  background-color: rgba(243, 239, 218, 0.48);
+  border: 0;
+  border-radius: 999px;
+  opacity: 1;
+  transition: width 0.22s ease, background-color 0.22s ease;
+}
+
+.cart-hero-indicators .active {
+  width: 46px;
+  background-color: var(--cart-cream);
+}
+
+/* Previous/next arrows: subtle circular controls over the image. */
+.cart-hero-control {
+  z-index: 4;
+  width: clamp(4rem, 7vw, 6rem);
+  opacity: 1;
+}
+
+.cart-hero-control-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  color: var(--cart-cream);
+  background: rgba(30, 52, 33, 0.58);
+  border: 1px solid rgba(243, 239, 218, 0.34);
+  border-radius: 50%;
+  transition: background-color 0.22s ease, border-color 0.22s ease, color 0.22s ease, transform 0.22s ease;
+}
+
+.cart-hero-control-icon .bi {
+  font-size: 1.75rem;
+  line-height: 1;
+}
+
+.cart-hero-control:hover .cart-hero-control-icon,
+.cart-hero-control:focus .cart-hero-control-icon {
+  color: var(--cart-green);
+  background: var(--cart-cream);
+  border-color: var(--cart-cream);
+  transform: translateY(-1px);
+}
+
+/* Mobile responsiveness: stronger overlay, smaller text, stacked CTAs and hidden arrows on small screens. */
+@media (max-width: 1199.98px) {
+  .cart-hero-slider .carousel-inner,
+  .cart-hero-slide {
+    min-height: clamp(600px, calc(100vh - 76px), 690px);
+  }
+
+  .cart-hero-title {
+    font-size: clamp(2.8rem, 6vw, 3.8rem);
+  }
+}
+
+@media (max-width: 991.98px) {
+  .cart-hero-slider .carousel-inner,
+  .cart-hero-slide {
+    min-height: 620px;
+  }
+
+  .cart-hero-overlay {
+    background:
+      linear-gradient(90deg, rgba(30, 52, 33, 0.95) 0%, rgba(30, 52, 33, 0.86) 58%, rgba(30, 52, 33, 0.56) 100%),
+      linear-gradient(180deg, rgba(30, 52, 33, 0.28) 0%, rgba(30, 52, 33, 0.08) 50%, rgba(30, 52, 33, 0.5) 100%);
+  }
+
+  .cart-hero-content {
+    padding: 4rem 0 5.6rem;
+  }
+
+  .cart-hero-title {
+    font-size: clamp(2.35rem, 7vw, 3.25rem);
+  }
+
+  .cart-hero-description {
+    max-width: 620px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .cart-hero-slider .carousel-inner,
+  .cart-hero-slide {
+    min-height: 620px;
+  }
+
+  .cart-hero-image {
+    object-position: 72% center;
+  }
+
+  .cart-hero-overlay {
+    background:
+      linear-gradient(90deg, rgba(30, 52, 33, 0.96) 0%, rgba(30, 52, 33, 0.88) 70%, rgba(30, 52, 33, 0.66) 100%),
+      linear-gradient(180deg, rgba(30, 52, 33, 0.34) 0%, rgba(30, 52, 33, 0.1) 44%, rgba(30, 52, 33, 0.62) 100%);
+  }
+
+  .cart-hero-content {
+    padding: 3.45rem 0 5.6rem;
+  }
+
+  .cart-hero-label {
+    margin-bottom: 0.85rem;
+    font-size: 0.84rem;
+  }
+
+  .cart-hero-label::before {
+    flex-basis: 28px;
+    width: 28px;
+    margin-right: 0.55rem;
+  }
+
+  .cart-hero-title {
+    font-size: clamp(1.72rem, 8.8vw, 2.16rem);
+    line-height: 1.08;
+  }
+
+  .cart-hero-description {
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 1.62;
+  }
+
+  .cart-hero-actions {
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+    margin-top: 1.7rem;
+  }
+
+  .cart-hero-btn {
+    width: 100%;
+    min-height: 50px;
+    padding-inline: 1rem;
+  }
+
+  .cart-hero-control {
+    display: none;
+  }
+
+  .cart-hero-indicators {
+    margin-bottom: 1.35rem;
+  }
+
+  .cart-hero-indicators [data-bs-target] {
+    width: 28px;
+  }
+
+  .cart-hero-indicators .active {
+    width: 38px;
+  }
+}
+
+@media (max-width: 359.98px) {
+  .cart-hero-title {
+    font-size: 1.7rem;
+  }
+
+  .cart-hero-description {
+    font-size: 0.96rem;
+  }
+}
+
+/* Home About preview section: concise intro placed directly after the hero slider. */
+.cart-about-section {
+  position: relative;
+  overflow: hidden;
+  background: var(--cart-cream);
+  padding-block: clamp(4rem, 7vw, 6.5rem);
+}
+
+/* Image area: local placeholder with restrained border, shadow and brand accent. */
+.cart-about-image-wrap {
+  position: relative;
+  max-width: 100%;
+}
+
+.cart-about-image-wrap::before {
+  position: absolute;
+  right: -14px;
+  bottom: -14px;
+  width: 42%;
+  height: 42%;
+  content: "";
+  background: var(--cart-green);
+  border-radius: 8px;
+  opacity: 0.95;
+}
+
+.cart-about-image {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid rgba(30, 52, 33, 0.16);
+  border-radius: 8px;
+  box-shadow: 0 18px 42px rgba(30, 52, 33, 0.13);
+}
+
+/* Content typography: uses the existing Manrope body font and Libre Baskerville heading font. */
+.cart-about-label {
+  color: var(--cart-green-soft);
+  font-size: 0.82rem;
+  font-weight: 800;
+  line-height: 1.3;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.cart-about-title {
+  max-width: 620px;
+  margin: 0;
+  color: var(--cart-green);
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: clamp(2.18rem, 3.5vw, 3.1rem);
+  font-weight: 700;
+  line-height: 1.16;
+  overflow-wrap: break-word;
+}
+
+.cart-about-text {
+  max-width: 610px;
+  margin: 1.25rem 0 0;
+  color: rgba(49, 90, 55, 0.92);
+  font-size: clamp(1rem, 1.2vw, 1.08rem);
+  font-weight: 600;
+  line-height: 1.78;
+}
+
+/* Key points: compact icon list for the preview, not service cards. */
+.cart-about-points {
+  display: grid;
+  gap: 0.78rem;
+  margin-top: 1.45rem;
+  color: var(--cart-green);
+  font-weight: 800;
+}
+
+.cart-about-point-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 28px;
+  height: 28px;
+  margin-right: 0.78rem;
+  color: var(--cart-cream);
+  background: var(--cart-green-soft);
+  border-radius: 50%;
+}
+
+.cart-about-point-icon .bi {
+  font-size: 1.05rem;
+  line-height: 1;
+}
+
+/* CTA button: brand-coloured link to the full About page. */
+.cart-about-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 50px;
+  padding: 0.82rem 1.35rem;
+  color: var(--cart-cream);
+  font-size: 0.95rem;
+  font-weight: 800;
+  line-height: 1.1;
+  background: var(--cart-green);
+  border: 1px solid var(--cart-green);
+  border-radius: 8px;
+  box-shadow: 0 12px 26px rgba(30, 52, 33, 0.13);
+  transition: background-color 0.22s ease, border-color 0.22s ease, color 0.22s ease, transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.cart-about-btn:hover,
+.cart-about-btn:focus {
+  color: var(--cart-cream);
+  background: var(--cart-green-soft);
+  border-color: var(--cart-green-soft);
+  box-shadow: 0 15px 30px rgba(30, 52, 33, 0.16);
+  transform: translateY(-2px);
+}
+
+.cart-about-btn:focus-visible {
+  outline: 3px solid rgba(49, 90, 55, 0.28);
+  outline-offset: 4px;
+  box-shadow: none;
+}
+
+@media (max-width: 991.98px) {
+  .cart-about-section {
+    padding-block: 4.25rem;
+  }
+
+  .cart-about-content {
+    padding-top: 1rem;
+  }
+
+  .cart-about-image-wrap::before {
+    right: -8px;
+    bottom: -8px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .cart-about-section {
+    padding-block: 3.5rem;
+  }
+
+  .cart-about-title {
+    font-size: clamp(1.86rem, 8vw, 2.22rem);
+  }
+
+  .cart-about-text {
+    line-height: 1.68;
+  }
+
+  .cart-about-btn {
+    width: 100%;
+  }
+}
+
+/* Home Services preview section: eight concise service cards after the About preview. */
+.cart-services-section {
+  position: relative;
+  overflow: hidden;
+  background: #fffaf0;
+  padding-block: clamp(4rem, 7vw, 6.4rem);
+}
+
+.cart-services-label {
+  color: var(--cart-green-soft);
+  font-size: 0.82rem;
+  font-weight: 800;
+  line-height: 1.3;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+
+.cart-home-section-header-row {
+  justify-content: center;
+  text-align: center;
+}
+
+.cart-services-title {
+  max-width: 780px;
+  margin: 0 auto;
+  color: var(--cart-green);
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: clamp(2.1rem, 3.2vw, 3rem);
+  font-weight: 700;
+  line-height: 1.16;
+  overflow-wrap: break-word;
+}
+
+.cart-services-intro {
+  max-width: 620px;
+  margin: 1rem 0 0;
+  color: rgba(49, 90, 55, 0.9);
+  font-size: clamp(1rem, 1.15vw, 1.08rem);
+  font-weight: 600;
+  line-height: 1.72;
+  display: none;
+}
+
+/* Service card: custom branded finish over Bootstrap's responsive grid. */
+.cart-services-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--cart-cream);
+  border: 1px solid rgba(30, 52, 33, 0.13);
+  border-radius: 8px;
+  box-shadow: 0 12px 28px rgba(30, 52, 33, 0.08);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.cart-services-card:hover,
+.cart-services-card:focus-within {
+  border-color: rgba(49, 90, 55, 0.34);
+  box-shadow: 0 18px 38px rgba(30, 52, 33, 0.12);
+  transform: translateY(-4px);
+}
+
+/* Service images: consistent landscape crop clipped inside each card. */
+.cart-services-image-link {
+  display: block;
+  overflow: hidden;
+  background: var(--cart-green);
+  aspect-ratio: 16 / 11;
+}
+
+.cart-services-card-feature .cart-services-image-link {
+  aspect-ratio: 16 / 8.6;
+}
+
+.cart-services-image {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  object-position: center center;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.cart-services-card:hover .cart-services-image,
+.cart-services-card:focus-within .cart-services-image {
+  transform: scale(1.01);
+}
+
+.cart-services-card-body {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1.15rem;
+}
+
+.cart-services-card-title {
+  margin: 0;
+  color: var(--cart-green);
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 1.18rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.cart-services-card-text {
+  margin: 0.7rem 0 1rem;
+  color: rgba(49, 90, 55, 0.88);
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.58;
+}
+
+.cart-services-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  width: fit-content;
+  margin-top: auto;
+  color: var(--cart-green);
+  font-size: 0.92rem;
+  font-weight: 800;
+  text-decoration: none;
+  transition: color 0.22s ease;
+}
+
+.cart-services-link .bi {
+  font-size: 1rem;
+  line-height: 1;
+  transition: transform 0.22s ease;
+}
+
+.cart-services-link:hover,
+.cart-services-link:focus {
+  color: var(--cart-green-soft);
+}
+
+.cart-services-link:hover .bi,
+.cart-services-link:focus .bi {
+  transform: translateX(4px);
+}
+
+.cart-services-image-link:focus-visible,
+.cart-services-link:focus-visible,
+.cart-services-btn:focus-visible {
+  outline: 3px solid rgba(49, 90, 55, 0.28);
+  outline-offset: 4px;
+}
+
+/* View all services CTA: matches the established dark green primary action style. */
+.cart-services-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 50px;
+  padding: 0.84rem 1.45rem;
+  color: var(--cart-cream);
+  font-size: 0.96rem;
+  font-weight: 800;
+  line-height: 1.1;
+  background: var(--cart-green);
+  border: 1px solid var(--cart-green);
+  border-radius: 8px;
+  box-shadow: 0 12px 26px rgba(30, 52, 33, 0.13);
+  transition: background-color 0.22s ease, border-color 0.22s ease, color 0.22s ease, transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.cart-services-btn:hover,
+.cart-services-btn:focus {
+  color: var(--cart-cream);
+  background: var(--cart-green-soft);
+  border-color: var(--cart-green-soft);
+  box-shadow: 0 15px 30px rgba(30, 52, 33, 0.16);
+  transform: translateY(-2px);
+}
+/* ==========================================================================
+   CART SECURITY SOLUTIONS PVT. LTD. - CTA SECTION CUSTOM STYLES
+   ========================================================================== */
+
+/* Section Base, Dominant Brand Color & Subtle Security Texture */
+.cart-cta-section {
+  background-color: #1e3421;
+  background-image: radial-gradient(circle at 90% 50%, rgba(49, 90, 55, 0.45) 0%, rgba(30, 52, 33, 0.95) 70%);
+}
+
+/* Subtle Editorial Prefix Line */
+.cart-cta-line {
+  width: 24px;
+  height: 2px;
+  background-color: #f3efda;
+  opacity: 0.75;
+}
+
+/* Typography Finishing */
+.cart-cta-label {
+  font-family: 'Manrope', sans-serif;
+  color: #f3efda;
+  font-size: 0.8125rem;
+  letter-spacing: 0.14em;
+  opacity: 0.85;
+}
+
+.cart-cta-title {
+  font-family: 'Libre Baskerville', serif;
+  color: #f3efda;
+  font-weight: 700;
+  font-size: clamp(1.875rem, 4vw, 2.75rem);
+  line-height: 1.25;
+}
+
+.cart-cta-desc {
+  font-family: 'Manrope', sans-serif;
+  color: #f3efda;
+  font-size: 1rem;
+  line-height: 1.65;
+  opacity: 0.88;
+  max-width: 580px;
+}
+
+/* Primary Action Button (#f3efda base with #1e3421 text) */
+.cart-cta-btn-primary {
+  font-family: 'Manrope', sans-serif;
+  background-color: #f3efda;
+  color: #1e3421;
+  border: 1px solid #f3efda;
+  border-radius: 4px;
+  transition: transform 0.25s ease, background-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cart-cta-btn-primary:hover,
+.cart-cta-btn-primary:focus {
+  background-color: #ffffff;
+  color: #1e3421;
+  border-color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.cart-cta-btn-primary:hover .bi-arrow-right {
+  transform: translateX(4px);
+}
+
+.cart-cta-btn-primary .bi-arrow-right {
+  transition: transform 0.25s ease;
+}
+
+/* Secondary Action Button (Transparent with #f3efda border & text) */
+.cart-cta-btn-secondary {
+  font-family: 'Manrope', sans-serif;
+  background-color: transparent;
+  color: #f3efda;
+  border: 1px solid #f3efda;
+  border-radius: 4px;
+  transition: transform 0.25s ease, background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+.cart-cta-btn-secondary:hover,
+.cart-cta-btn-secondary:focus {
+  background-color: #315a37;
+  color: #f3efda;
+  border-color: #315a37;
+  transform: translateY(-2px);
+}
+@media (max-width: 991.98px) {
+  .cart-services-section {
+    padding-block: 4.25rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .cart-services-section {
+    padding-block: 3.5rem;
+  }
+
+  .cart-services-title {
+    font-size: clamp(1.82rem, 8vw, 2.2rem);
+  }
+
+  .cart-services-card-body {
+    padding: 1rem;
+  }
+
+  .cart-services-btn {
+    width: 100%;
+  }
+}
+
+/* Home Why Choose Us section: premium two-column trust and discipline message. */
+.cart-why-section {
+  position: relative;
+  overflow: hidden;
+  background: var(--cart-cream);
+  padding-block: clamp(4rem, 7vw, 6.4rem);
+}
+
+/* Image area: restrained brand accent that matches the About section polish. */
+.cart-why-image-wrap {
+  position: relative;
+  max-width: 100%;
+}
+
+.cart-why-image-wrap::before {
+  position: absolute;
+  top: -14px;
+  left: -14px;
+  width: 44%;
+  height: 44%;
+  content: "";
+  background: var(--cart-green);
+  border-radius: 8px;
+  opacity: 0.95;
+}
+
+.cart-why-image {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid rgba(30, 52, 33, 0.16);
+  border-radius: 8px;
+  box-shadow: 0 18px 42px rgba(30, 52, 33, 0.13);
+}
+
+.cart-why-label {
+  color: var(--cart-green-soft);
+  font-size: 0.82rem;
+  font-weight: 800;
+  line-height: 1.3;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+
+.cart-why-title {
+  max-width: 650px;
+  margin: 0;
+  color: var(--cart-green);
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: clamp(2.14rem, 3.35vw, 3.08rem);
+  font-weight: 700;
+  line-height: 1.16;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+.cart-why-text {
+  max-width: 630px;
+  margin: 1.2rem 0 0;
+  color: rgba(49, 90, 55, 0.92);
+  font-size: clamp(1rem, 1.15vw, 1.08rem);
+  font-weight: 600;
+  line-height: 1.74;
+}
+
+/* Feature points: compact icon rows, two columns on wider screens. */
+.cart-why-points {
+  margin-top: 1.6rem;
+}
+
+.cart-why-item {
+  display: flex;
+  align-items: center;
+  gap: 0.82rem;
+  min-height: 64px;
+  padding: 0.74rem 0.82rem;
+  color: var(--cart-green);
+  font-weight: 800;
+  line-height: 1.35;
+  background: rgba(255, 250, 240, 0.72);
+  border: 1px solid rgba(30, 52, 33, 0.12);
+  border-radius: 8px;
+  transition: border-color 0.24s ease, background-color 0.24s ease, transform 0.24s ease;
+}
+
+.cart-why-item:hover {
+  background: #fffaf0;
+  border-color: rgba(49, 90, 55, 0.28);
+  transform: translateY(-2px);
+}
+
+.cart-why-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 44px;
+  height: 44px;
+  color: var(--cart-green);
+  background: rgba(243, 239, 218, 0.98);
+  border: 1px solid rgba(30, 52, 33, 0.14);
+  border-radius: 8px;
+  transition: background-color 0.24s ease, color 0.24s ease;
+}
+
+.cart-why-item:hover .cart-why-icon {
+  color: var(--cart-cream);
+  background: var(--cart-green-soft);
+}
+
+.cart-why-icon .bi {
+  font-size: 1.22rem;
+  line-height: 1;
+}
+
+@media (max-width: 991.98px) {
+  .cart-why-section {
+    padding-block: 4.25rem;
+  }
+
+  .cart-why-content {
+    padding-top: 1rem;
+  }
+
+  .cart-why-image-wrap::before {
+    top: -8px;
+    left: -8px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .cart-why-section {
+    padding-block: 3.5rem;
+  }
+
+  .cart-why-title {
+    font-size: clamp(1.66rem, 7.1vw, 2.04rem);
+    line-height: 1.18;
+  }
+
+  .cart-why-text {
+    line-height: 1.68;
+  }
+
+  .cart-why-item {
+    min-height: 58px;
+    padding: 0.68rem 0.72rem;
+  }
+
+  .cart-why-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .navbar-nav .nav-link {
+    padding-inline: 0.62rem;
+  }
+
+  .enquire-btn {
+    padding-inline: 0.95rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .navbar {
+    min-height: 76px;
+    padding-block: 0.65rem;
+  }
+
+  .navbar-collapse {
+    margin-top: 0.8rem;
+    padding: 0.7rem 0 0.2rem;
+    border-top: 1px solid rgba(30, 52, 33, 0.13);
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.78rem 0.15rem;
+  }
+
+  .navbar-nav .nav-link::after {
+    right: auto;
+    bottom: 0.45rem;
+    left: 0.15rem;
+    width: 34px;
+  }
+
+  .enquire-btn {
+    width: 100%;
+    max-width: 240px;
+  }
+}
+
+@media (max-width: 425px) {
+  .brand-lockup {
+    gap: 0.65rem;
+    margin-right: 0.6rem;
+  }
+
+  .brand-emblem {
+    width: 56px;
+    height: 56px;
+  }
+
+  .brand-emblem img {
+    width: 110px;
+  }
+
+  .brand-title {
+    font-size: 0.95rem;
+  }
+
+  .brand-subtitle {
+    font-size: 0.58rem;
+  }
+}
+
+@media (max-width: 359.98px) {
+  .brand-title {
+    font-size: 0.86rem;
+  }
+
+  .brand-subtitle {
+    font-size: 0.52rem;
+  }
+
+  .navbar-toggler {
+    width: 42px;
+    height: 40px;
+  }
+}
+
+/* Layout: keep brand left, center nav, and push enquire button to the right */
+nav.navbar > .container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.brand-lockup {
+  margin-right: 0.75rem;
+}
+
+.collapse.navbar-collapse {
+  /* default: hidden (Bootstrap toggles .show) */
+  display: none;
+}
+
+/* Desktop: always show expanded navbar */
+@media (min-width: 992px) {
+  .collapse.navbar-collapse {
+    display: flex !important;
+    align-items: center;
+    flex: 1 1 auto;
+  }
+
+  .collapse.navbar-collapse .navbar-nav {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .collapse.navbar-collapse .enquire-btn {
+    margin-left: auto;
+  }
+}
+
+/* Mobile: hidden until toggled (Bootstrap adds .show) */
+@media (max-width: 991.98px) {
+  .collapse.navbar-collapse {
+    display: none !important;
+    /* reserve absolute centered position even when hidden to avoid layout flash */
+    position: absolute !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    top: calc(100% + 8px) !important;
+    width: calc(100% - 40px) !important;
+    margin: 0 auto !important;
+    padding: 1rem 20px !important;
+    border-radius: 8px !important;
+    z-index: 1060 !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+  }
+
+  /* Center the opened mobile menu absolutely to avoid layout flash */
+  .collapse.navbar-collapse.show {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    background: transparent !important;
+  }
+
+  /* Footer specific styles */
+  .site-footer {
+    background: var(--cart-cream);
+    color: var(--cart-text);
+  }
+  .site-footer .footer-heading {
+    font-family: "Libre Baskerville", serif;
+    color: var(--cart-green);
+    font-size: 1.15rem;
+    margin-bottom: 1rem;
+  }
+  .site-footer .footer-links a {
+    color: var(--cart-text);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    transition: color .18s ease, transform .18s ease;
+  }
+  .site-footer .footer-links a:hover,
+  .site-footer .footer-links a:focus {
+    color: var(--cart-green-soft);
+    transform: translateX(6px);
+  }
+  .site-footer .footer-links li { margin-bottom: .55rem; }
+  .site-footer .footer-links .bi { font-size: .9rem; opacity: .9; }
+  .site-footer .text-muted { color: rgba(49,90,55,.85) !important; }
+
+  .site-footer .social-icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(30,52,33,0.12);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--cart-green);
+    transition: background-color .18s ease, color .18s ease, transform .12s ease;
+  }
+  .site-footer .social-icon:hover,
+  .site-footer .social-icon:focus {
+    background: var(--cart-green);
+    color: var(--cart-cream);
+    transform: translateY(-2px);
+  }
+
+  .site-footer .footer-bar { background: var(--cart-green); }
+  .site-footer .footer-bar small { color: var(--cart-cream); font-family: "Manrope", sans-serif; }
+
+  /* Floating WhatsApp (placeholder) */
+  .floating-whatsapp {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    width: 52px;
+    height: 52px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--cart-green);
+    color: var(--cart-cream);
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(30,52,33,0.18);
+    z-index: 2000;
+    text-decoration: none;
+  }
+  .floating-whatsapp .bi { font-size: 1.35rem; }
+
+  /* Decorative subtle pattern (very low opacity) */
+  .site-footer {
+    background-image: repeating-linear-gradient(45deg, rgba(30,52,33,0.01) 0 2px, transparent 2px 40px);
+  }
+
+  /* Responsive tweaks for footer spacing */
+  @media (min-width: 992px) {
+    .site-footer { padding-top: 3rem; padding-bottom: 2rem; }
+  }
+  @media (max-width: 991.98px) {
+    .site-footer { padding-top: 2rem; padding-bottom: 1.5rem; }
+  }
+
+  .collapse.navbar-collapse .navbar-nav {
+    margin: 0 !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 0.75rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .collapse.navbar-collapse .navbar-nav .nav-link {
+    padding: 0.75rem 0;
+    text-align: center;
+  }
+
+  .collapse.navbar-collapse .enquire-btn {
+    margin: 1.25rem auto 0 !important;
+    display: block !important;
+    width: 220px !important;
+    max-width: 90% !important;
+  }
+  /* Prevent initial layout flash by making the .show state fully centered and disabling transitions */
+  .collapse.navbar-collapse.show {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  /* remove transitions to prevent any reflow animation */
+  .collapse.navbar-collapse,
+  .collapse.navbar-collapse .navbar-nav,
+  .collapse.navbar-collapse .enquire-btn {
+    transition: none !important;
+  }
+}
+
+/* Mobile navbar overlap fix: keep opened menu in page flow so it pushes the hero down. */
+@media (max-width: 991.98px) {
+  .site-header .collapse.navbar-collapse {
+    position: static !important;
+    left: auto !important;
+    top: auto !important;
+    width: 100% !important;
+    margin-top: 0.8rem !important;
+    padding: 1rem 0 0.25rem !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    transform: none !important;
+    background: var(--cart-cream) !important;
+    border-top: 1px solid rgba(30, 52, 33, 0.13) !important;
+    border-radius: 0 !important;
+  }
+
+  .site-header .collapse.navbar-collapse.show {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+}
+
+/* Home page refinement: CART-branded corporate security visual language. */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background: #fffaf0;
+}
+
+.container,
+.row,
+.row > * {
+  min-width: 0;
+}
+
+.site-header {
+  background: rgba(243, 239, 218, 0.98);
+  backdrop-filter: blur(10px);
+}
+
+.navbar {
+  min-height: 76px;
+  padding-block: 0.55rem;
+}
+
+.brand-emblem {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  box-shadow: none;
+}
+
+.brand-emblem img {
+  width: 138px;
+}
+
+.navbar-nav .nav-link {
+  font-size: 0.98rem;
+  font-weight: 800;
+}
+
+.enquire-btn,
+.cart-hero-btn,
+.cart-about-btn,
+.cart-services-btn {
+  border-radius: 6px;
+  box-shadow: none;
+}
+
+.enquire-btn:hover,
+.enquire-btn:focus,
+.cart-about-btn:hover,
+.cart-about-btn:focus,
+.cart-services-btn:hover,
+.cart-services-btn:focus {
+  box-shadow: none;
+}
+
+.cart-hero-slider .carousel-inner,
+.cart-hero-slide {
+  min-height: clamp(590px, calc(100vh - 76px), 690px);
+}
+
+.cart-hero-image {
+  object-position: center;
+}
+
+.cart-hero-overlay {
+  background:
+    linear-gradient(90deg, rgba(30, 52, 33, 0.96) 0%, rgba(30, 52, 33, 0.86) 39%, rgba(30, 52, 33, 0.42) 70%, rgba(30, 52, 33, 0.1) 100%),
+    linear-gradient(180deg, rgba(30, 52, 33, 0.18) 0%, rgba(30, 52, 33, 0.08) 52%, rgba(30, 52, 33, 0.34) 100%);
+}
+
+.cart-hero-content {
+  padding: clamp(3.4rem, 6vw, 5.2rem) 0 5.4rem;
+}
+
+.cart-hero-label,
+.cart-about-label,
+.cart-services-label,
+.cart-why-label {
+  letter-spacing: 0;
+}
+
+.cart-hero-title {
+  max-width: 720px;
+  width: min(100%, 720px);
+  font-size: clamp(2.9rem, 5vw, 4.05rem);
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.cart-hero-description {
+  max-width: 540px;
+  width: min(100%, 540px);
+  overflow-wrap: anywhere;
+}
+
+.cart-hero-btn {
+  min-height: 48px;
+  padding: 0.78rem 1.28rem;
+}
+
+.cart-hero-control-icon {
+  border-radius: 6px;
+}
+
+.cart-about-section,
+.cart-why-section {
+  background: var(--cart-cream);
+  padding-block: clamp(3.6rem, 5.6vw, 5.35rem);
+}
+
+.cart-about-section {
+  border-bottom: 1px solid rgba(30, 52, 33, 0.11);
+}
+
+.cart-about-image-wrap::before,
+.cart-why-image-wrap::before {
+  width: 10px;
+  height: auto;
+  border-radius: 3px;
+}
+
+.cart-about-image-wrap::before {
+  top: 10px;
+  right: auto;
+  bottom: 10px;
+  left: -10px;
+}
+
+.cart-about-image,
+.cart-why-image {
+  aspect-ratio: 5 / 4;
+  border-radius: 6px;
+  box-shadow: none;
+}
+
+.cart-about-content {
+  padding-left: clamp(1.1rem, 2vw, 1.7rem) !important;
+  border-left: 3px solid rgba(30, 52, 33, 0.18);
+}
+
+.cart-about-title,
+.cart-services-title,
+.cart-why-title {
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.cart-about-title {
+  font-size: clamp(2rem, 3vw, 2.78rem);
+}
+
+.cart-about-text,
+.cart-services-intro,
+.cart-why-text {
+  max-width: 100%;
+  color: rgba(49, 90, 55, 0.9);
+  font-size: 1rem;
+  line-height: 1.66;
+  overflow-wrap: anywhere;
+}
+
+.cart-about-points {
+  gap: 0.58rem;
+  margin-top: 1.2rem;
+}
+
+.cart-about-point-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.68rem;
+  border-radius: 6px;
+}
+
+.cart-services-section {
+  background: #fffaf0;
+  padding-block: clamp(3.7rem, 5.7vw, 5.5rem);
+  border-bottom: 1px solid rgba(30, 52, 33, 0.1);
+}
+
+.cart-services-title {
+  max-width: 720px;
+  margin: 0;
+  font-size: clamp(2rem, 3vw, 2.72rem);
+}
+
+.cart-services-intro {
+  max-width: 510px;
+}
+
+.cart-services-card {
+  background: var(--cart-cream);
+  border-color: rgba(30, 52, 33, 0.16);
+  border-radius: 6px;
+  box-shadow: none;
+}
+
+.cart-services-card:hover,
+.cart-services-card:focus-within {
+  border-color: rgba(30, 52, 33, 0.36);
+  box-shadow: none;
+  transform: translateY(-3px);
+}
+
+.cart-services-image-link {
+  aspect-ratio: 16 / 11;
+}
+
+.cart-services-card-feature .cart-services-image-link {
+  aspect-ratio: 16 / 8.6;
+}
+
+.cart-services-card-body {
+  padding: 1rem 1.05rem 1.12rem;
+  border-top: 4px solid rgba(30, 52, 33, 0.18);
+}
+
+.cart-services-card-feature .cart-services-card-body {
+  padding: 1.1rem 1.18rem 1.2rem;
+}
+
+.cart-services-card-title {
+  font-size: 1.08rem;
+}
+
+.cart-services-card-feature .cart-services-card-title {
+  font-size: 1.28rem;
+}
+
+.cart-services-card-text {
+  margin: 0.62rem 0 0.95rem;
+  font-size: 0.93rem;
+  line-height: 1.52;
+}
+
+.cart-services-link {
+  padding-top: 0.35rem;
+  border-top: 1px solid rgba(30, 52, 33, 0.12);
+}
+
+.cart-services-btn {
+  min-height: 48px;
+  padding: 0.78rem 1.26rem;
+}
+
+.cart-why-section {
+  border-bottom: 1px solid rgba(30, 52, 33, 0.1);
+}
+
+.cart-why-image-wrap::before {
+  top: 10px;
+  bottom: 10px;
+  left: -10px;
+}
+
+.cart-why-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.cart-why-title {
+  font-size: clamp(2rem, 3vw, 2.82rem);
+}
+
+.cart-why-points {
+  margin-top: 1.45rem;
+}
+
+.cart-why-item {
+  min-height: 58px;
+  padding: 0.72rem 0;
+  background: transparent;
+  border: 0;
+  border-top: 1px solid rgba(30, 52, 33, 0.16);
+  border-radius: 0;
+}
+
+.cart-why-item:hover {
+  background: transparent;
+  border-color: rgba(30, 52, 33, 0.28);
+  transform: none;
+}
+
+.cart-why-icon {
+  width: 36px;
+  height: 36px;
+  color: var(--cart-cream);
+  background: var(--cart-green);
+  border-color: var(--cart-green);
+  border-radius: 6px;
+}
+
+.cart-why-item:hover .cart-why-icon {
+  color: var(--cart-cream);
+  background: var(--cart-green-soft);
+}
+
+.cart-why-icon .bi {
+  font-size: 1.04rem;
+}
+
+.site-footer.mt-5 {
+  margin-top: 0 !important;
+}
+
+.site-footer {
+  background: var(--cart-green);
+  color: rgba(243, 239, 218, 0.86);
+}
+
+.site-footer .footer-heading {
+  margin-bottom: 1rem;
+  color: var(--cart-cream);
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 1.08rem;
+}
+
+.site-footer .text-muted,
+.site-footer .text-dark {
+  color: rgba(243, 239, 218, 0.76) !important;
+}
+
+.site-footer .footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.site-footer .footer-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: rgba(243, 239, 218, 0.82);
+  text-decoration: none;
+  transition: color 0.18s ease, transform 0.18s ease;
+}
+
+.site-footer .footer-links a:hover,
+.site-footer .footer-links a:focus {
+  color: var(--cart-cream);
+  transform: translateX(4px);
+}
+
+.site-footer .social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  color: var(--cart-cream);
+  text-decoration: none;
+  border: 1px solid rgba(243, 239, 218, 0.26);
+  border-radius: 6px;
+  transition: background-color 0.18s ease, color 0.18s ease, transform 0.18s ease;
+}
+
+.site-footer .social-icon:hover,
+.site-footer .social-icon:focus {
+  color: var(--cart-green);
+  background: var(--cart-cream);
+  transform: translateY(-2px);
+}
+
+.site-footer .footer-bar {
+  background: rgba(0, 0, 0, 0.18);
+  border-top: 1px solid rgba(243, 239, 218, 0.14);
+}
+
+.site-footer .footer-bar small {
+  color: var(--cart-cream);
+}
+
+/* ==========================================================================
+   CART SECURITY SOLUTIONS PVT. LTD. - INDUSTRIES SECTION CUSTOM STYLES
+   ========================================================================== */
+
+/* Section Base & Background */
+.cart-industries-section {
+  background-color: #ffffff;
+}
+
+/* Typography & Brand Colors */
+.cart-industries-label {
+  color: #315a37;
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.8125rem;
+  letter-spacing: 0.12em;
+}
+
+.cart-industries-title {
+  color: #1e3421;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+#homeServicesPreview .cart-services-title,
+#industries-heading {
+  white-space: nowrap;
+}
+
+.cart-industries-desc {
+  color: #315a37;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  display: none;
+}
+
+/* Industry Card Container */
+.cart-industries-card {
+  min-height: 280px;
+  border-radius: 6px !important;
+  background-color: #1e3421;
+}
+
+.cart-industries-card--featured {
+  min-height: 380px;
+}
+
+/* Image Cropping & Scaling */
+.cart-industries-image {
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* Brand Gradient Dark Overlay (Based on #1e3421) */
+/* .cart-industries-overlay {
+  background: linear-gradient(
+    180deg, 
+    rgba(30, 52, 33, 0.25) 0%, 
+    rgba(30, 52, 33, 0.65) 50%, 
+    rgba(30, 52, 33, 0.95) 100%
+  );
+  transition: background 0.3s ease;
+} */
+
+/* Text Overlays */
+.cart-industries-card-title {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  color: #dcdce5 !important;
+  transition: color 0.3s ease;
+  align-items: center;
+}
+
+.cart-industries-card-desc {
+  font-family: 'Manrope', sans-serif;
+  color: #14650b;
+  line-height: 1.5;
+  font-weight: 900;
+  display: none;
+}
+
+/* Icon Interactions */
+.cart-industries-arrow {
+  display: none;
+  color: #f3efda;
+  opacity: 0.75;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hover States (Clean & Subtle) */
+.cart-industries-card:hover .cart-industries-image {
+  transform: scale(1.04);
+}
+
+/* .cart-industries-card:hover .cart-industries-overlay {
+  background: linear-gradient(
+    180deg, 
+    rgba(30, 52, 33, 0.35) 0%, 
+    rgba(30, 52, 33, 0.75) 50%, 
+    rgba(30, 52, 33, 0.98) 100%
+  );
+} */
+
+.cart-industries-card:hover .cart-industries-arrow {
+  opacity: 1;
+  transform: translate(3px, -3px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767.98px) {
+  .cart-industries-card,
+  .cart-industries-card--featured {
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .brand-emblem {
+    width: 62px;
+    height: 62px;
+  }
+
+  .brand-emblem img {
+    width: 124px;
+  }
+
+  nav.navbar > .container {
+    width: 100%;
+    max-width: 100%;
+    justify-content: space-between;
+  }
+
+  .navbar-toggler {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    margin-left: auto;
+  }
+
+  .cart-hero-slider .carousel-inner,
+  .cart-hero-slide {
+    min-height: 590px;
+  }
+
+  .cart-about-content {
+    padding-left: 0 !important;
+    border-left: 0;
+  }
+
+  .cart-services-intro {
+    max-width: 680px;
+    display: none important;
+  }
+
+  .cart-services-card-feature .cart-services-image-link {
+    aspect-ratio: 16 / 10.5;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .navbar {
+    min-height: 70px;
+  }
+
+  nav.navbar > .container {
+    width: min(100%, 390px);
+    max-width: 390px;
+    margin-right: auto;
+    margin-left: 0;
+  }
+
+  .brand-emblem {
+    width: 54px;
+    height: 54px;
+  }
+
+  .brand-emblem img {
+    width: 108px;
+  }
+
+  .cart-hero-slider .carousel-inner,
+  .cart-hero-slide {
+    min-height: 560px;
+  }
+
+  .cart-hero-title {
+    font-size: clamp(1.62rem, 7.5vw, 1.98rem);
+  }
+
+  .cart-hero-label,
+  .cart-hero-title,
+  .cart-hero-description,
+  .cart-about-title,
+  .cart-about-text,
+  .cart-services-title,
+  .cart-services-intro,
+  .cart-why-title,
+  .cart-why-text {
+    width: min(calc(100vw - 24px), 366px);
+    max-width: min(calc(100vw - 24px), 366px);
+  }
+
+  .cart-services-section .row > *,
+  .cart-why-section .row > *,
+  .site-footer .row > * {
+    flex: 0 0 auto;
+    width: min(calc(100vw - 24px), 366px);
+    max-width: min(calc(100vw - 24px), 366px);
+  }
+
+  .site-footer p,
+  .site-footer a,
+  .site-footer small {
+    max-width: min(calc(100vw - 24px), 366px);
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .site-footer .footer-bar small {
+    display: block;
+    margin-right: auto;
+    margin-left: 0;
+    text-align: left;
+    line-height: 1.5;
+  }
+
+  .cart-hero-description {
+    font-size: 0.96rem;
+  }
+
+  .cart-about-section,
+  .cart-services-section,
+  .cart-why-section {
+    padding-block: 3.15rem;
+  }
+
+  .cart-about-title,
+  .cart-services-title,
+  .cart-why-title {
+    font-size: clamp(1.48rem, 6.5vw, 1.76rem);
+    line-height: 1.18;
+  }
+
+  .cart-about-image,
+  .cart-why-image,
+  .cart-services-image-link,
+  .cart-services-card-feature .cart-services-image-link {
+    aspect-ratio: 4 / 3;
+  }
+
+  .cart-services-card-body,
+  .cart-services-card-feature .cart-services-card-body {
+    padding: 0.95rem;
+  }
+
+  .cart-why-item {
+    min-height: 54px;
+  }
+
+  #homeServicesPreview .cart-services-title,
+  #industries-heading {
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+}

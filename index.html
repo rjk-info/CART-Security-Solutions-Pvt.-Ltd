@@ -1,0 +1,768 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CART Security Solutions Pvt. Ltd.</title>
+  <meta name="description" content="CART Security Solutions Pvt. Ltd. provides professional guarding, supervision and premises security services.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header sticky-top" id="siteHeader">
+    <nav class="navbar navbar-expand-lg" aria-label="Primary navigation">
+      <div class="container">
+        <a class="navbar-brand brand-lockup" href="index.html" aria-label="CART Security Solutions Pvt. Ltd. home">
+          <span class="brand-emblem" aria-hidden="true">
+            <img src="assets/images/logo/WhatsApp%20Image%202026-08-10%20at%209.58.37%20AM.jpeg" alt="">
+          </span>
+          <!-- brand text removed per request; only logo kept -->
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNavbar" aria-controls="primaryNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="primaryNavbar">
+          <ul class="navbar-nav ms-lg-auto align-items-lg-center gap-lg-1">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Our Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+
+          <a class="btn enquire-btn ms-lg-4 mt-3 mt-lg-0" href="contact.html">
+            <span>Enquire Now</span>
+            <i class="bi bi-arrow-right-short" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--
+    HOME HERO SLIDER START
+    Bootstrap controls the fade, timing, touch swipe, indicators and arrows.
+    To convert this into one static banner later, keep Slide 1 and remove
+    Slide 2, Slide 3, indicators and previous/next controls.
+  -->
+  <section id="homeHeroSlider" class="carousel slide carousel-fade cart-hero-slider" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="hover" data-bs-touch="true" data-bs-wrap="true" aria-label="Home page hero slider">
+    <!-- Indicators: Bootstrap indicator buttons, styled in CSS for a cleaner premium look. -->
+    <div class="carousel-indicators cart-hero-indicators">
+      <button type="button" data-bs-target="#homeHeroSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#homeHeroSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#homeHeroSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <!-- Slide 1: main static-hero candidate for a future single-banner version. -->
+      <div class="carousel-item active cart-hero-slide">
+        <!-- Slider image: replace this local placeholder with the final Slide 1 banner image later. -->
+        <img src="assets/images/home/banner1.jpeg" class="d-block w-100 cart-hero-image" alt="Professional security guard at a corporate building entrance">
+        <!-- Overlay: dark green gradient keeps the HTML hero text readable over the image. -->
+        <div class="cart-hero-overlay" aria-hidden="true"></div>
+
+        <!-- Hero text and CTA buttons: kept as HTML for responsive editing and SEO. -->
+        <div class="cart-hero-content">
+          <div class="container h-100">
+            <div class="row h-100 align-items-center">
+              <div class="col-lg-7 col-xl-7">
+                <p class="cart-hero-label">CART Security Solutions Pvt. Ltd.</p>
+                <h1 class="cart-hero-title">Professional Security You Can Depend On</h1>
+                <p class="cart-hero-description">Reliable and professional security solutions for people, property and business premises.</p>
+                <div class="cart-hero-actions">
+                  <a class="btn cart-hero-btn cart-hero-btn-primary" href="services.html">Our Services</a>
+                  <a class="btn cart-hero-btn cart-hero-btn-secondary" href="contact.html">Contact Us</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2: trained personnel message. Remove this block for a future one-slide banner. -->
+      <div class="carousel-item cart-hero-slide">
+        <!-- Slider image: replace this local placeholder with the final Slide 2 banner image later. -->
+        <img src="assets/images/home/banner3.jpeg" class="d-block w-100 cart-hero-image" alt="Trained security personnel standing at a modern business premises">
+        <!-- Overlay: slightly stronger behind the left-side content. -->
+        <div class="cart-hero-overlay" aria-hidden="true"></div>
+
+        <!-- Hero text and CTA buttons. -->
+        <div class="cart-hero-content">
+          <div class="container h-100">
+            <div class="row h-100 align-items-center">
+              <div class="col-lg-7 col-xl-7">
+                <p class="cart-hero-label">Trained &bull; Disciplined &bull; Reliable</p>
+                <h2 class="cart-hero-title">Trained Security Personnel for Every Requirement</h2>
+                <p class="cart-hero-description">Professional security personnel focused on safety, discipline and dependable protection.</p>
+                <div class="cart-hero-actions">
+                  <a class="btn cart-hero-btn cart-hero-btn-primary" href="services.html">Explore Services</a>
+                  <a class="btn cart-hero-btn cart-hero-btn-secondary" href="contact.html">Enquire Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3: premises and asset protection message. Remove this block for a future one-slide banner. -->
+      <div class="carousel-item cart-hero-slide">
+        <!-- Slider image: replace this local placeholder with the final Slide 3 banner image later. -->
+        <img src="assets/images/home/hero-slide-3.jpg" class="d-block w-100 cart-hero-image" alt="Security officer protecting a corporate facility entrance">
+        <!-- Overlay: dark green gradient for consistent text contrast. -->
+        <div class="cart-hero-overlay" aria-hidden="true"></div>
+
+        <!-- Hero text and CTA buttons. -->
+        <div class="cart-hero-content">
+          <div class="container h-100">
+            <div class="row h-100 align-items-center">
+              <div class="col-lg-7 col-xl-7">
+                <p class="cart-hero-label">Security With Responsibility</p>
+                <h2 class="cart-hero-title">Protecting What Matters Most</h2>
+                <p class="cart-hero-description">Security solutions designed to protect your premises, workforce and valuable assets.</p>
+                <div class="cart-hero-actions">
+                  <a class="btn cart-hero-btn cart-hero-btn-primary" href="services.html">View Our Services</a>
+                  <a class="btn cart-hero-btn cart-hero-btn-secondary" href="contact.html">Get in Touch</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Previous/Next arrows: circular controls styled in CSS and hidden on very small screens. -->
+    <button class="carousel-control-prev cart-hero-control cart-hero-control-prev" type="button" data-bs-target="#homeHeroSlider" data-bs-slide="prev" aria-label="Previous slide">
+      <span class="cart-hero-control-icon" aria-hidden="true">
+        <i class="bi bi-arrow-left-short"></i>
+      </span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next cart-hero-control cart-hero-control-next" type="button" data-bs-target="#homeHeroSlider" data-bs-slide="next" aria-label="Next slide">
+      <span class="cart-hero-control-icon" aria-hidden="true">
+        <i class="bi bi-arrow-right-short"></i>
+      </span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </section>
+  <!-- HOME HERO SLIDER END -->
+
+  <!--
+    HOME ABOUT US PREVIEW SECTION START
+    This is a short Home page intro only. The full About page content can live in about.html.
+  -->
+  <section class="cart-about-section py-5" id="homeAboutPreview" aria-labelledby="cartAboutTitle">
+    <div class="container">
+      <div class="row align-items-center g-4 g-lg-5">
+        <div class="col-lg-7">
+          <!-- About image: replace this local placeholder with the final About preview image later. -->
+          <div class="cart-about-image-wrap">
+            <img src="assets/images/home/banner1m.png" class="img-fluid cart-about-image" alt="Professional security personnel managing access control at a corporate premises">
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <!-- About text: concise Home page preview with CTA to the full About page. -->
+          <div class="cart-about-content ps-lg-3 ps-xl-4">
+            <p class="cart-about-label mb-3">About Cart Security</p>
+            <h2 class="cart-about-title" id="cartAboutTitle">Trusted Security Solutions for Complete Peace of Mind</h2>
+            <p class="cart-about-text">CART Security Solutions Pvt. Ltd. provides professional security solutions focused on protecting people, property and business premises through disciplined, dependable and responsible security services.</p>
+
+            <!-- Key points: compact Bootstrap Icons list, not separate cards. -->
+            <ul class="list-unstyled cart-about-points mb-0">
+              <li class="d-flex align-items-start">
+                <span class="cart-about-point-icon" aria-hidden="true"><i class="bi bi-check2"></i></span>
+                <span>Professional Security Services</span>
+              </li>
+              <li class="d-flex align-items-start">
+                <span class="cart-about-point-icon" aria-hidden="true"><i class="bi bi-check2"></i></span>
+                <span>Trained Security Personnel</span>
+              </li>
+              <li class="d-flex align-items-start">
+                <span class="cart-about-point-icon" aria-hidden="true"><i class="bi bi-check2"></i></span>
+                <span>Reliable &amp; Disciplined Approach</span>
+              </li>
+            </ul>
+
+            <!-- CTA button: links visitors to the full About page. -->
+            <a class="btn cart-about-btn mt-4" href="about.html">
+              <span>Know More</span>
+              <i class="bi bi-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- HOME ABOUT US PREVIEW SECTION END -->
+
+  <!--
+    HOME SERVICES PREVIEW SECTION START
+    This Home page preview shows exactly eight services. Full service details can live in services.html.
+  -->
+  <section class="cart-services-section py-5" id="homeServicesPreview" aria-labelledby="cartServicesTitle">
+    <div class="container">
+      <!-- Section header: editorial alignment keeps services feeling business-led, not template-led. -->
+      <div class="row align-items-end g-4 cart-home-section-header-row">
+        <div class="col-12">
+          <p class="cart-services-label mb-3">Our Services</p>
+          <h2 class="cart-services-title" id="cartServicesTitle">Professional Security Solutions for Every Requirement</h2>
+        </div>
+        <div class="col-12">
+          <p class="cart-services-intro mb-0">Explore our range of professional security services designed to help protect people, property and business premises.</p>
+        </div>
+      </div>
+
+      <!-- Services grid: featured first row with compact operational blocks below. -->
+      <div class="row g-4 mt-4 mt-lg-5">
+        <div class="col-xl-6 col-lg-6 col-md-6">
+          <article class="cart-services-card cart-services-card-feature h-100">
+            <a class="cart-services-image-link" href="services.html#security-guard" aria-label="Explore Security Guard service">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS9FUgogxKldG0DNjH56ZHFWqr3VT_R-Ti-JFrTDiZxQ&s=10" class="img-fluid cart-services-image" alt="CART security guard at a corporate building entrance">
+            </a>
+            <div class="cart-services-card-body">
+              <h3 class="cart-services-card-title">Security Guard</h3>
+              <p class="cart-services-card-text">Professional security personnel for dependable protection.</p>
+              <a class="cart-services-link" href="services.html#security-guard">
+                <span>Explore</span>
+                <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-xl-6 col-lg-6 col-md-6">
+          <article class="cart-services-card cart-services-card-feature h-100">
+            <a class="cart-services-image-link" href="services.html#security-supervisor" aria-label="Explore Security Supervisor service">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxpcXPxC1XvXc7DmxrCevqUVoXGb_cVlfmHHhiWQUfug&s=10" class="img-fluid cart-services-image" alt="CART security supervisor managing personnel at access control">
+            </a>
+            <div class="cart-services-card-body">
+              <h3 class="cart-services-card-title">Security Supervisor</h3>
+              <p class="cart-services-card-text">Supervisory support for organized security operations.</p>
+              <a class="cart-services-link" href="services.html#security-supervisor">
+                <span>Explore</span>
+                <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <article class="cart-services-card h-100">
+            <a class="cart-services-image-link" href="services.html#armed-pso" aria-label="Explore Armed PSO service">
+              <img src="assets/images/home/services/ChatGPT Image Aug 17, 2026, 11_34_50 AM.png" class="img-fluid cart-services-image" alt="CART personal security officer at an executive arrival area">
+            </a>
+            <div class="cart-services-card-body">
+              <h3 class="cart-services-card-title">Armed PSO</h3>
+              <p class="cart-services-card-text">Personal security support for responsible protection.</p>
+              <a class="cart-services-link" href="services.html#armed-pso">
+                <span>Explore</span>
+                <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <article class="cart-services-card h-100">
+            <a class="cart-services-image-link" href="services.html#bouncer" aria-label="Explore Bouncer service">
+              <img src="https://i.pinimg.com/736x/a4/f9/81/a4f9817c986132d4932c09ffa08ea7e0.jpg" class="img-fluid cart-services-image" alt="CART venue security personnel at an event entrance">
+            </a>
+            <div class="cart-services-card-body">
+              <h3 class="cart-services-card-title">Bouncer</h3>
+              <p class="cart-services-card-text">Venue security personnel for disciplined entry control.</p>
+              <a class="cart-services-link" href="services.html#bouncer">
+                <span>Explore</span>
+                <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <article class="cart-services-card h-100">
+            <a class="cart-services-image-link" href="services.html#gunman" aria-label="Explore Gunman service">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTQBSSw2dR0Bd_ZbkNJjIagZDKK4JlEiwGml5274ZWOw&s=10" class="img-fluid cart-services-image" alt="CART security gunman posted at a protected premises">
+            </a>
+            <div class="cart-services-card-body">
+              <h3 class="cart-services-card-title">Gunman</h3>
+              <p class="cart-services-card-text">Professional armed security presence for protected premises.</p>
+              <a class="cart-services-link" href="services.html#gunman">
+                <span>Explore</span>
+                <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <article class="cart-services-card h-100">
+            <a class="cart-services-image-link" href="services.html#fire-safety-expert" aria-label="Explore Fire Safety Expert service">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUCFHUNgL1NWJmLzk-_V7yT8pc6l6P7BI6olONq3LXHA&s=10" class="img-fluid cart-services-image" alt="CART fire safety expert inspecting safety equipment">
+            </a>
+            <div class="cart-services-card-body">
+              <h3 class="cart-services-card-title">Fire Safety Expert</h3>
+              <p class="cart-services-card-text">Fire safety support for responsible premises protection.</p>
+              <a class="cart-services-link" href="services.html#fire-safety-expert">
+                <span>Explore</span>
+                <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <article class="cart-services-card h-100">
+            <a class="cart-services-image-link" href="services.html#aso" aria-label="Explore ASO service">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdd6fdCEkfmFfPPnJ_tanmLhuUk2zt2pZIEf2NZjB26A&s=10" class="img-fluid cart-services-image" alt="CART assistant security officer reviewing a security register">
+            </a>
+            <div class="cart-services-card-body">
+              <h3 class="cart-services-card-title">ASO</h3>
+              <p class="cart-services-card-text">Assistant security officer support for daily operations.</p>
+              <a class="cart-services-link" href="services.html#aso">
+                <span>Explore</span>
+                <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <article class="cart-services-card h-100">
+            <a class="cart-services-image-link" href="services.html#surveillance-room" aria-label="Explore Surveillance Room service">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX31feSIFkdXSEXBMprN1Ob7ElIrLTypFHoOYtD3A_BA&s=10" class="img-fluid cart-services-image" alt="CART security personnel monitoring CCTV surveillance screens">
+            </a>
+            <div class="cart-services-card-body">
+              <h3 class="cart-services-card-title">Surveillance Room</h3>
+              <p class="cart-services-card-text">CCTV monitoring support for security awareness.</p>
+              <a class="cart-services-link" href="services.html#surveillance-room">
+                <span>Explore</span>
+                <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- View all CTA: single primary action to the services page. -->
+      <div class="text-center mt-4 mt-lg-5">
+        <a class="btn cart-services-btn" href="services.html">
+          <span>View All Services</span>
+          <i class="bi bi-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- HOME SERVICES PREVIEW SECTION END -->
+
+  <!--
+    HOME WHY CHOOSE US SECTION START
+    This section explains key reasons visitors may consider CART Security Solutions Pvt. Ltd.
+  -->
+  <section class="cart-why-section py-5" id="homeWhyChooseUs" aria-labelledby="cartWhyTitle">
+    <div class="container">
+      <div class="row align-items-center g-4 g-lg-5">
+        <div class="col-lg-6">
+          <!-- Why image: local professional team image, replace later if final brand photography is available. -->
+          <div class="cart-why-image-wrap">
+            <img src="assets/images/home/banner2m (2).png" class="img-fluid cart-why-image" alt="CART Security professional personnel standing in a corporate premises">
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <!-- Why content: neutral claims only, with six concise feature points. -->
+          <div class="cart-why-content ps-lg-3 ps-xl-4">
+            <p class="cart-why-label mb-3">Why Choose Us</p>
+            <h2 class="cart-why-title" id="cartWhyTitle">Security Built on Trust, Discipline &amp; Professionalism</h2>
+            <p class="cart-why-text">We focus on delivering disciplined and dependable security services through professional personnel, responsible practices and a strong commitment to protecting people and premises.</p>
+
+            <!-- Feature points: compact two-column grid on desktop/tablet, stacked naturally on mobile. -->
+            <div class="row g-3 cart-why-points">
+              <div class="col-md-6">
+                <div class="cart-why-item h-100">
+                  <span class="cart-why-icon" aria-hidden="true"><i class="bi bi-person-check"></i></span>
+                  <span>Trained Security Personnel</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="cart-why-item h-100">
+                  <span class="cart-why-icon" aria-hidden="true"><i class="bi bi-patch-check"></i></span>
+                  <span>Professional Approach</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="cart-why-item h-100">
+                  <span class="cart-why-icon" aria-hidden="true"><i class="bi bi-shield-check"></i></span>
+                  <span>Reliable Security Services</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="cart-why-item h-100">
+                  <span class="cart-why-icon" aria-hidden="true"><i class="bi bi-check-circle"></i></span>
+                  <span>Disciplined Workforce</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="cart-why-item h-100">
+                  <span class="cart-why-icon" aria-hidden="true"><i class="bi bi-shield-lock"></i></span>
+                  <span>Security-Focused Solutions</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="cart-why-item h-100">
+                  <span class="cart-why-icon" aria-hidden="true"><i class="bi bi-headset"></i></span>
+                  <span>Responsive Support</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- HOME WHY CHOOSE US SECTION END -->
+
+<!-- ==========================================================================
+   CART SECURITY SOLUTIONS PVT. LTD. - INDUSTRIES WE SERVE SECTION
+   ========================================================================== -->
+<section class="cart-industries-section py-5 position-relative overflow-hidden" aria-labelledby="industries-heading">
+  <div class="container py-lg-4">
+
+    <!-- Section Header: Editorial two-column layout on desktop, stacked on mobile -->
+    <header class="cart-industries-header row align-items-end mb-4 mb-lg-5 g-4 cart-home-section-header-row">
+      <div class="col-12">
+        <span class="cart-industries-label d-inline-block text-uppercase fw-bold mb-2">
+          Industries We Serve
+        </span>
+        <h2 id="industries-heading" class="cart-industries-title mb-0">
+          Security Solutions Across Diverse Industries
+        </h2>
+      </div>
+      <div class="col-12">
+        <p class="cart-industries-desc mb-0">
+          Professional security solutions designed to support the safety and protection needs of different industries and premises.
+        </p>
+      </div>
+    </header>
+
+    <!-- Industry Image Grid -->
+    <div class="cart-industries-grid row g-3 g-lg-4">
+
+      <!-- 1. Corporate & Offices (Featured Large Block) -->
+      <div class="col-12 col-md-6 col-lg-6">
+        <article class="cart-industries-card cart-industries-card--featured position-relative overflow-hidden rounded shadow-sm h-100">
+          <img 
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4eDECIo-82IjhM9n9m_TAvNUoHkQyf0-pQ5qJhG8LLw&s=10" 
+            alt="Private security presence at a modern commercial corporate office" 
+            class="cart-industries-image img-fluid w-100 h-100" 
+            loading="lazy" 
+          />
+          <div class="cart-industries-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-4 p-lg-5">
+            <div class="cart-industries-content text-white">
+              <div class="d-flex align-items-center justify-content-between mb-2">
+                <h3 class="cart-industries-card-title h4 mb-0 text-white">Corporate &amp; Offices</h3>
+                <i class="cart-industries-arrow bi bi-arrow-up-right fs-5" aria-hidden="true"></i>
+              </div>
+              <p class="cart-industries-card-desc mb-0">
+                Security support for offices, corporate workplaces and commercial premises.
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- 2. Residential (Featured Large Block) -->
+      <div class="col-12 col-md-6 col-lg-6">
+        <article class="cart-industries-card cart-industries-card--featured position-relative overflow-hidden rounded shadow-sm h-100">
+          <img 
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs2hYm7uxv-TVJCSiNCyI6kedjOFgaK2EVkytyYDwviA&s=10" 
+            alt="Professional security personnel managing residential society entrance" 
+            class="cart-industries-image img-fluid w-100 h-100" 
+            loading="lazy" 
+          />
+          <div class="cart-industries-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-4 p-lg-5">
+            <div class="cart-industries-content text-white">
+              <div class="d-flex align-items-center justify-content-between mb-2">
+                <h3 class="cart-industries-card-title h4 mb-0 text-white">Residential</h3>
+                <i class="cart-industries-arrow bi bi-arrow-up-right fs-5" aria-hidden="true"></i>
+              </div>
+              <p class="cart-industries-card-desc mb-0">
+                Professional security solutions for residential societies, apartments and premises.
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- 3. Industrial & Manufacturing -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="cart-industries-card position-relative overflow-hidden rounded shadow-sm h-100">
+          <img 
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlmzW76n4hU0MHHNKSwOGmzLS0jKJCOtQP58iar1Kc5w&s=10" 
+            alt="Industrial plant facility secured by CART security personnel" 
+            class="cart-industries-image img-fluid w-100 h-100" 
+            loading="lazy" 
+          />
+          <div class="cart-industries-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-3 p-lg-4">
+            <div class="cart-industries-content text-white">
+              <div class="d-flex align-items-center justify-content-between mb-2">
+                <h3 class="cart-industries-card-title h5 mb-0 text-white">Industrial &amp; Manufacturing</h3>
+                <i class="cart-industries-arrow bi bi-arrow-up-right fs-6" aria-hidden="true"></i>
+              </div>
+              <p class="cart-industries-card-desc small mb-0">
+                Security support for factories, manufacturing units and industrial facilities.
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- 4. Retail & Shopping Centres -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="cart-industries-card position-relative overflow-hidden rounded shadow-sm h-100">
+          <img 
+            src="https://metrosecurityservices.com/wp-content/uploads/2025/07/Retail-Site-Security-in-Elk-Grove.webp" 
+            alt="Retail shopping mall and showroom floor security environment" 
+            class="cart-industries-image img-fluid w-100 h-100" 
+            loading="lazy" 
+          />
+          <div class="cart-industries-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-3 p-lg-4">
+            <div class="cart-industries-content text-white">
+              <div class="d-flex align-items-center justify-content-between mb-2">
+                <h3 class="cart-industries-card-title h5 mb-0 text-white">Retail &amp; Shopping Centres</h3>
+                <i class="cart-industries-arrow bi bi-arrow-up-right fs-6" aria-hidden="true"></i>
+              </div>
+              <p class="cart-industries-card-desc small mb-0">
+                Security solutions for retail stores, showrooms and shopping environments.
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- 5. Healthcare -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="cart-industries-card position-relative overflow-hidden rounded shadow-sm h-100">
+          <img 
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVFOQe9UNSmJvYo4yuLgtq3xhHGwTclEO2sOcx-_LxcqyYA51hR_qoohk&s=10" 
+            alt="Hospital entrance and medical facility security coverage" 
+            class="cart-industries-image img-fluid w-100 h-100" 
+            loading="lazy" 
+          />
+          <div class="cart-industries-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-3 p-lg-4">
+            <div class="cart-industries-content text-white">
+              <div class="d-flex align-items-center justify-content-between mb-2">
+                <h3 class="cart-industries-card-title h5 mb-0 text-white">Healthcare</h3>
+                <i class="cart-industries-arrow bi bi-arrow-up-right fs-6" aria-hidden="true"></i>
+              </div>
+              <p class="cart-industries-card-desc small mb-0">
+                Professional security support for hospitals, clinics and healthcare facilities.
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- 6. Education -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="cart-industries-card position-relative overflow-hidden rounded shadow-sm h-100">
+          <img 
+            src="https://www.sviansecurity.in/assets/images/service/service-image-16.jpg" 
+            alt="College campus and school safety security infrastructure" 
+            class="cart-industries-image img-fluid w-100 h-100" 
+            loading="lazy" 
+          />
+          <div class="cart-industries-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-3 p-lg-4">
+            <div class="cart-industries-content text-white">
+              <div class="d-flex align-items-center justify-content-between mb-2">
+                <h3 class="cart-industries-card-title h5 mb-0 text-white">Education</h3>
+                <i class="cart-industries-arrow bi bi-arrow-up-right fs-6" aria-hidden="true"></i>
+              </div>
+              <p class="cart-industries-card-desc small mb-0">
+                Security solutions for schools, colleges and educational premises.
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- 7. Hospitality -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="cart-industries-card position-relative overflow-hidden rounded shadow-sm h-100">
+          <img 
+            src="https://5.imimg.com/data5/JO/DZ/SW/SELLER-43738531/hotel-security-service.jpg" 
+            alt="Hotel entrance and reception hospitality security setting" 
+            class="cart-industries-image img-fluid w-100 h-100" 
+            loading="lazy" 
+          />
+          <div class="cart-industries-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-3 p-lg-4">
+            <div class="cart-industries-content text-white">
+              <div class="d-flex align-items-center justify-content-between mb-2">
+                <h3 class="cart-industries-card-title h5 mb-0 text-white">Hospitality</h3>
+                <i class="cart-industries-arrow bi bi-arrow-up-right fs-6" aria-hidden="true"></i>
+              </div>
+              <p class="cart-industries-card-desc small mb-0">
+                Security support for hotels, restaurants and hospitality environments.
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- 8. Events & Venues -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="cart-industries-card position-relative overflow-hidden rounded shadow-sm h-100">
+          <img 
+            src="https://5.imimg.com/data5/BH/JK/WQ/SELLER-15649558/bouncers-services-for-events-wedding-500x500.png" 
+            alt="Event arena and venue security checkpoint management" 
+            class="cart-industries-image img-fluid w-100 h-100" 
+            loading="lazy" 
+          />
+          <div class="cart-industries-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-3 p-lg-4">
+            <div class="cart-industries-content text-white">
+              <div class="d-flex align-items-center justify-content-between mb-2">
+                <h3 class="cart-industries-card-title h5 mb-0 text-white">Events &amp; Venues</h3>
+                <i class="cart-industries-arrow bi bi-arrow-up-right fs-6" aria-hidden="true"></i>
+              </div>
+              <p class="cart-industries-card-desc small mb-0">
+                Professional security solutions for events, functions and venues.
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+   CART SECURITY SOLUTIONS PVT. LTD. - CALL TO ACTION / GET IN TOUCH SECTION
+   ========================================================================== -->
+<section class="cart-cta-section position-relative overflow-hidden py-5 text-white" aria-labelledby="cta-heading">
+  <div class="container py-lg-4">
+    <div class="row align-items-center justify-content-between g-4 g-lg-5">
+
+      <!-- Left Column: Editorial Content & Typography -->
+      <div class="col-12 col-lg-7 col-xl-8 text-start">
+        <div class="d-inline-flex align-items-center mb-2 mb-md-3">
+          <span class="cart-cta-line d-inline-block me-2" aria-hidden="true"></span>
+          <span class="cart-cta-label text-uppercase fw-bold">
+            Let's Talk Security
+          </span>
+        </div>
+        <h2 id="cta-heading" class="cart-cta-title mb-3">
+          Looking for Reliable Security Solutions?
+        </h2>
+        <p class="cart-cta-desc mb-0">
+          Talk to CART Security Solutions Pvt. Ltd. about your security requirements and find the right security support for your premises.
+        </p>
+      </div>
+
+      <!-- Right Column: Action Buttons -->
+      <div class="col-12 col-lg-5 col-xl-4 text-start text-lg-end">
+        <div class="d-flex flex-column flex-sm-row flex-lg-column gap-3 justify-content-start justify-content-lg-end">
+          <a href="contact.html" class="btn cart-cta-btn-primary d-inline-flex align-items-center justify-content-center fw-semibold px-4 py-3 text-decoration-none">
+            <span>Get in Touch</span>
+            <i class="bi bi-arrow-right ms-2 fs-5" aria-hidden="true"></i>
+          </a>
+          <a href="services.html" class="btn cart-cta-btn-secondary d-inline-flex align-items-center justify-content-center fw-semibold px-4 py-3 text-decoration-none">
+            <span>Explore Our Services</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <!--
+    FOOTER SECTION START
+    The footer below is an independent component for CART Security Solutions Pvt. Ltd.
+    It follows the project's design system (Bootstrap 5.3 + Bootstrap Icons).
+    Do NOT modify other sections of the page when editing the footer.
+    The floating WhatsApp button is included as commented HTML — add real number later.
+  -->
+
+  <footer class="site-footer mt-5" id="siteFooter">
+    <div class="container py-5">
+      <div class="row gy-4">
+        <!-- Column 1: Get in Touch -->
+        <div class="col-lg-3 col-md-6 col-12">
+          <h5 class="footer-heading">Get in Touch</h5>
+          <p class="mb-2 text-muted"><i class="bi bi-geo-alt-fill me-2 text-dark"></i>
+            Vill–Haldoni, Near Saini Hospital,<br>
+            Kulesara, G.B Nagar (U.P) 201308
+          </p>
+          <p class="small text-muted mb-0">Contact details (phone / email) will be added here when provided.</p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="col-lg-3 col-md-6 col-12">
+          <h5 class="footer-heading">Quick Links</h5>
+          <ul class="list-unstyled footer-links mb-0">
+            <li><a href="index.html"><i class="bi bi-arrow-right me-2"></i>Home</a></li>
+            <li><a href="about.html"><i class="bi bi-arrow-right me-2"></i>About</a></li>
+            <li><a href="services.html"><i class="bi bi-arrow-right me-2"></i>Our Services</a></li>
+            <li><a href="contact.html"><i class="bi bi-arrow-right me-2"></i>Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Our Services -->
+        <div class="col-lg-3 col-md-6 col-12">
+          <h5 class="footer-heading">Our Services</h5>
+          <ul class="list-unstyled footer-links mb-0">
+            <li><a href="services.html#security-guard"><i class="bi bi-arrow-right me-2"></i>Security Guard</a></li>
+            <li><a href="services.html#security-supervisor"><i class="bi bi-arrow-right me-2"></i>Security Supervisor</a></li>
+            <li><a href="services.html#armed-pso"><i class="bi bi-arrow-right me-2"></i>Armed PSO</a></li>
+            <li><a href="services.html#bouncer"><i class="bi bi-arrow-right me-2"></i>Bouncer</a></li>
+            <li><a href="services.html#gunman"><i class="bi bi-arrow-right me-2"></i>Gunman</a></li>
+            <li><a href="services.html#fire-safety-expert"><i class="bi bi-arrow-right me-2"></i>Fire Safety Expert</a></li>
+            <li><a href="services.html#aso"><i class="bi bi-arrow-right me-2"></i>ASO</a></li>
+            <li><a href="services.html#surveillance-room"><i class="bi bi-arrow-right me-2"></i>Surveillance Room</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: About Us -->
+        <div class="col-lg-3 col-md-6 col-12">
+          <h5 class="footer-heading">About Us</h5>
+          <p class="text-muted">CART Security Solutions Pvt. Ltd. provides professional security solutions focused on protecting people, property and business premises through disciplined and dependable security services.</p>
+
+          <div class="social d-flex gap-2 mt-3">
+            <a href="#" class="social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright bar -->
+    <div class="footer-bar text-center py-3">
+      <div class="container">
+        <small class="text-light">Copyright © 2026 CART Security Solutions Pvt. Ltd. All Rights Reserved.</small>
+      </div>
+    </div>
+
+    <!-- Floating WhatsApp (commented) - Uncomment and add real number when available -->
+    <!--
+    <a href="https://wa.me/XXXXXXXXXXX" class="floating-whatsapp" aria-label="WhatsApp">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+    -->
+  </footer>
+</body>
+</html>
