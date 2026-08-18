@@ -1,10 +1,10 @@
 :root {
   --cart-cream: #f3efda;
-  --cart-green: #1e3421;
-  --cart-green-soft: #315a37;
-  --cart-text: #315a37;
-  --cart-border: rgba(30, 52, 33, 0.14);
-  --cart-shadow: 0 12px 30px rgba(30, 52, 33, 0.08);
+  --cart-green: #27425B;
+  --cart-green-soft: #365A78;
+  --cart-text: #365A78;
+  --cart-border: rgba(39, 66, 91, 0.14);
+  --cart-shadow: 0 12px 30px rgba(39, 66, 91, 0.08);
 }
 
 /* Footer styles - CART Security Solutions Pvt. Ltd. */
@@ -26,7 +26,7 @@ body {
 }
 
 .site-header.is-scrolled {
-  border-color: rgba(30, 52, 33, 0.08);
+  border-color: rgba(39, 66, 91, 0.08);
   box-shadow: var(--cart-shadow);
 }
 
@@ -57,10 +57,10 @@ body {
   width: 80px;
   height: 80px;
   overflow: hidden;
-  border: 1px solid rgba(30, 52, 33, 0.18);
+  border: 1px solid rgba(39, 66, 91, 0.18);
   border-radius: 50%;
   background: #fff;
-  box-shadow: 0 6px 16px rgba(30, 52, 33, 0.08);
+  box-shadow: 0 6px 16px rgba(39, 66, 91, 0.08);
 }
 
 .brand-emblem img {
@@ -147,7 +147,7 @@ body {
   background: var(--cart-green);
   border: 1px solid var(--cart-green);
   border-radius: 8px;
-  box-shadow: 0 10px 20px rgba(30, 52, 33, 0.14);
+  box-shadow: 0 10px 20px rgba(39, 66, 91, 0.14);
   transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 
@@ -156,7 +156,7 @@ body {
   color: #fff;
   background: var(--cart-green-soft);
   border-color: var(--cart-green-soft);
-  box-shadow: 0 12px 24px rgba(30, 52, 33, 0.18);
+  box-shadow: 0 12px 24px rgba(39, 66, 91, 0.18);
   transform: translateY(-1px);
 }
 
@@ -169,7 +169,7 @@ body {
   width: 46px;
   height: 42px;
   padding: 0;
-  border: 1px solid rgba(30, 52, 33, 0.22);
+  border: 1px solid rgba(39, 66, 91, 0.22);
   border-radius: 8px;
 }
 
@@ -177,7 +177,7 @@ body {
 .nav-link:focus-visible,
 .enquire-btn:focus-visible,
 .brand-lockup:focus-visible {
-  outline: 3px solid rgba(49, 90, 55, 0.28);
+  outline: 3px solid rgba(54, 90, 120, 0.28);
   outline-offset: 3px;
   box-shadow: none;
 }
@@ -221,8 +221,8 @@ body {
   z-index: 1;
   pointer-events: none;
   background:
-    linear-gradient(90deg, rgba(30, 52, 33, 0.94) 0%, rgba(30, 52, 33, 0.82) 38%, rgba(30, 52, 33, 0.48) 68%, rgba(30, 52, 33, 0.18) 100%),
-    linear-gradient(180deg, rgba(30, 52, 33, 0.18) 0%, rgba(30, 52, 33, 0.08) 48%, rgba(30, 52, 33, 0.28) 100%);
+    linear-gradient(90deg, rgba(39, 66, 91, 0.94) 0%, rgba(39, 66, 91, 0.82) 38%, rgba(39, 66, 91, 0.48) 68%, rgba(39, 66, 91, 0.18) 100%),
+    linear-gradient(180deg, rgba(39, 66, 91, 0.18) 0%, rgba(39, 66, 91, 0.08) 48%, rgba(39, 66, 91, 0.28) 100%);
 }
 
 /* Hero text: HTML content stays editable, responsive and search-friendly. */
@@ -317,7 +317,7 @@ body {
 
 .cart-hero-btn-secondary {
   color: var(--cart-cream);
-  background: rgba(30, 52, 33, 0.08);
+  background: rgba(39, 66, 91, 0.08);
   border-color: rgba(243, 239, 218, 0.74);
 }
 
@@ -373,7 +373,7 @@ body {
   width: 48px;
   height: 48px;
   color: var(--cart-cream);
-  background: rgba(30, 52, 33, 0.58);
+  background: rgba(39, 66, 91, 0.58);
   border: 1px solid rgba(243, 239, 218, 0.34);
   border-radius: 50%;
   transition: background-color 0.22s ease, border-color 0.22s ease, color 0.22s ease, transform 0.22s ease;
@@ -412,8 +412,8 @@ body {
 
   .cart-hero-overlay {
     background:
-      linear-gradient(90deg, rgba(30, 52, 33, 0.95) 0%, rgba(30, 52, 33, 0.86) 58%, rgba(30, 52, 33, 0.56) 100%),
-      linear-gradient(180deg, rgba(30, 52, 33, 0.28) 0%, rgba(30, 52, 33, 0.08) 50%, rgba(30, 52, 33, 0.5) 100%);
+      linear-gradient(90deg, rgba(39, 66, 91, 0.95) 0%, rgba(39, 66, 91, 0.86) 58%, rgba(39, 66, 91, 0.56) 100%),
+      linear-gradient(180deg, rgba(39, 66, 91, 0.28) 0%, rgba(39, 66, 91, 0.08) 50%, rgba(39, 66, 91, 0.5) 100%);
   }
 
   .cart-hero-content {
@@ -441,8 +441,8 @@ body {
 
   .cart-hero-overlay {
     background:
-      linear-gradient(90deg, rgba(30, 52, 33, 0.96) 0%, rgba(30, 52, 33, 0.88) 70%, rgba(30, 52, 33, 0.66) 100%),
-      linear-gradient(180deg, rgba(30, 52, 33, 0.34) 0%, rgba(30, 52, 33, 0.1) 44%, rgba(30, 52, 33, 0.62) 100%);
+      linear-gradient(90deg, rgba(39, 66, 91, 0.96) 0%, rgba(39, 66, 91, 0.88) 70%, rgba(39, 66, 91, 0.66) 100%),
+      linear-gradient(180deg, rgba(39, 66, 91, 0.34) 0%, rgba(39, 66, 91, 0.1) 44%, rgba(39, 66, 91, 0.62) 100%);
   }
 
   .cart-hero-content {
@@ -544,9 +544,9 @@ body {
   aspect-ratio: 4 / 3;
   object-fit: cover;
   object-position: center;
-  border: 1px solid rgba(30, 52, 33, 0.16);
+  border: 1px solid rgba(39, 66, 91, 0.16);
   border-radius: 8px;
-  box-shadow: 0 18px 42px rgba(30, 52, 33, 0.13);
+  box-shadow: 0 18px 42px rgba(39, 66, 91, 0.13);
 }
 
 /* Content typography: uses the existing Manrope body font and Libre Baskerville heading font. */
@@ -573,7 +573,7 @@ body {
 .cart-about-text {
   max-width: 610px;
   margin: 1.25rem 0 0;
-  color: rgba(49, 90, 55, 0.92);
+  color: rgba(54, 90, 120, 0.92);
   font-size: clamp(1rem, 1.2vw, 1.08rem);
   font-weight: 600;
   line-height: 1.78;
@@ -621,7 +621,7 @@ body {
   background: var(--cart-green);
   border: 1px solid var(--cart-green);
   border-radius: 8px;
-  box-shadow: 0 12px 26px rgba(30, 52, 33, 0.13);
+  box-shadow: 0 12px 26px rgba(39, 66, 91, 0.13);
   transition: background-color 0.22s ease, border-color 0.22s ease, color 0.22s ease, transform 0.22s ease, box-shadow 0.22s ease;
 }
 
@@ -630,12 +630,12 @@ body {
   color: var(--cart-cream);
   background: var(--cart-green-soft);
   border-color: var(--cart-green-soft);
-  box-shadow: 0 15px 30px rgba(30, 52, 33, 0.16);
+  box-shadow: 0 15px 30px rgba(39, 66, 91, 0.16);
   transform: translateY(-2px);
 }
 
 .cart-about-btn:focus-visible {
-  outline: 3px solid rgba(49, 90, 55, 0.28);
+  outline: 3px solid rgba(54, 90, 120, 0.28);
   outline-offset: 4px;
   box-shadow: none;
 }
@@ -709,7 +709,7 @@ body {
 .cart-services-intro {
   max-width: 620px;
   margin: 1rem 0 0;
-  color: rgba(49, 90, 55, 0.9);
+  color: rgba(54, 90, 120, 0.9);
   font-size: clamp(1rem, 1.15vw, 1.08rem);
   font-weight: 600;
   line-height: 1.72;
@@ -722,16 +722,16 @@ body {
   flex-direction: column;
   overflow: hidden;
   background: var(--cart-cream);
-  border: 1px solid rgba(30, 52, 33, 0.13);
+  border: 1px solid rgba(39, 66, 91, 0.13);
   border-radius: 8px;
-  box-shadow: 0 12px 28px rgba(30, 52, 33, 0.08);
+  box-shadow: 0 12px 28px rgba(39, 66, 91, 0.08);
   transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .cart-services-card:hover,
 .cart-services-card:focus-within {
-  border-color: rgba(49, 90, 55, 0.34);
-  box-shadow: 0 18px 38px rgba(30, 52, 33, 0.12);
+  border-color: rgba(54, 90, 120, 0.34);
+  box-shadow: 0 18px 38px rgba(39, 66, 91, 0.12);
   transform: translateY(-4px);
 }
 
@@ -779,7 +779,7 @@ body {
 
 .cart-services-card-text {
   margin: 0.7rem 0 1rem;
-  color: rgba(49, 90, 55, 0.88);
+  color: rgba(54, 90, 120, 0.88);
   font-size: 0.95rem;
   font-weight: 600;
   line-height: 1.58;
@@ -817,7 +817,7 @@ body {
 .cart-services-image-link:focus-visible,
 .cart-services-link:focus-visible,
 .cart-services-btn:focus-visible {
-  outline: 3px solid rgba(49, 90, 55, 0.28);
+  outline: 3px solid rgba(54, 90, 120, 0.28);
   outline-offset: 4px;
 }
 
@@ -836,7 +836,7 @@ body {
   background: var(--cart-green);
   border: 1px solid var(--cart-green);
   border-radius: 8px;
-  box-shadow: 0 12px 26px rgba(30, 52, 33, 0.13);
+  box-shadow: 0 12px 26px rgba(39, 66, 91, 0.13);
   transition: background-color 0.22s ease, border-color 0.22s ease, color 0.22s ease, transform 0.22s ease, box-shadow 0.22s ease;
 }
 
@@ -845,7 +845,7 @@ body {
   color: var(--cart-cream);
   background: var(--cart-green-soft);
   border-color: var(--cart-green-soft);
-  box-shadow: 0 15px 30px rgba(30, 52, 33, 0.16);
+  box-shadow: 0 15px 30px rgba(39, 66, 91, 0.16);
   transform: translateY(-2px);
 }
 /* ==========================================================================
@@ -854,8 +854,8 @@ body {
 
 /* Section Base, Dominant Brand Color & Subtle Security Texture */
 .cart-cta-section {
-  background-color: #1e3421;
-  background-image: radial-gradient(circle at 90% 50%, rgba(49, 90, 55, 0.45) 0%, rgba(30, 52, 33, 0.95) 70%);
+  background-color: #27425B;
+  background-image: radial-gradient(circle at 90% 50%, rgba(54, 90, 120, 0.45) 0%, rgba(39, 66, 91, 0.95) 70%);
 }
 
 /* Subtle Editorial Prefix Line */
@@ -892,11 +892,11 @@ body {
   max-width: 580px;
 }
 
-/* Primary Action Button (#f3efda base with #1e3421 text) */
+/* Primary Action Button (#f3efda base with #27425B text) */
 .cart-cta-btn-primary {
   font-family: 'Manrope', sans-serif;
   background-color: #f3efda;
-  color: #1e3421;
+  color: #27425B;
   border: 1px solid #f3efda;
   border-radius: 4px;
   transition: transform 0.25s ease, background-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
@@ -905,7 +905,7 @@ body {
 .cart-cta-btn-primary:hover,
 .cart-cta-btn-primary:focus {
   background-color: #ffffff;
-  color: #1e3421;
+  color: #27425B;
   border-color: #ffffff;
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
@@ -931,9 +931,9 @@ body {
 
 .cart-cta-btn-secondary:hover,
 .cart-cta-btn-secondary:focus {
-  background-color: #315a37;
+  background-color: #365A78;
   color: #f3efda;
-  border-color: #315a37;
+  border-color: #365A78;
   transform: translateY(-2px);
 }
 @media (max-width: 991.98px) {
@@ -993,9 +993,9 @@ body {
   aspect-ratio: 4 / 3;
   object-fit: cover;
   object-position: center;
-  border: 1px solid rgba(30, 52, 33, 0.16);
+  border: 1px solid rgba(39, 66, 91, 0.16);
   border-radius: 8px;
-  box-shadow: 0 18px 42px rgba(30, 52, 33, 0.13);
+  box-shadow: 0 18px 42px rgba(39, 66, 91, 0.13);
 }
 
 .cart-why-label {
@@ -1022,7 +1022,7 @@ body {
 .cart-why-text {
   max-width: 630px;
   margin: 1.2rem 0 0;
-  color: rgba(49, 90, 55, 0.92);
+  color: rgba(54, 90, 120, 0.92);
   font-size: clamp(1rem, 1.15vw, 1.08rem);
   font-weight: 600;
   line-height: 1.74;
@@ -1043,14 +1043,14 @@ body {
   font-weight: 800;
   line-height: 1.35;
   background: rgba(255, 250, 240, 0.72);
-  border: 1px solid rgba(30, 52, 33, 0.12);
+  border: 1px solid rgba(39, 66, 91, 0.12);
   border-radius: 8px;
   transition: border-color 0.24s ease, background-color 0.24s ease, transform 0.24s ease;
 }
 
 .cart-why-item:hover {
   background: #fffaf0;
-  border-color: rgba(49, 90, 55, 0.28);
+  border-color: rgba(54, 90, 120, 0.28);
   transform: translateY(-2px);
 }
 
@@ -1063,7 +1063,7 @@ body {
   height: 44px;
   color: var(--cart-green);
   background: rgba(243, 239, 218, 0.98);
-  border: 1px solid rgba(30, 52, 33, 0.14);
+  border: 1px solid rgba(39, 66, 91, 0.14);
   border-radius: 8px;
   transition: background-color 0.24s ease, color 0.24s ease;
 }
@@ -1137,7 +1137,7 @@ body {
   .navbar-collapse {
     margin-top: 0.8rem;
     padding: 0.7rem 0 0.2rem;
-    border-top: 1px solid rgba(30, 52, 33, 0.13);
+    border-top: 1px solid rgba(39, 66, 91, 0.13);
   }
 
   .navbar-nav .nav-link {
@@ -1284,12 +1284,12 @@ nav.navbar > .container {
   }
   .site-footer .footer-links li { margin-bottom: .55rem; }
   .site-footer .footer-links .bi { font-size: .9rem; opacity: .9; }
-  .site-footer .text-muted { color: rgba(49,90,55,.85) !important; }
+  .site-footer .text-muted { color: rgba(54,90,120,.85) !important; }
 
   .site-footer .social-icon {
     width: 40px;
     height: 40px;
-    border: 1px solid rgba(30,52,33,0.12);
+    border: 1px solid rgba(39,66,91,0.12);
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -1320,7 +1320,7 @@ nav.navbar > .container {
     background: var(--cart-green);
     color: var(--cart-cream);
     border-radius: 50%;
-    box-shadow: 0 8px 20px rgba(30,52,33,0.18);
+    box-shadow: 0 8px 20px rgba(39,66,91,0.18);
     z-index: 2000;
     text-decoration: none;
   }
@@ -1328,7 +1328,7 @@ nav.navbar > .container {
 
   /* Decorative subtle pattern (very low opacity) */
   .site-footer {
-    background-image: repeating-linear-gradient(45deg, rgba(30,52,33,0.01) 0 2px, transparent 2px 40px);
+    background-image: repeating-linear-gradient(45deg, rgba(39,66,91,0.01) 0 2px, transparent 2px 40px);
   }
 
   /* Responsive tweaks for footer spacing */
@@ -1387,7 +1387,7 @@ nav.navbar > .container {
     opacity: 0 !important;
     transform: none !important;
     background: var(--cart-cream) !important;
-    border-top: 1px solid rgba(30, 52, 33, 0.13) !important;
+    border-top: 1px solid rgba(39, 66, 91, 0.13) !important;
     border-radius: 0 !important;
   }
 
@@ -1469,8 +1469,8 @@ body {
 
 .cart-hero-overlay {
   background:
-    linear-gradient(90deg, rgba(30, 52, 33, 0.96) 0%, rgba(30, 52, 33, 0.86) 39%, rgba(30, 52, 33, 0.42) 70%, rgba(30, 52, 33, 0.1) 100%),
-    linear-gradient(180deg, rgba(30, 52, 33, 0.18) 0%, rgba(30, 52, 33, 0.08) 52%, rgba(30, 52, 33, 0.34) 100%);
+    linear-gradient(90deg, rgba(39, 66, 91, 0.96) 0%, rgba(39, 66, 91, 0.86) 39%, rgba(39, 66, 91, 0.42) 70%, rgba(39, 66, 91, 0.1) 100%),
+    linear-gradient(180deg, rgba(39, 66, 91, 0.18) 0%, rgba(39, 66, 91, 0.08) 52%, rgba(39, 66, 91, 0.34) 100%);
 }
 
 .cart-hero-content {
@@ -1514,7 +1514,7 @@ body {
 }
 
 .cart-about-section {
-  border-bottom: 1px solid rgba(30, 52, 33, 0.11);
+  border-bottom: 1px solid rgba(39, 66, 91, 0.11);
 }
 
 .cart-about-image-wrap::before,
@@ -1540,7 +1540,7 @@ body {
 
 .cart-about-content {
   padding-left: clamp(1.1rem, 2vw, 1.7rem) !important;
-  border-left: 3px solid rgba(30, 52, 33, 0.18);
+  border-left: 3px solid rgba(39, 66, 91, 0.18);
 }
 
 .cart-about-title,
@@ -1559,7 +1559,7 @@ body {
 .cart-services-intro,
 .cart-why-text {
   max-width: 100%;
-  color: rgba(49, 90, 55, 0.9);
+  color: rgba(54, 90, 120, 0.9);
   font-size: 1rem;
   line-height: 1.66;
   overflow-wrap: anywhere;
@@ -1580,7 +1580,7 @@ body {
 .cart-services-section {
   background: #fffaf0;
   padding-block: clamp(3.7rem, 5.7vw, 5.5rem);
-  border-bottom: 1px solid rgba(30, 52, 33, 0.1);
+  border-bottom: 1px solid rgba(39, 66, 91, 0.1);
 }
 
 .cart-services-title {
@@ -1595,14 +1595,14 @@ body {
 
 .cart-services-card {
   background: var(--cart-cream);
-  border-color: rgba(30, 52, 33, 0.16);
+  border-color: rgba(39, 66, 91, 0.16);
   border-radius: 6px;
   box-shadow: none;
 }
 
 .cart-services-card:hover,
 .cart-services-card:focus-within {
-  border-color: rgba(30, 52, 33, 0.36);
+  border-color: rgba(39, 66, 91, 0.36);
   box-shadow: none;
   transform: translateY(-3px);
 }
@@ -1617,7 +1617,7 @@ body {
 
 .cart-services-card-body {
   padding: 1rem 1.05rem 1.12rem;
-  border-top: 4px solid rgba(30, 52, 33, 0.18);
+  border-top: 4px solid rgba(39, 66, 91, 0.18);
 }
 
 .cart-services-card-feature .cart-services-card-body {
@@ -1640,7 +1640,7 @@ body {
 
 .cart-services-link {
   padding-top: 0.35rem;
-  border-top: 1px solid rgba(30, 52, 33, 0.12);
+  border-top: 1px solid rgba(39, 66, 91, 0.12);
 }
 
 .cart-services-btn {
@@ -1649,7 +1649,7 @@ body {
 }
 
 .cart-why-section {
-  border-bottom: 1px solid rgba(30, 52, 33, 0.1);
+  border-bottom: 1px solid rgba(39, 66, 91, 0.1);
 }
 
 .cart-why-image-wrap::before {
@@ -1678,13 +1678,13 @@ body {
   padding: 0.72rem 0;
   background: transparent;
   border: 0;
-  border-top: 1px solid rgba(30, 52, 33, 0.16);
+  border-top: 1px solid rgba(39, 66, 91, 0.16);
   border-radius: 0;
 }
 
 .cart-why-item:hover {
   background: transparent;
-  border-color: rgba(30, 52, 33, 0.28);
+  border-color: rgba(39, 66, 91, 0.28);
   transform: none;
 }
 
@@ -1787,43 +1787,43 @@ body {
 /* Typography & Labels */
 .cart-faq-label {
   font-family: 'Manrope', sans-serif;
-  color: #315a37;
+  color: #365A78;
   font-size: 0.8125rem;
   letter-spacing: 0.12em;
 }
 
 .cart-faq-title {
   font-family: 'Libre Baskerville', serif;
-  color: #1e3421;
+  color: #27425B;
   font-weight: 700;
   line-height: 1.25;
 }
 
 .cart-faq-desc {
   font-family: 'Manrope', sans-serif;
-  color: #315a37;
+  color: #365A78;
   font-size: 1rem;
   line-height: 1.6;
 }
 
 .cart-faq-support {
-  border-top-color: rgba(49, 90, 55, 0.2) !important;
+  border-top-color: rgba(54, 90, 120, 0.2) !important;
 }
 
 .cart-faq-support-text {
   font-family: 'Manrope', sans-serif;
-  color: #315a37;
+  color: #365A78;
   font-size: 0.9375rem;
 }
 
 .cart-faq-link {
   font-family: 'Manrope', sans-serif;
-  color: #1e3421;
+  color: #27425B;
   transition: color 0.25s ease, transform 0.25s ease;
 }
 
 .cart-faq-link:hover {
-  color: #315a37;
+  color: #365A78;
 }
 
 .cart-faq-link:hover .bi-arrow-right {
@@ -1837,13 +1837,13 @@ body {
 /* Accordion Shell & Individual Items */
 .cart-faq-item {
   background-color: #ffffff;
-  border: 1px solid rgba(49, 90, 55, 0.12) !important;
+  border: 1px solid rgba(54, 90, 120, 0.12) !important;
 }
 
 /* Accordion Button (Question) Styling */
 .cart-faq-button {
   font-family: 'Manrope', sans-serif;
-  color: #1e3421;
+  color: #27425B;
   background-color: #ffffff;
   font-size: 1rem;
   line-height: 1.5;
@@ -1853,24 +1853,24 @@ body {
 }
 
 .cart-faq-button:hover {
-  color: #315a37;
+  color: #365A78;
   background-color: #fbfaf4;
 }
 
 /* Active Open Accordion State */
 .cart-faq-button:not(.collapsed) {
-  color: #1e3421;
+  color: #27425B;
   background-color: #fbfaf4;
-  box-shadow: inset 0 -1px 0 rgba(49, 90, 55, 0.1);
+  box-shadow: inset 0 -1px 0 rgba(54, 90, 120, 0.1);
 }
 
 /* Override Default Bootstrap Blue Focus Ring & Icons */
 .cart-faq-button:focus {
-  border-color: rgba(49, 90, 55, 0.3);
-  box-shadow: 0 0 0 0.2rem rgba(30, 52, 33, 0.15) !important;
+  border-color: rgba(54, 90, 120, 0.3);
+  box-shadow: 0 0 0 0.2rem rgba(39, 66, 91, 0.15) !important;
 }
 
-/* Custom Accordion Chevron Recolor to #1e3421 */
+/* Custom Accordion Chevron Recolor to #27425B */
 .cart-faq-button::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%231e3421'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   transition: transform 0.25s ease;
@@ -1883,20 +1883,20 @@ body {
 /* Accordion Body (Answer Area) */
 .cart-faq-body {
   font-family: 'Manrope', sans-serif;
-  color: #315a37;
+  color: #365A78;
   background-color: #fbfaf4;
   font-size: 0.95rem;
   line-height: 1.65;
 }
 
 .cart-faq-body-link {
-  color: #1e3421;
-  text-decoration-color: #315a37;
+  color: #27425B;
+  text-decoration-color: #365A78;
   transition: color 0.2s ease;
 }
 
 .cart-faq-body-link:hover {
-  color: #315a37;
+  color: #365A78;
 }
 
 /* ==========================================================================
@@ -1911,21 +1911,21 @@ body {
 /* Header & Typography */
 .cart-blog-label {
   font-family: 'Manrope', sans-serif;
-  color: #315a37;
+  color: #365A78;
   font-size: 0.8125rem;
   letter-spacing: 0.12em;
 }
 
 .cart-blog-title {
   font-family: 'Libre Baskerville', serif;
-  color: #1e3421;
+  color: #27425B;
   font-weight: 700;
   line-height: 1.25;
 }
 
 .cart-blog-desc {
   font-family: 'Manrope', sans-serif;
-  color: #315a37;
+  color: #365A78;
   font-size: 0.95rem;
   line-height: 1.6;
   max-width: 480px;
@@ -1934,13 +1934,13 @@ body {
 
 .cart-blog-view-all {
   font-family: 'Manrope', sans-serif;
-  color: #1e3421;
+  color: #27425B;
   white-space: nowrap;
   transition: color 0.25s ease;
 }
 
 .cart-blog-view-all:hover {
-  color: #315a37;
+  color: #365A78;
 }
 
 .cart-blog-view-all:hover .bi-arrow-right {
@@ -1954,21 +1954,21 @@ body {
 /* Card Styling */
 .cart-blog-card {
   background-color: #ffffff;
-  border: 1px solid rgba(49, 90, 55, 0.12) !important;
+  border: 1px solid rgba(54, 90, 120, 0.12) !important;
   border-radius: 6px !important;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .cart-blog-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 24px rgba(30, 52, 33, 0.08) !important;
-  border-color: rgba(49, 90, 55, 0.25) !important;
+  box-shadow: 0 10px 24px rgba(39, 66, 91, 0.08) !important;
+  border-color: rgba(54, 90, 120, 0.25) !important;
 }
 
 /* Consistent Image Aspect Ratio & Zoom */
 .cart-blog-img-wrap {
   aspect-ratio: 16 / 10;
-  background-color: #1e3421;
+  background-color: #27425B;
 }
 
 .cart-blog-image {
@@ -1984,21 +1984,21 @@ body {
 /* Card Body & Typography */
 .cart-blog-category {
   font-family: 'Manrope', sans-serif;
-  color: #315a37;
+  color: #365A78;
   font-size: 0.75rem;
   letter-spacing: 0.08em;
 }
 
 .cart-blog-card-title {
   font-family: 'Libre Baskerville', serif;
-  color: #1e3421;
+  color: #27425B;
   font-weight: 700;
   line-height: 1.35;
 }
 
 .cart-blog-card-desc {
   font-family: 'Manrope', sans-serif;
-  color: #315a37;
+  color: #365A78;
   font-size: 0.9rem;
   line-height: 1.6;
 }
@@ -2006,13 +2006,13 @@ body {
 /* Read More Link */
 .cart-blog-read-more {
   font-family: 'Manrope', sans-serif;
-  color: #1e3421;
+  color: #27425B;
   font-size: 0.9rem;
   transition: color 0.25s ease;
 }
 
 .cart-blog-read-more:hover {
-  color: #315a37;
+  color: #365A78;
 }
 
 .cart-blog-read-more:hover .bi-arrow-right {
@@ -2028,20 +2028,20 @@ body {
   width: 42px;
   height: 42px;
   background-color: transparent;
-  border: 1px solid #1e3421;
-  color: #1e3421;
+  border: 1px solid #27425B;
+  color: #27425B;
   transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
 }
 
 .cart-blog-control:hover,
 .cart-blog-control:focus {
-  background-color: #1e3421;
+  background-color: #27425B;
   color: #f3efda;
-  border-color: #1e3421;
+  border-color: #27425B;
 }
 
 .cart-blog-control:focus {
-  box-shadow: 0 0 0 0.2rem rgba(30, 52, 33, 0.2);
+  box-shadow: 0 0 0 0.2rem rgba(39, 66, 91, 0.2);
 }
 
 /* ==========================================================================
@@ -2055,14 +2055,14 @@ body {
 
 /* Typography & Brand Colors */
 .cart-industries-label {
-  color: #315a37;
+  color: #365A78;
   font-family: 'Manrope', sans-serif;
   font-size: 0.8125rem;
   letter-spacing: 0.12em;
 }
 
 .cart-industries-title {
-  color: #1e3421;
+  color: #27425B;
   font-family: 'Libre Baskerville', serif;
   font-weight: 700;
   line-height: 1.25;
@@ -2074,7 +2074,7 @@ body {
 }
 
 .cart-industries-desc {
-  color: #315a37;
+  color: #365A78;
   font-family: 'Manrope', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
@@ -2085,7 +2085,7 @@ body {
 .cart-industries-card {
   min-height: 280px;
   border-radius: 6px !important;
-  background-color: #1e3421;
+  background-color: #27425B;
 }
 
 .cart-industries-card--featured {
@@ -2098,13 +2098,13 @@ body {
   transition: transform 0.4s ease;
 }
 
-/* Brand Gradient Dark Overlay (Based on #1e3421) */
+/* Brand Gradient Dark Overlay (Based on #27425B) */
 /* .cart-industries-overlay {
   background: linear-gradient(
     180deg, 
-    rgba(30, 52, 33, 0.25) 0%, 
-    rgba(30, 52, 33, 0.65) 50%, 
-    rgba(30, 52, 33, 0.95) 100%
+    rgba(39, 66, 91, 0.25) 0%, 
+    rgba(39, 66, 91, 0.65) 50%, 
+    rgba(39, 66, 91, 0.95) 100%
   );
   transition: background 0.3s ease;
 } */
@@ -2120,7 +2120,7 @@ body {
 
 .cart-industries-card-desc {
   font-family: 'Manrope', sans-serif;
-  color: #14650b;
+  color: #365A78;
   line-height: 1.5;
   font-weight: 900;
   display: none;
@@ -2142,9 +2142,9 @@ body {
 /* .cart-industries-card:hover .cart-industries-overlay {
   background: linear-gradient(
     180deg, 
-    rgba(30, 52, 33, 0.35) 0%, 
-    rgba(30, 52, 33, 0.75) 50%, 
-    rgba(30, 52, 33, 0.98) 100%
+    rgba(39, 66, 91, 0.35) 0%, 
+    rgba(39, 66, 91, 0.75) 50%, 
+    rgba(39, 66, 91, 0.98) 100%
   );
 } */
 
@@ -2324,7 +2324,7 @@ body {
 .cart-reviews-watermark {
   font-size: 26rem;
   line-height: 1;
-  color: rgba(49, 90, 55, 0.025);
+  color: rgba(54, 90, 120, 0.025);
   pointer-events: none;
   z-index: 0;
 }
@@ -2337,19 +2337,19 @@ body {
 .cart-reviews-line {
   width: 24px;
   height: 2px;
-  background-color: #315a37;
+  background-color: #365A78;
 }
 
 .cart-reviews-label {
   font-family: 'Manrope', sans-serif;
-  color: #315a37;
+  color: #365A78;
   font-size: 0.8125rem;
   letter-spacing: 0.14em;
 }
 
 .cart-reviews-title {
   font-family: 'Libre Baskerville', serif;
-  color: #1e3421;
+  color: #27425B;
   font-weight: 700;
   line-height: 1.25;
   font-size: clamp(1.75rem, 3.2vw, 2.5rem);
@@ -2357,7 +2357,7 @@ body {
 
 .cart-reviews-description {
   font-family: 'Manrope', sans-serif;
-  color: #315a37;
+  color: #365A78;
   font-size: 0.95rem;
   line-height: 1.65;
   max-width: 650px;
@@ -2366,20 +2366,20 @@ body {
 /* Testimonial Card Styling */
 .cart-reviews-card {
   background-color: #f3efda;
-  border: 1px solid rgba(49, 90, 55, 0.12);
+  border: 1px solid rgba(54, 90, 120, 0.12);
   border-radius: 6px !important;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .cart-reviews-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 24px rgba(30, 52, 33, 0.08);
-  border-color: rgba(49, 90, 55, 0.25);
+  box-shadow: 0 10px 24px rgba(39, 66, 91, 0.08);
+  border-color: rgba(54, 90, 120, 0.25);
 }
 
 /* Quote Icon & Stars */
 .cart-reviews-quote-icon {
-  color: #315a37;
+  color: #365A78;
   opacity: 0.45;
   line-height: 1;
 }
@@ -2391,7 +2391,7 @@ body {
 /* Review Text */
 .cart-reviews-text {
   font-family: 'Manrope', sans-serif;
-  color: #1e3421;
+  color: #27425B;
   font-size: 0.9375rem;
   line-height: 1.65;
   font-style: normal;
@@ -2399,7 +2399,7 @@ body {
 
 /* Client Details */
 .cart-reviews-client-divider {
-  border-top-color: rgba(49, 90, 55, 0.12) !important;
+  border-top-color: rgba(54, 90, 120, 0.12) !important;
 }
 
 .cart-reviews-client-image {
@@ -2407,19 +2407,19 @@ body {
   height: 60px;
   object-fit: cover;
   border: 2px solid #ffffff;
-  box-shadow: 0 2px 6px rgba(30, 52, 33, 0.1);
+  box-shadow: 0 2px 6px rgba(39, 66, 91, 0.1);
 }
 
 .cart-reviews-client-name {
   font-family: 'Libre Baskerville', serif;
-  color: #1e3421;
+  color: #27425B;
   font-size: 1.05rem;
   line-height: 1.3;
 }
 
 .cart-reviews-client-role {
   font-family: 'Manrope', sans-serif;
-  color: #315a37;
+  color: #365A78;
   font-size: 0.8125rem;
   font-weight: 500;
 }
@@ -2429,15 +2429,15 @@ body {
   width: 48px;
   height: 48px;
   background-color: #f3efda;
-  color: #1e3421;
-  border: 1px solid rgba(49, 90, 55, 0.15) !important;
+  color: #27425B;
+  border: 1px solid rgba(54, 90, 120, 0.15) !important;
   transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
   cursor: pointer;
 }
 
 .cart-reviews-nav-btn:hover,
 .cart-reviews-nav-btn:focus {
-  background-color: #1e3421;
+  background-color: #27425B;
   color: #f3efda;
   transform: scale(1.06);
 }

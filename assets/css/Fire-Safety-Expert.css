@@ -33,7 +33,7 @@
   left: 5%;
   font-size: 22rem;
   line-height: 1;
-  color: rgba(49, 90, 55, 0.035);
+  color: rgba(54, 90, 120, 0.035);
   pointer-events: none;
   z-index: 1;
 }
@@ -42,13 +42,13 @@
 .cart-fire-safety-hero-line {
   width: 36px;
   height: 3px;
-  background-color: #1e3421;
+  background-color: #27425B;
 }
 
 /* Main Service Title */
 .cart-fire-safety-hero-title {
   font-family: 'Libre Baskerville', serif;
-  color: #1e3421;
+  color: #27425B;
   font-weight: 700;
   font-size: clamp(2.25rem, 5.2vw, 4.25rem);
   line-height: 1.15;
@@ -113,7 +113,7 @@
 
 .cart-fire-safety-intro-image-frame {
   border-radius: 6px !important;
-  background-color: #1e3421;
+  background-color: #27425B;
   z-index: 2;
 }
 
@@ -134,7 +134,7 @@
   width: 100%;
   height: 100%;
   background-color: #f3efda;
-  border: 1px solid rgba(49, 90, 55, 0.15);
+  border: 1px solid rgba(54, 90, 120, 0.15);
   border-radius: 6px !important;
   z-index: -1;
 }
@@ -143,12 +143,12 @@
 .cart-fire-safety-intro-line {
   width: 24px;
   height: 2px;
-  background-color: #315a37;
+  background-color: #365A78;
 }
 
 .cart-fire-safety-intro-label {
   font-family: 'Manrope', sans-serif;
-  color: #315a37;
+  color: #365A78;
   font-size: 0.8125rem;
   letter-spacing: 0.14em;
 }
@@ -156,7 +156,7 @@
 /* Headings & Descriptive Text */
 .cart-fire-safety-intro-title {
   font-family: 'Libre Baskerville', serif;
-  color: #1e3421;
+  color: #27425B;
   font-weight: 700;
   line-height: 1.3;
   font-size: clamp(1.5rem, 2.5vw, 2.125rem);
@@ -164,7 +164,7 @@
 
 .cart-fire-safety-intro-text {
   font-family: 'Manrope', sans-serif;
-  color: #315a37;
+  color: #365A78;
   font-size: 0.95rem;
   line-height: 1.65;
 }
@@ -172,19 +172,19 @@
 /* Highlights Structure */
 .cart-fire-safety-intro-highlight-item {
   background-color: #fbfaf4;
-  border: 1px solid rgba(49, 90, 55, 0.12);
+  border: 1px solid rgba(54, 90, 120, 0.12);
   transition: background-color 0.25s ease, border-color 0.25s ease;
 }
 
 .cart-fire-safety-intro-highlight-item:hover {
   background-color: #f3efda;
-  border-color: rgba(49, 90, 55, 0.25);
+  border-color: rgba(54, 90, 120, 0.25);
 }
 
 .cart-fire-safety-intro-icon-box {
   width: 38px;
   height: 38px;
-  background-color: #1e3421;
+  background-color: #27425B;
   border-radius: 4px !important;
 }
 
@@ -195,7 +195,7 @@
 
 .cart-fire-safety-intro-highlight-title {
   font-family: 'Manrope', sans-serif;
-  color: #1e3421;
+  color: #27425B;
   font-size: 0.9375rem;
 }
 
@@ -222,7 +222,7 @@
   right: 5%;
   font-size: 24rem;
   line-height: 1;
-  color: rgba(49, 90, 55, 0.04);
+  color: rgba(54, 90, 120, 0.04);
   pointer-events: none;
   z-index: 0;
 }
@@ -231,19 +231,19 @@
 .cart-fire-safety-features-line {
   width: 24px;
   height: 2px;
-  background-color: #315a37;
+  background-color: #365A78;
 }
 
 .cart-fire-safety-features-label {
   font-family: 'Manrope', sans-serif;
-  color: #315a37;
+  color: #365A78;
   font-size: 0.8125rem;
   letter-spacing: 0.14em;
 }
 
 .cart-fire-safety-features-title {
   font-family: 'Libre Baskerville', serif;
-  color: #1e3421;
+  color: #27425B;
   font-weight: 700;
   line-height: 1.28;
   font-size: clamp(1.65rem, 3vw, 2.35rem);
@@ -251,7 +251,7 @@
 
 .cart-fire-safety-features-desc {
   font-family: 'Manrope', sans-serif;
-  color: #315a37;
+  color: #365A78;
   font-size: 0.95rem;
   line-height: 1.65;
   max-width: 620px;
@@ -260,10 +260,10 @@
 /* 2x2 Editorial Dividers (Desktop & Tablet) */
 @media (min-width: 768px) {
   .cart-fire-safety-features-col.border-end-md {
-    border-right: 1px solid rgba(49, 90, 55, 0.15);
+    border-right: 1px solid rgba(54, 90, 120, 0.15);
   }
   .cart-fire-safety-features-col.border-bottom-md {
-    border-bottom: 1px solid rgba(49, 90, 55, 0.15);
+    border-bottom: 1px solid rgba(54, 90, 120, 0.15);
   }
 }
 
@@ -273,27 +273,27 @@
   height: 54px;
   border-radius: 50%;
   background-color: #ffffff;
-  border: 1px solid rgba(49, 90, 55, 0.2);
-  color: #1e3421;
+  border: 1px solid rgba(54, 90, 120, 0.2);
+  color: #27425B;
   transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
 }
 
 .cart-fire-safety-features-item:hover .cart-fire-safety-features-icon {
-  background-color: #1e3421;
-  border-color: #1e3421;
+  background-color: #27425B;
+  border-color: #27425B;
   color: #f3efda;
 }
 
 .cart-fire-safety-features-number {
   font-family: 'Libre Baskerville', serif;
-  color: #315a37;
+  color: #365A78;
   font-size: 1.35rem;
   opacity: 0.75;
 }
 
 .cart-fire-safety-features-item-title {
   font-family: 'Libre Baskerville', serif;
-  color: #1e3421;
+  color: #27425B;
   font-weight: 700;
   line-height: 1.35;
 }
@@ -301,13 +301,13 @@
 .cart-fire-safety-features-divider {
   width: 24px;
   height: 1.5px;
-  background-color: #315a37;
+  background-color: #365A78;
   opacity: 0.5;
 }
 
 .cart-fire-safety-features-item-desc {
   font-family: 'Manrope', sans-serif;
-  color: #315a37;
+  color: #365A78;
   font-size: 0.875rem;
   line-height: 1.6;
 }
@@ -315,9 +315,9 @@
 /* Right-Side Image Frame */
 .cart-fire-safety-features-image-wrap {
   min-height: 440px;
-  background-color: #1e3421;
+  background-color: #27425B;
   border-radius: 6px !important;
-  border: 1px solid rgba(49, 90, 55, 0.15);
+  border: 1px solid rgba(54, 90, 120, 0.15);
 }
 
 .cart-fire-safety-features-image {
@@ -328,8 +328,8 @@
 .cart-fire-safety-features-image-blend {
   background: linear-gradient(
     180deg,
-    rgba(30, 52, 33, 0) 70%,
-    rgba(30, 52, 33, 0.35) 100%
+    rgba(39, 66, 91, 0) 70%,
+    rgba(39, 66, 91, 0.35) 100%
   );
   pointer-events: none;
 }
@@ -343,7 +343,7 @@
 
 @media (max-width: 767.98px) {
   .cart-fire-safety-features-col {
-    border-bottom: 1px solid rgba(49, 90, 55, 0.12);
+    border-bottom: 1px solid rgba(54, 90, 120, 0.12);
   }
   
   .cart-fire-safety-features-col:last-child {
@@ -362,8 +362,8 @@
 
 /* Section Base Background & Radial Gradient */
 .cart-fire-safety-responsibilities-section {
-  background-color: #1e3421;
-  background-image: radial-gradient(circle at 10% 50%, rgba(49, 90, 55, 0.45) 0%, rgba(30, 52, 33, 0.98) 75%);
+  background-color: #27425B;
+  background-image: radial-gradient(circle at 10% 50%, rgba(54, 90, 120, 0.45) 0%, rgba(39, 66, 91, 0.98) 75%);
 }
 
 /* Subtle Security Shield Watermark Backdrop */
@@ -410,7 +410,7 @@
 
 /* Left-Side Image Frame & Soft Bottom Blend */
 .cart-fire-safety-responsibilities-image-wrap {
-  background-color: #1e3421;
+  background-color: #27425B;
   border: 1px solid rgba(243, 239, 218, 0.15);
   border-radius: 6px !important;
 }
@@ -424,8 +424,8 @@
 .cart-fire-safety-responsibilities-image-blend {
   background: linear-gradient(
     180deg,
-    rgba(30, 52, 33, 0) 65%,
-    rgba(30, 52, 33, 0.4) 100%
+    rgba(39, 66, 91, 0) 65%,
+    rgba(39, 66, 91, 0.4) 100%
   );
   pointer-events: none;
 }
@@ -486,7 +486,7 @@
 .cart-fire-safety-suitable-watermark {
   font-size: 28rem;
   line-height: 1;
-  color: rgba(49, 90, 55, 0.03);
+  color: rgba(54, 90, 120, 0.03);
   pointer-events: none;
   z-index: 0;
 }
@@ -499,19 +499,19 @@
 .cart-fire-safety-suitable-line {
   width: 24px;
   height: 2px;
-  background-color: #315a37;
+  background-color: #365A78;
 }
 
 .cart-fire-safety-suitable-label {
   font-family: 'Manrope', sans-serif;
-  color: #315a37;
+  color: #365A78;
   font-size: 0.8125rem;
   letter-spacing: 0.14em;
 }
 
 .cart-fire-safety-suitable-title {
   font-family: 'Libre Baskerville', serif;
-  color: #1e3421;
+  color: #27425B;
   font-weight: 700;
   line-height: 1.25;
   font-size: clamp(1.75rem, 3.2vw, 2.5rem);
@@ -519,7 +519,7 @@
 
 .cart-fire-safety-suitable-description {
   font-family: 'Manrope', sans-serif;
-  color: #315a37;
+  color: #365A78;
   font-size: 0.95rem;
   line-height: 1.65;
   max-width: 700px;
@@ -528,19 +528,19 @@
 /* Editorial Grid Dividers (Desktop & Tablet) */
 @media (min-width: 768px) {
   .cart-fire-safety-suitable-col.border-end-md {
-    border-right: 1px solid rgba(49, 90, 55, 0.12);
+    border-right: 1px solid rgba(54, 90, 120, 0.12);
   }
   .cart-fire-safety-suitable-col.border-bottom-md {
-    border-bottom: 1px solid rgba(49, 90, 55, 0.12);
+    border-bottom: 1px solid rgba(54, 90, 120, 0.12);
   }
 }
 
 @media (min-width: 992px) {
   .cart-fire-safety-suitable-col.border-end-lg {
-    border-right: 1px solid rgba(49, 90, 55, 0.12);
+    border-right: 1px solid rgba(54, 90, 120, 0.12);
   }
   .cart-fire-safety-suitable-col.border-bottom-lg {
-    border-bottom: 1px solid rgba(49, 90, 55, 0.12);
+    border-bottom: 1px solid rgba(54, 90, 120, 0.12);
   }
 }
 
@@ -550,27 +550,27 @@
   height: 56px;
   border-radius: 50%;
   background-color: #f3efda;
-  border: 1px solid rgba(49, 90, 55, 0.12);
-  color: #1e3421;
+  border: 1px solid rgba(54, 90, 120, 0.12);
+  color: #27425B;
   transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
 }
 
 .cart-fire-safety-suitable-item:hover .cart-fire-safety-suitable-icon {
-  background-color: #1e3421;
+  background-color: #27425B;
   color: #f3efda;
   transform: scale(1.05);
 }
 
 .cart-fire-safety-suitable-number {
   font-family: 'Libre Baskerville', serif;
-  color: #315a37;
+  color: #365A78;
   font-size: 1.25rem;
   opacity: 0.85;
 }
 
 .cart-fire-safety-suitable-item-title {
   font-family: 'Libre Baskerville', serif;
-  color: #1e3421;
+  color: #27425B;
   font-weight: 700;
   line-height: 1.35;
 }
@@ -578,13 +578,13 @@
 .cart-fire-safety-suitable-divider {
   width: 24px;
   height: 1.5px;
-  background-color: #315a37;
+  background-color: #365A78;
   opacity: 0.5;
 }
 
 .cart-fire-safety-suitable-item-desc {
   font-family: 'Manrope', sans-serif;
-  color: #315a37;
+  color: #365A78;
   font-size: 0.875rem;
   line-height: 1.6;
 }
@@ -592,7 +592,7 @@
 /* Mobile Fallback */
 @media (max-width: 767.98px) {
   .cart-fire-safety-suitable-col {
-    border-bottom: 1px solid rgba(49, 90, 55, 0.1);
+    border-bottom: 1px solid rgba(54, 90, 120, 0.1);
   }
 
   .cart-fire-safety-suitable-col:last-child {
