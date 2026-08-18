@@ -1,0 +1,582 @@
+/* ==========================================================================
+   CART SECURITY SOLUTIONS PVT. LTD. - GUNMAN HERO CUSTOM STYLES
+   ========================================================================== */
+
+/* Inner Service Banner Height & Background */
+.cart-gunman-hero {
+  min-height: 460px;
+  background-color: #fbfaf5;
+}
+
+/* Normal HTML Image Setup */
+.cart-gunman-hero-image {
+  object-fit: cover;
+  object-position: center right;
+  z-index: 0;
+}
+
+/* Light / Cream Directional Gradient (Matches Security Guard Hero Tone) */
+.cart-gunman-hero-mask {
+  background: linear-gradient(
+    90deg, 
+    #fbfaf5 0%, 
+    #fbfaf5 38%, 
+    rgba(251, 250, 245, 0.85) 60%, 
+    rgba(251, 250, 245, 0.2) 85%, 
+    rgba(251, 250, 245, 0) 100%
+  );
+  z-index: 1;
+}
+
+/* Decorative Low-Opacity Shield Watermark */
+.cart-gunman-hero-watermark {
+  left: 5%;
+  font-size: 22rem;
+  line-height: 1;
+  color: rgba(49, 90, 55, 0.035);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Main Service Title */
+.cart-gunman-hero-title {
+  font-family: 'Libre Baskerville', serif;
+  color: #1e3421;
+  font-weight: 700;
+  font-size: clamp(2.25rem, 5.5vw, 4.25rem);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+/* Responsive Breakpoints & Mobile Fallbacks */
+@media (max-width: 991.98px) {
+  .cart-gunman-hero {
+    min-height: 380px;
+  }
+
+  .cart-gunman-hero-mask {
+    background: linear-gradient(
+      90deg, 
+      #fbfaf5 0%, 
+      #fbfaf5 45%, 
+      rgba(251, 250, 245, 0.8) 75%, 
+      rgba(251, 250, 245, 0.3) 100%
+    );
+  }
+}
+
+@media (max-width: 575.98px) {
+  .cart-gunman-hero {
+    min-height: 320px;
+  }
+
+  .cart-gunman-hero-image {
+    object-position: 75% center;
+  }
+
+  .cart-gunman-hero-mask {
+    background: linear-gradient(
+      90deg, 
+      rgba(251, 250, 245, 0.95) 0%, 
+      rgba(251, 250, 245, 0.88) 55%, 
+      rgba(251, 250, 245, 0.45) 100%
+    );
+  }
+}
+
+/* ==========================================================================
+   CART SECURITY SOLUTIONS PVT. LTD. - GUNMAN SERVICE INTRO CUSTOM STYLES
+   ========================================================================== */
+
+/* Section Base */
+.cart-gunman-intro-section {
+  background-color: #ffffff;
+}
+
+/* Image Presentation & Framing */
+.cart-gunman-intro-image-wrap {
+  z-index: 1;
+}
+
+.cart-gunman-intro-image-frame {
+  border-radius: 6px !important;
+  background-color: #1e3421;
+  z-index: 2;
+}
+
+.cart-gunman-intro-image {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.cart-gunman-intro-image-wrap:hover .cart-gunman-intro-image {
+  transform: scale(1.03);
+}
+
+/* Subtle Cream Backdrop Offset Panel */
+.cart-gunman-intro-backdrop {
+  top: 14px;
+  left: -14px;
+  width: 100%;
+  height: 100%;
+  background-color: #f3efda;
+  border: 1px solid rgba(49, 90, 55, 0.15);
+  border-radius: 6px !important;
+  z-index: -1;
+}
+
+/* Section Label & Editorial Prefix Line */
+.cart-gunman-intro-line {
+  width: 24px;
+  height: 2px;
+  background-color: #315a37;
+}
+
+.cart-gunman-intro-label {
+  font-family: 'Manrope', sans-serif;
+  color: #315a37;
+  font-size: 0.8125rem;
+  letter-spacing: 0.14em;
+}
+
+/* Headings & Text */
+.cart-gunman-intro-title {
+  font-family: 'Libre Baskerville', serif;
+  color: #1e3421;
+  font-weight: 700;
+  line-height: 1.3;
+  font-size: clamp(1.5rem, 2.5vw, 2.125rem);
+}
+
+.cart-gunman-intro-text {
+  font-family: 'Manrope', sans-serif;
+  color: #315a37;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+/* Highlights Structure */
+.cart-gunman-intro-highlight-item {
+  background-color: #fbfaf4;
+  border: 1px solid rgba(49, 90, 55, 0.12);
+  transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.cart-gunman-intro-highlight-item:hover {
+  background-color: #f3efda;
+  border-color: rgba(49, 90, 55, 0.25);
+}
+
+.cart-gunman-intro-icon-box {
+  width: 38px;
+  height: 38px;
+  background-color: #1e3421;
+  border-radius: 4px !important;
+}
+
+.cart-gunman-intro-icon {
+  color: #f3efda;
+  font-size: 1.15rem;
+}
+
+.cart-gunman-intro-highlight-title {
+  font-family: 'Manrope', sans-serif;
+  color: #1e3421;
+  font-size: 0.9375rem;
+}
+
+/* ==========================================================================
+   CART SECURITY SOLUTIONS PVT. LTD. - GUNMAN FEATURES CUSTOM STYLES
+   ========================================================================== */
+
+/* Section Base Background (Visual Contrast with Light White Intro) */
+.cart-gunman-features-section {
+  background-color: #f3efda;
+}
+
+/* Subtle Security Shield Watermark */
+.cart-gunman-features-watermark {
+  top: 15%;
+  right: 5%;
+  font-size: 24rem;
+  line-height: 1;
+  color: rgba(49, 90, 55, 0.04);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Section Header Typography */
+.cart-gunman-features-line {
+  width: 24px;
+  height: 2px;
+  background-color: #1e3421;
+}
+
+.cart-gunman-features-label {
+  font-family: 'Manrope', sans-serif;
+  color: #1e3421;
+  font-size: 0.8125rem;
+  letter-spacing: 0.14em;
+}
+
+.cart-gunman-features-title {
+  font-family: 'Libre Baskerville', serif;
+  color: #1e3421;
+  font-weight: 700;
+  line-height: 1.28;
+  font-size: clamp(1.65rem, 3vw, 2.35rem);
+}
+
+.cart-gunman-features-desc {
+  font-family: 'Manrope', sans-serif;
+  color: #315a37;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  max-width: 600px;
+}
+
+/* 2x2 Editorial Dividers (Desktop & Tablet) */
+@media (min-width: 768px) {
+  .border-end-md {
+    border-right: 1px solid rgba(49, 90, 55, 0.15);
+  }
+  .border-bottom-md {
+    border-bottom: 1px solid rgba(49, 90, 55, 0.15);
+  }
+}
+
+/* Feature Item, Numbers & Icon Styling */
+.cart-gunman-features-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid rgba(49, 90, 55, 0.2);
+  color: #1e3421;
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+.cart-gunman-features-item:hover .cart-gunman-features-icon {
+  background-color: #1e3421;
+  border-color: #1e3421;
+  color: #f3efda;
+}
+
+.cart-gunman-features-number {
+  font-family: 'Libre Baskerville', serif;
+  color: #315a37;
+  font-size: 1.35rem;
+  opacity: 0.75;
+}
+
+.cart-gunman-features-item-title {
+  font-family: 'Libre Baskerville', serif;
+  color: #1e3421;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.cart-gunman-features-divider {
+  width: 24px;
+  height: 1.5px;
+  background-color: #315a37;
+  opacity: 0.5;
+}
+
+.cart-gunman-features-item-desc {
+  font-family: 'Manrope', sans-serif;
+  color: #315a37;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+/* Left-Side Editorial Image Frame */
+.cart-gunman-features-image-wrap {
+  min-height: 440px;
+  background-color: #1e3421;
+  border-radius: 6px !important;
+  border: 1px solid rgba(49, 90, 55, 0.15);
+}
+
+.cart-gunman-features-image {
+  object-fit: cover;
+  object-position: center top;
+}
+
+.cart-gunman-features-image-blend {
+  background: linear-gradient(
+    180deg,
+    rgba(30, 52, 33, 0) 70%,
+    rgba(30, 52, 33, 0.35) 100%
+  );
+  pointer-events: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+  .cart-gunman-features-image-wrap {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .cart-gunman-features-col {
+    border-bottom: 1px solid rgba(49, 90, 55, 0.12);
+  }
+  
+  .cart-gunman-features-col:last-child {
+    border-bottom: none;
+  }
+
+  .cart-gunman-features-icon {
+    width: 46px;
+    height: 46px;
+  }
+}
+
+/* ==========================================================================
+   CART SECURITY SOLUTIONS PVT. LTD. - GUNMAN RESPONSIBILITIES CUSTOM STYLES
+   ========================================================================== */
+
+/* Section Base Background & Radiant Tone */
+.cart-gunman-resp-section {
+  background-color: #1e3421;
+  background-image: radial-gradient(circle at 10% 50%, rgba(49, 90, 55, 0.45) 0%, rgba(30, 52, 33, 0.98) 75%);
+}
+
+/* Subtle Security Shield Watermark */
+.cart-gunman-resp-watermark {
+  left: -5%;
+  font-size: 26rem;
+  line-height: 1;
+  color: rgba(243, 239, 218, 0.03);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Typography & Label */
+.cart-gunman-resp-line {
+  width: 24px;
+  height: 2px;
+  background-color: #f3efda;
+  opacity: 0.85;
+}
+
+.cart-gunman-resp-label {
+  font-family: 'Manrope', sans-serif;
+  color: #f3efda;
+  font-size: 0.8125rem;
+  letter-spacing: 0.14em;
+  opacity: 0.9;
+}
+
+.cart-gunman-resp-title {
+  font-family: 'Libre Baskerville', serif;
+  color: #f3efda;
+  font-weight: 700;
+  line-height: 1.25;
+  font-size: clamp(1.65rem, 2.8vw, 2.35rem);
+}
+
+.cart-gunman-resp-desc {
+  font-family: 'Manrope', sans-serif;
+  color: #f3efda;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  opacity: 0.88;
+}
+
+/* Left Image Frame & Soft Bottom Blend */
+.cart-gunman-resp-image-wrap {
+  background-color: #1e3421;
+  border: 1px solid rgba(243, 239, 218, 0.15);
+  border-radius: 6px !important;
+}
+
+.cart-gunman-resp-image {
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.cart-gunman-resp-image-blend {
+  background: linear-gradient(
+    180deg,
+    rgba(30, 52, 33, 0) 65%,
+    rgba(30, 52, 33, 0.4) 100%
+  );
+  pointer-events: none;
+}
+
+/* Vertical Editorial List & Separators */
+.cart-gunman-resp-border {
+  border-bottom-color: rgba(243, 239, 218, 0.15) !important;
+}
+
+.cart-gunman-resp-number {
+  font-family: 'Libre Baskerville', serif;
+  color: #f3efda;
+  font-size: 1.35rem;
+  line-height: 1.2;
+  width: 32px;
+  opacity: 0.85;
+}
+
+.cart-gunman-resp-item-title {
+  font-family: 'Libre Baskerville', serif;
+  color: #f3efda;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.cart-gunman-resp-item-desc {
+  font-family: 'Manrope', sans-serif;
+  color: #f3efda;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+  .cart-gunman-resp-image-wrap {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .cart-gunman-resp-number {
+    font-size: 1.15rem;
+    width: 26px;
+  }
+}
+
+/* ==========================================================================
+   CART SECURITY SOLUTIONS PVT. LTD. - GUNMAN: WHERE SERVICE IS SUITABLE
+   ========================================================================== */
+
+/* Section Base Background (Light/Clean contrast to previous dark section) */
+.cart-gunman-suitable-section {
+  background-color: #ffffff;
+}
+
+/* Subtle Security Shield Watermark */
+.cart-gunman-suitable-watermark {
+  font-size: 28rem;
+  line-height: 1;
+  color: rgba(49, 90, 55, 0.03);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Section Header Typography */
+.cart-gunman-suitable-line {
+  width: 24px;
+  height: 2px;
+  background-color: #315a37;
+}
+
+.cart-gunman-suitable-label {
+  font-family: 'Manrope', sans-serif;
+  color: #315a37;
+  font-size: 0.8125rem;
+  letter-spacing: 0.14em;
+}
+
+.cart-gunman-suitable-title {
+  font-family: 'Libre Baskerville', serif;
+  color: #1e3421;
+  font-weight: 700;
+  line-height: 1.25;
+  font-size: clamp(1.75rem, 3.2vw, 2.5rem);
+  max-width: 720px;
+}
+
+.cart-gunman-suitable-desc {
+  font-family: 'Manrope', sans-serif;
+  color: #315a37;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  max-width: 680px;
+}
+
+/* 3x2 / 2x3 Editorial Dividers */
+@media (min-width: 768px) {
+  .border-end-md {
+    border-right: 1px solid rgba(49, 90, 55, 0.12);
+  }
+  .border-bottom-md {
+    border-bottom: 1px solid rgba(49, 90, 55, 0.12);
+  }
+}
+
+@media (min-width: 992px) {
+  .border-end-lg {
+    border-right: 1px solid rgba(49, 90, 55, 0.12);
+  }
+  .border-bottom-lg {
+    border-bottom: 1px solid rgba(49, 90, 55, 0.12);
+  }
+}
+
+/* Item, Number & Icon Styling */
+.cart-gunman-suitable-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #f3efda;
+  border: 1px solid rgba(49, 90, 55, 0.12);
+  color: #1e3421;
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+
+.cart-gunman-suitable-item:hover .cart-gunman-suitable-icon {
+  background-color: #1e3421;
+  color: #f3efda;
+  transform: scale(1.05);
+}
+
+.cart-gunman-suitable-number {
+  font-family: 'Libre Baskerville', serif;
+  color: #315a37;
+  font-size: 1.25rem;
+  opacity: 0.85;
+}
+
+.cart-gunman-suitable-item-title {
+  font-family: 'Libre Baskerville', serif;
+  color: #1e3421;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.cart-gunman-suitable-divider {
+  width: 24px;
+  height: 1.5px;
+  background-color: #315a37;
+  opacity: 0.5;
+}
+
+.cart-gunman-suitable-item-desc {
+  font-family: 'Manrope', sans-serif;
+  color: #315a37;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+/* Mobile Fallback */
+@media (max-width: 767.98px) {
+  .cart-gunman-suitable-col {
+    border-bottom: 1px solid rgba(49, 90, 55, 0.1);
+  }
+
+  .cart-gunman-suitable-col:last-child {
+    border-bottom: none;
+  }
+
+  .cart-gunman-suitable-icon {
+    width: 48px;
+    height: 48px;
+  }
+}

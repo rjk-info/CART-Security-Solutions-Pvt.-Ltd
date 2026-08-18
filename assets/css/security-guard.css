@@ -1,0 +1,578 @@
+/* ================= Security Guard Hero ================= */
+.cart-sg-hero {
+  background: #f3efda;
+}
+
+.cart-sg-hero-media {
+  height: clamp(420px, 36vw, 520px);
+  background: #f3efda;
+}
+
+.cart-sg-hero-media::after {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  content: "";
+  background: linear-gradient(
+    90deg,
+    rgba(243, 239, 218, 0.94) 0%,
+    rgba(243, 239, 218, 0.72) 34%,
+    rgba(243, 239, 218, 0.18) 64%,
+    rgba(243, 239, 218, 0) 100%
+  );
+}
+
+.cart-sg-hero-image {
+  object-fit: cover;
+  object-position: center center;
+}
+
+.cart-sg-hero-title {
+  color: #1e3421;
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: clamp(3.45rem, 5vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1.08;
+  overflow-wrap: break-word;
+}
+
+.cart-sg-hero-accent {
+  width: 58px;
+  height: 3px;
+  background: #1e3421;
+  border-radius: 999px;
+}
+
+@media (max-width: 991.98px) {
+  .cart-sg-hero-media {
+    height: clamp(350px, 42vw, 430px);
+  }
+
+  .cart-sg-hero-title {
+    font-size: clamp(2.65rem, 6.2vw, 3.45rem);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .cart-sg-hero-media {
+    height: clamp(300px, 86vw, 360px);
+  }
+
+  .cart-sg-hero-media::after {
+    background: linear-gradient(
+      90deg,
+      rgba(243, 239, 218, 0.96) 0%,
+      rgba(243, 239, 218, 0.82) 48%,
+      rgba(243, 239, 218, 0.2) 78%,
+      rgba(243, 239, 218, 0) 100%
+    );
+  }
+
+  .cart-sg-hero-image {
+    object-position: 72% center;
+  }
+
+  .cart-sg-hero-title {
+    font-size: clamp(2rem, 10vw, 2.6rem);
+    line-height: 1.12;
+  }
+
+  .cart-sg-hero-accent {
+    width: 44px;
+  }
+}
+/* ==========================================================================
+   Security Guard Service Introduction
+   ========================================================================== */
+
+/* Section Base */
+.cart-sg-intro {
+  background-color: #ffffff;
+}
+
+/* Image Presentation & Framing */
+.cart-sg-intro-image-wrap {
+  z-index: 1;
+}
+
+.cart-sg-intro-image-frame {
+  border-radius: 6px !important;
+  background-color: #1e3421;
+  z-index: 2;
+}
+
+.cart-sg-intro-image {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.cart-sg-intro-image-wrap:hover .cart-sg-intro-image {
+  transform: scale(1.03);
+}
+
+/* Subtle Cream Backdrop Offset Panel */
+.cart-sg-intro-backdrop {
+  top: 14px;
+  left: -14px;
+  width: 100%;
+  height: 100%;
+  background-color: #f3efda;
+  border: 1px solid rgba(49, 90, 55, 0.15);
+  border-radius: 6px !important;
+  z-index: -1;
+}
+
+/* Section Label & Editorial Prefix Line */
+.cart-sg-intro-line {
+  width: 24px;
+  height: 2px;
+  background-color: #315a37;
+}
+
+.cart-sg-intro-label {
+  font-family: 'Manrope', sans-serif;
+  color: #315a37;
+  font-size: 0.8125rem;
+  letter-spacing: 0.14em;
+}
+
+/* Headings & Descriptive Text */
+.cart-sg-intro-title {
+  font-family: 'Libre Baskerville', serif;
+  color: #1e3421;
+  font-weight: 700;
+  line-height: 1.3;
+  font-size: clamp(1.5rem, 2.5vw, 2.125rem);
+}
+
+.cart-sg-intro-text {
+  font-family: 'Manrope', sans-serif;
+  color: #315a37;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+/* Highlights Structure */
+.cart-sg-intro-highlight-item {
+  background-color: #fbfaf4;
+  border: 1px solid rgba(49, 90, 55, 0.12);
+  transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.cart-sg-intro-highlight-item:hover {
+  background-color: #f3efda;
+  border-color: rgba(49, 90, 55, 0.25);
+}
+
+.cart-sg-intro-icon-box {
+  width: 38px;
+  height: 38px;
+  background-color: #1e3421;
+  border-radius: 4px !important;
+}
+
+.cart-sg-intro-icon {
+  color: #f3efda;
+  font-size: 1.15rem;
+}
+
+.cart-sg-intro-highlight-title {
+  font-family: 'Manrope', sans-serif;
+  color: #1e3421;
+  font-size: 0.9375rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 575.98px) {
+  .cart-sg-intro-image {
+    min-height: 250px;
+    max-height: 320px;
+  }
+}
+
+/* ==========================================================================
+   Security Guard Key Service Features
+   ========================================================================== */
+
+/* Section Base Background (Cream contrast to white intro) */
+.cart-sg-features {
+  background-color: #f3efda;
+}
+
+/* Header & Typography */
+.cart-sg-features-line {
+  width: 24px;
+  height: 2px;
+  background-color: #315a37;
+}
+
+.cart-sg-features-label {
+  font-family: 'Manrope', sans-serif;
+  color: #315a37;
+  font-size: 0.8125rem;
+  letter-spacing: 0.14em;
+}
+
+.cart-sg-features-title {
+  font-family: 'Libre Baskerville', serif;
+  color: #1e3421;
+  font-weight: 700;
+  line-height: 1.28;
+  font-size: clamp(1.65rem, 3vw, 2.35rem);
+}
+
+.cart-sg-features-desc {
+  font-family: 'Manrope', sans-serif;
+  color: #315a37;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  max-width: 620px;
+}
+
+/* 2x2 Editorial Dividers (Desktop & Tablet) */
+@media (min-width: 768px) {
+  .cart-sg-features-col.border-end-md {
+    border-right: 1px solid rgba(49, 90, 55, 0.15);
+  }
+  .cart-sg-features-col.border-bottom-md {
+    border-bottom: 1px solid rgba(49, 90, 55, 0.15);
+  }
+}
+
+/* Feature Item & Icon Circle */
+.cart-sg-features-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid rgba(49, 90, 55, 0.2);
+  color: #1e3421;
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+.cart-sg-features-item:hover .cart-sg-features-icon {
+  background-color: #1e3421;
+  border-color: #1e3421;
+  color: #f3efda;
+}
+
+.cart-sg-features-number {
+  font-family: 'Libre Baskerville', serif;
+  color: #315a37;
+  font-size: 1.35rem;
+  opacity: 0.75;
+}
+
+.cart-sg-features-item-title {
+  font-family: 'Libre Baskerville', serif;
+  color: #1e3421;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.cart-sg-features-divider {
+  width: 24px;
+  height: 1.5px;
+  background-color: #315a37;
+  opacity: 0.5;
+}
+
+.cart-sg-features-item-desc {
+  font-family: 'Manrope', sans-serif;
+  color: #315a37;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+/* Right-Side Guard Image Frame */
+.cart-sg-features-image-wrap {
+  min-height: 440px;
+  background-color: #1e3421;
+  border-radius: 6px !important;
+  border: 1px solid rgba(49, 90, 55, 0.15);
+}
+
+.cart-sg-features-image {
+  object-fit: cover;
+  object-position: center top;
+}
+
+.cart-sg-features-image-blend {
+  background: linear-gradient(
+    180deg,
+    rgba(30, 52, 33, 0) 70%,
+    rgba(30, 52, 33, 0.35) 100%
+  );
+  pointer-events: none;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 991.98px) {
+  .cart-sg-features-image-wrap {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .cart-sg-features-col {
+    border-bottom: 1px solid rgba(49, 90, 55, 0.12);
+  }
+  
+  .cart-sg-features-col:last-child {
+    border-bottom: none;
+  }
+
+  .cart-sg-features-icon {
+    width: 46px;
+    height: 46px;
+  }
+}
+
+/* ==========================================================================
+   Security Guard Key Responsibilities
+   ========================================================================== */
+
+/* Section Base Background & Radial Gradient */
+.cart-sg-responsibilities {
+  background-color: #1e3421;
+  background-image: radial-gradient(circle at 10% 50%, rgba(49, 90, 55, 0.45) 0%, rgba(30, 52, 33, 0.98) 75%);
+}
+
+/* Subtle Security Shield Watermark Backdrop */
+.cart-sg-responsibilities-watermark {
+  left: -5%;
+  font-size: 26rem;
+  line-height: 1;
+  color: rgba(243, 239, 218, 0.03);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Section Header Typography & Label */
+.cart-sg-responsibilities-line {
+  width: 24px;
+  height: 2px;
+  background-color: #f3efda;
+  opacity: 0.85;
+}
+
+.cart-sg-responsibilities-label {
+  font-family: 'Manrope', sans-serif;
+  color: #f3efda;
+  font-size: 0.8125rem;
+  letter-spacing: 0.14em;
+  opacity: 0.9;
+}
+
+.cart-sg-responsibilities-title {
+  font-family: 'Libre Baskerville', serif;
+  color: #f3efda;
+  font-weight: 700;
+  line-height: 1.25;
+  font-size: clamp(1.65rem, 2.8vw, 2.35rem);
+}
+
+.cart-sg-responsibilities-desc {
+  font-family: 'Manrope', sans-serif;
+  color: #f3efda;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  opacity: 0.88;
+}
+
+/* Left-Side Guard Image Frame & Soft Bottom Blend */
+.cart-sg-responsibilities-image-wrap {
+  background-color: #1e3421;
+  border: 1px solid rgba(243, 239, 218, 0.15);
+  border-radius: 6px !important;
+}
+
+.cart-sg-responsibilities-image {
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.cart-sg-responsibilities-image-blend {
+  background: linear-gradient(
+    180deg,
+    rgba(30, 52, 33, 0) 65%,
+    rgba(30, 52, 33, 0.4) 100%
+  );
+  pointer-events: none;
+}
+
+/* Vertical Numbered List Items & Thin Dividers */
+.cart-sg-responsibilities-border {
+  border-bottom-color: rgba(243, 239, 218, 0.15) !important;
+}
+
+.cart-sg-responsibilities-number {
+  font-family: 'Libre Baskerville', serif;
+  color: #f3efda;
+  font-size: 1.35rem;
+  line-height: 1.2;
+  width: 32px;
+  opacity: 0.85;
+}
+
+.cart-sg-responsibilities-item-title {
+  font-family: 'Libre Baskerville', serif;
+  color: #f3efda;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.cart-sg-responsibilities-item-desc {
+  font-family: 'Manrope', sans-serif;
+  color: #f3efda;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+  .cart-sg-responsibilities-image-wrap {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .cart-sg-responsibilities-number {
+    font-size: 1.15rem;
+    width: 26px;
+  }
+}
+
+/* ==========================================================================
+   Security Guard Suitable Premises
+   ========================================================================== */
+
+/* Section Base Background (Light & open contrast after dark responsibilities) */
+.cart-sg-suitable {
+  background-color: #ffffff;
+}
+
+/* Subtle Shield Watermark */
+.cart-sg-suitable-watermark {
+  font-size: 28rem;
+  line-height: 1;
+  color: rgba(49, 90, 55, 0.03);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Section Header Typography */
+.cart-sg-suitable-line {
+  width: 24px;
+  height: 2px;
+  background-color: #315a37;
+}
+
+.cart-sg-suitable-label {
+  font-family: 'Manrope', sans-serif;
+  color: #315a37;
+  font-size: 0.8125rem;
+  letter-spacing: 0.14em;
+}
+
+.cart-sg-suitable-title {
+  font-family: 'Libre Baskerville', serif;
+  color: #1e3421;
+  font-weight: 700;
+  line-height: 1.25;
+  font-size: clamp(1.75rem, 3.2vw, 2.5rem);
+  max-width: 720px;
+}
+
+.cart-sg-suitable-desc {
+  font-family: 'Manrope', sans-serif;
+  color: #315a37;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  max-width: 680px;
+}
+
+/* Editorial Grid Dividers (Desktop & Tablet) */
+@media (min-width: 768px) {
+  .cart-sg-suitable-col.border-end-md {
+    border-right: 1px solid rgba(49, 90, 55, 0.12);
+  }
+  .cart-sg-suitable-col.border-bottom-md {
+    border-bottom: 1px solid rgba(49, 90, 55, 0.12);
+  }
+}
+
+@media (min-width: 992px) {
+  .cart-sg-suitable-col.border-end-lg {
+    border-right: 1px solid rgba(49, 90, 55, 0.12);
+  }
+  .cart-sg-suitable-col.border-bottom-lg {
+    border-bottom: 1px solid rgba(49, 90, 55, 0.12);
+  }
+}
+
+/* Item, Number & Icon Styling */
+.cart-sg-suitable-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #f3efda;
+  border: 1px solid rgba(49, 90, 55, 0.12);
+  color: #1e3421;
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+
+.cart-sg-suitable-item:hover .cart-sg-suitable-icon {
+  background-color: #1e3421;
+  color: #f3efda;
+  transform: scale(1.05);
+}
+
+.cart-sg-suitable-number {
+  font-family: 'Libre Baskerville', serif;
+  color: #315a37;
+  font-size: 1.25rem;
+  opacity: 0.85;
+}
+
+.cart-sg-suitable-item-title {
+  font-family: 'Libre Baskerville', serif;
+  color: #1e3421;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.cart-sg-suitable-divider {
+  width: 24px;
+  height: 1.5px;
+  background-color: #315a37;
+  opacity: 0.5;
+}
+
+.cart-sg-suitable-item-desc {
+  font-family: 'Manrope', sans-serif;
+  color: #315a37;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+/* Mobile Fallback */
+@media (max-width: 767.98px) {
+  .cart-sg-suitable-col {
+    border-bottom: 1px solid rgba(49, 90, 55, 0.1);
+  }
+
+  .cart-sg-suitable-col:last-child {
+    border-bottom: none;
+  }
+
+  .cart-sg-suitable-icon {
+    width: 48px;
+    height: 48px;
+  }
+}
+
