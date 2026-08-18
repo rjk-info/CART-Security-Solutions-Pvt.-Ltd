@@ -2311,3 +2311,145 @@ body {
     overflow-wrap: anywhere;
   }
 }
+/* ==========================================================================
+   CART SECURITY SOLUTIONS PVT. LTD. - CLIENT REVIEWS / TESTIMONIALS SLIDER
+   ========================================================================== */
+
+/* Section Base */
+.cart-reviews-section {
+  background-color: #ffffff;
+}
+
+/* Subtle Quote Watermark */
+.cart-reviews-watermark {
+  font-size: 26rem;
+  line-height: 1;
+  color: rgba(49, 90, 55, 0.025);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Section Header Typography */
+.cart-reviews-header {
+  max-width: 740px;
+}
+
+.cart-reviews-line {
+  width: 24px;
+  height: 2px;
+  background-color: #315a37;
+}
+
+.cart-reviews-label {
+  font-family: 'Manrope', sans-serif;
+  color: #315a37;
+  font-size: 0.8125rem;
+  letter-spacing: 0.14em;
+}
+
+.cart-reviews-title {
+  font-family: 'Libre Baskerville', serif;
+  color: #1e3421;
+  font-weight: 700;
+  line-height: 1.25;
+  font-size: clamp(1.75rem, 3.2vw, 2.5rem);
+}
+
+.cart-reviews-description {
+  font-family: 'Manrope', sans-serif;
+  color: #315a37;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  max-width: 650px;
+}
+
+/* Testimonial Card Styling */
+.cart-reviews-card {
+  background-color: #f3efda;
+  border: 1px solid rgba(49, 90, 55, 0.12);
+  border-radius: 6px !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.cart-reviews-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(30, 52, 33, 0.08);
+  border-color: rgba(49, 90, 55, 0.25);
+}
+
+/* Quote Icon & Stars */
+.cart-reviews-quote-icon {
+  color: #315a37;
+  opacity: 0.45;
+  line-height: 1;
+}
+
+.cart-reviews-stars i {
+  margin-right: 2px;
+}
+
+/* Review Text */
+.cart-reviews-text {
+  font-family: 'Manrope', sans-serif;
+  color: #1e3421;
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  font-style: normal;
+}
+
+/* Client Details */
+.cart-reviews-client-divider {
+  border-top-color: rgba(49, 90, 55, 0.12) !important;
+}
+
+.cart-reviews-client-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border: 2px solid #ffffff;
+  box-shadow: 0 2px 6px rgba(30, 52, 33, 0.1);
+}
+
+.cart-reviews-client-name {
+  font-family: 'Libre Baskerville', serif;
+  color: #1e3421;
+  font-size: 1.05rem;
+  line-height: 1.3;
+}
+
+.cart-reviews-client-role {
+  font-family: 'Manrope', sans-serif;
+  color: #315a37;
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+
+/* Navigation Controls (Centered Below) */
+.cart-reviews-nav-btn {
+  width: 48px;
+  height: 48px;
+  background-color: #f3efda;
+  color: #1e3421;
+  border: 1px solid rgba(49, 90, 55, 0.15) !important;
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
+  cursor: pointer;
+}
+
+.cart-reviews-nav-btn:hover,
+.cart-reviews-nav-btn:focus {
+  background-color: #1e3421;
+  color: #f3efda;
+  transform: scale(1.06);
+}
+
+/* Mobile & Tablet Specific Layout Safety */
+@media (max-width: 767.98px) {
+  .cart-reviews-card {
+    padding: 1.5rem !important;
+  }
+
+  .cart-reviews-client-image {
+    width: 52px;
+    height: 52px;
+  }
+}
