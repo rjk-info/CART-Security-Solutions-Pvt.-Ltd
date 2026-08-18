@@ -1,35 +1,35 @@
 /* ==========================================================================
-   CART SECURITY SOLUTIONS PVT. LTD. - BOUNCER HERO / INNER BANNER
+   CART SECURITY SOLUTIONS PVT. LTD. - ARMED PSO HERO CUSTOM STYLES
    ========================================================================== */
 
 /* Inner Service Banner Base Height & Light Background */
-.cart-bouncer-hero {
-  min-height: 460px;
+.cart-armed-pso-hero {
+  min-height: 480px;
   background-color: #fbfaf5;
 }
 
 /* HTML Banner Image */
-.cart-bouncer-hero-image {
+.cart-armed-pso-hero-image {
   object-fit: cover;
   object-position: center right;
   z-index: 0;
 }
 
-/* Light / Cream Gradient Overlay (Matching Security Guard, Gunman & ASO Hero Tone) */
-.cart-bouncer-hero-mask {
+/* Light Cream Directional Gradient Mask */
+.cart-armed-pso-hero-mask {
   background: linear-gradient(
     90deg, 
     #fbfaf5 0%, 
     #fbfaf5 38%, 
-    rgba(251, 250, 245, 0.85) 60%, 
-    rgba(251, 250, 245, 0.2) 85%, 
-    rgba(251, 250, 245, 0) 100%
+    rgba(243, 239, 218, 0.88) 60%, 
+    rgba(243, 239, 218, 0.25) 85%, 
+    rgba(243, 239, 218, 0) 100%
   );
   z-index: 1;
 }
 
-/* Low-Opacity Shield Watermark */
-.cart-bouncer-hero-watermark {
+/* Low-Opacity Decorative Shield Watermark */
+.cart-armed-pso-hero-watermark {
   left: 5%;
   font-size: 22rem;
   line-height: 1;
@@ -38,82 +38,97 @@
   z-index: 1;
 }
 
+/* Minimal Editorial Accent Line */
+.cart-armed-pso-hero-line {
+  width: 36px;
+  height: 3px;
+  background-color: #1e3421;
+}
+
 /* Main Service Title */
-.cart-bouncer-hero-title {
+.cart-armed-pso-hero-title {
   font-family: 'Libre Baskerville', serif;
   color: #1e3421;
   font-weight: 700;
-  font-size: clamp(2.25rem, 5.5vw, 4.25rem);
+  font-size: clamp(2.35rem, 5.8vw, 4.5rem);
   line-height: 1.15;
   letter-spacing: -0.01em;
 }
 
-/* Responsive Breakpoints & Mobile Fallbacks */
+/* Responsive Tablet Refinements (768px - 1024px) */
 @media (max-width: 991.98px) {
-  .cart-bouncer-hero {
-    min-height: 380px;
+  .cart-armed-pso-hero {
+    min-height: 400px;
   }
 
-  .cart-bouncer-hero-mask {
+  .cart-armed-pso-hero-mask {
     background: linear-gradient(
       90deg, 
       #fbfaf5 0%, 
       #fbfaf5 45%, 
-      rgba(251, 250, 245, 0.8) 75%, 
-      rgba(251, 250, 245, 0.3) 100%
+      rgba(243, 239, 218, 0.82) 75%, 
+      rgba(243, 239, 218, 0.3) 100%
     );
   }
 }
 
+/* Responsive Mobile Refinements (320px - 575.98px) */
 @media (max-width: 575.98px) {
-  .cart-bouncer-hero {
-    min-height: 320px;
+  .cart-armed-pso-hero {
+    min-height: 330px;
   }
 
-  .cart-bouncer-hero-image {
-    object-position: 75% center;
+  .cart-armed-pso-hero-image {
+    object-position: 78% center;
   }
 
-  .cart-bouncer-hero-mask {
+  .cart-armed-pso-hero-mask {
     background: linear-gradient(
       90deg, 
-      rgba(251, 250, 245, 0.95) 0%, 
+      rgba(251, 250, 245, 0.96) 0%, 
       rgba(251, 250, 245, 0.88) 55%, 
-      rgba(251, 250, 245, 0.45) 100%
+      rgba(243, 239, 218, 0.45) 100%
     );
+  }
+
+  .cart-armed-pso-hero-line {
+    width: 28px;
+    height: 2px;
   }
 }
 
-/* ================= Bouncer Service Introduction ================= */
+/* ==========================================================================
+   CART SECURITY SOLUTIONS PVT. LTD. - ARMED PSO SERVICE INTRODUCTION
+   ========================================================================== */
 
 /* Section Base */
-.cart-bouncer-intro {
+.cart-armed-pso-intro-section {
   background-color: #ffffff;
 }
 
 /* Image Presentation & Framing */
-.cart-bouncer-intro-image-wrap {
+.cart-armed-pso-intro-image-wrap {
   z-index: 1;
 }
 
-.cart-bouncer-intro-image-frame {
+.cart-armed-pso-intro-image-frame {
   border-radius: 6px !important;
   background-color: #1e3421;
   z-index: 2;
 }
 
-.cart-bouncer-intro-image {
+.cart-armed-pso-intro-image {
   aspect-ratio: 4 / 3;
   object-fit: cover;
   transition: transform 0.4s ease;
 }
 
-.cart-bouncer-intro-image-wrap:hover .cart-bouncer-intro-image {
+.cart-armed-pso-intro-image-wrap:hover .cart-armed-pso-intro-image {
   transform: scale(1.03);
 }
 
-/* Subtle Cream Backdrop Offset Panel */
-.cart-bouncer-intro-backdrop {
+/* Subtle Cream Offset Panel Backdrop */
+.cart-armed-pso-intro-backdrop {
   top: 14px;
   left: -14px;
   width: 100%;
@@ -124,14 +139,14 @@
   z-index: -1;
 }
 
-/* Section Label & Editorial Prefix Line */
-.cart-bouncer-intro-line {
+/* Section Label & Editorial Line */
+.cart-armed-pso-intro-line {
   width: 24px;
   height: 2px;
   background-color: #315a37;
 }
 
-.cart-bouncer-intro-label {
+.cart-armed-pso-intro-label {
   font-family: 'Manrope', sans-serif;
   color: #315a37;
   font-size: 0.8125rem;
@@ -139,7 +154,7 @@
 }
 
 /* Headings & Descriptive Text */
-.cart-bouncer-intro-title {
+.cart-armed-pso-intro-title {
   font-family: 'Libre Baskerville', serif;
   color: #1e3421;
   font-weight: 700;
@@ -147,7 +162,7 @@
   font-size: clamp(1.5rem, 2.5vw, 2.125rem);
 }
 
-.cart-bouncer-intro-text {
+.cart-armed-pso-intro-text {
   font-family: 'Manrope', sans-serif;
   color: #315a37;
   font-size: 0.95rem;
@@ -155,30 +170,30 @@
 }
 
 /* Highlights Structure */
-.cart-bouncer-intro-highlight-item {
+.cart-armed-pso-intro-highlight-item {
   background-color: #fbfaf4;
   border: 1px solid rgba(49, 90, 55, 0.12);
   transition: background-color 0.25s ease, border-color 0.25s ease;
 }
 
-.cart-bouncer-intro-highlight-item:hover {
+.cart-armed-pso-intro-highlight-item:hover {
   background-color: #f3efda;
   border-color: rgba(49, 90, 55, 0.25);
 }
 
-.cart-bouncer-intro-icon-box {
+.cart-armed-pso-intro-icon-box {
   width: 38px;
   height: 38px;
   background-color: #1e3421;
   border-radius: 4px !important;
 }
 
-.cart-bouncer-intro-icon {
+.cart-armed-pso-intro-icon {
   color: #f3efda;
   font-size: 1.15rem;
 }
 
-.cart-bouncer-intro-highlight-title {
+.cart-armed-pso-intro-highlight-title {
   font-family: 'Manrope', sans-serif;
   color: #1e3421;
   font-size: 0.9375rem;
@@ -186,21 +201,23 @@
 
 /* Mobile Responsiveness */
 @media (max-width: 575.98px) {
-  .cart-bouncer-intro-image {
+  .cart-armed-pso-intro-image {
     min-height: 250px;
     max-height: 320px;
   }
 }
 
-/* ================= Bouncer Key Service Features ================= */
+/* ==========================================================================
+   CART SECURITY SOLUTIONS PVT. LTD. - ARMED PSO KEY SERVICE FEATURES
+   ========================================================================== */
 
 /* Section Base Background (Cream tone providing visual contrast to white intro) */
-.cart-bouncer-features {
+.cart-armed-pso-features-section {
   background-color: #f3efda;
 }
 
 /* Subtle Security Shield Watermark */
-.cart-bouncer-features-watermark {
+.cart-armed-pso-features-watermark {
   top: 15%;
   right: 5%;
   font-size: 24rem;
@@ -211,20 +228,20 @@
 }
 
 /* Header & Typography */
-.cart-bouncer-features-line {
+.cart-armed-pso-features-line {
   width: 24px;
   height: 2px;
   background-color: #315a37;
 }
 
-.cart-bouncer-features-label {
+.cart-armed-pso-features-label {
   font-family: 'Manrope', sans-serif;
   color: #315a37;
   font-size: 0.8125rem;
   letter-spacing: 0.14em;
 }
 
-.cart-bouncer-features-title {
+.cart-armed-pso-features-title {
   font-family: 'Libre Baskerville', serif;
   color: #1e3421;
   font-weight: 700;
@@ -232,7 +249,7 @@
   font-size: clamp(1.65rem, 3vw, 2.35rem);
 }
 
-.cart-bouncer-features-desc {
+.cart-armed-pso-features-desc {
   font-family: 'Manrope', sans-serif;
   color: #315a37;
   font-size: 0.95rem;
@@ -242,16 +259,16 @@
 
 /* 2x2 Editorial Dividers (Desktop & Tablet) */
 @media (min-width: 768px) {
-  .cart-bouncer-features-col.border-end-md {
+  .cart-armed-pso-features-col.border-end-md {
     border-right: 1px solid rgba(49, 90, 55, 0.15);
   }
-  .cart-bouncer-features-col.border-bottom-md {
+  .cart-armed-pso-features-col.border-bottom-md {
     border-bottom: 1px solid rgba(49, 90, 55, 0.15);
   }
 }
 
 /* Feature Item & Icon Circle */
-.cart-bouncer-features-icon {
+.cart-armed-pso-features-icon {
   width: 54px;
   height: 54px;
   border-radius: 50%;
@@ -261,34 +278,34 @@
   transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
 }
 
-.cart-bouncer-features-item:hover .cart-bouncer-features-icon {
+.cart-armed-pso-features-item:hover .cart-armed-pso-features-icon {
   background-color: #1e3421;
   border-color: #1e3421;
   color: #f3efda;
 }
 
-.cart-bouncer-features-number {
+.cart-armed-pso-features-number {
   font-family: 'Libre Baskerville', serif;
   color: #315a37;
   font-size: 1.35rem;
   opacity: 0.75;
 }
 
-.cart-bouncer-features-item-title {
+.cart-armed-pso-features-item-title {
   font-family: 'Libre Baskerville', serif;
   color: #1e3421;
   font-weight: 700;
   line-height: 1.35;
 }
 
-.cart-bouncer-features-divider {
+.cart-armed-pso-features-divider {
   width: 24px;
   height: 1.5px;
   background-color: #315a37;
   opacity: 0.5;
 }
 
-.cart-bouncer-features-item-desc {
+.cart-armed-pso-features-item-desc {
   font-family: 'Manrope', sans-serif;
   color: #315a37;
   font-size: 0.875rem;
@@ -296,19 +313,19 @@
 }
 
 /* Right-Side Image Frame */
-.cart-bouncer-features-image-wrap {
+.cart-armed-pso-features-image-wrap {
   min-height: 440px;
   background-color: #1e3421;
   border-radius: 6px !important;
   border: 1px solid rgba(49, 90, 55, 0.15);
 }
 
-.cart-bouncer-features-image {
+.cart-armed-pso-features-image {
   object-fit: cover;
   object-position: center top;
 }
 
-.cart-bouncer-features-image-blend {
+.cart-armed-pso-features-image-blend {
   background: linear-gradient(
     180deg,
     rgba(30, 52, 33, 0) 70%,
@@ -319,36 +336,38 @@
 
 /* Responsive Breakpoints */
 @media (max-width: 991.98px) {
-  .cart-bouncer-features-image-wrap {
+  .cart-armed-pso-features-image-wrap {
     min-height: 300px;
   }
 }
 
 @media (max-width: 767.98px) {
-  .cart-bouncer-features-col {
+  .cart-armed-pso-features-col {
     border-bottom: 1px solid rgba(49, 90, 55, 0.12);
   }
   
-  .cart-bouncer-features-col:last-child {
+  .cart-armed-pso-features-col:last-child {
     border-bottom: none;
   }
 
-  .cart-bouncer-features-icon {
+  .cart-armed-pso-features-icon {
     width: 46px;
     height: 46px;
   }
 }
 
-/* ================= Bouncer Key Responsibilities ================= */
+/* ==========================================================================
+   CART SECURITY SOLUTIONS PVT. LTD. - ARMED PSO KEY RESPONSIBILITIES
+   ========================================================================== */
 
 /* Section Base Background & Radial Gradient */
-.cart-bouncer-responsibilities {
+.cart-armed-pso-responsibilities-section {
   background-color: #1e3421;
   background-image: radial-gradient(circle at 10% 50%, rgba(49, 90, 55, 0.45) 0%, rgba(30, 52, 33, 0.98) 75%);
 }
 
 /* Subtle Security Shield Watermark Backdrop */
-.cart-bouncer-responsibilities-watermark {
+.cart-armed-pso-responsibilities-watermark {
   left: -5%;
   font-size: 26rem;
   line-height: 1;
@@ -358,14 +377,14 @@
 }
 
 /* Section Header Typography & Label */
-.cart-bouncer-responsibilities-line {
+.cart-armed-pso-responsibilities-line {
   width: 24px;
   height: 2px;
   background-color: #f3efda;
   opacity: 0.85;
 }
 
-.cart-bouncer-responsibilities-label {
+.cart-armed-pso-responsibilities-label {
   font-family: 'Manrope', sans-serif;
   color: #f3efda;
   font-size: 0.8125rem;
@@ -373,7 +392,7 @@
   opacity: 0.9;
 }
 
-.cart-bouncer-responsibilities-title {
+.cart-armed-pso-responsibilities-title {
   font-family: 'Libre Baskerville', serif;
   color: #f3efda;
   font-weight: 700;
@@ -381,7 +400,7 @@
   font-size: clamp(1.65rem, 2.8vw, 2.35rem);
 }
 
-.cart-bouncer-responsibilities-desc {
+.cart-armed-pso-responsibilities-desc {
   font-family: 'Manrope', sans-serif;
   color: #f3efda;
   font-size: 0.95rem;
@@ -389,20 +408,20 @@
   opacity: 0.88;
 }
 
-/* Left-Side Bouncer Image Frame & Soft Bottom Blend */
-.cart-bouncer-responsibilities-image-wrap {
+/* Left-Side Image Frame & Soft Bottom Blend */
+.cart-armed-pso-responsibilities-image-wrap {
   background-color: #1e3421;
   border: 1px solid rgba(243, 239, 218, 0.15);
   border-radius: 6px !important;
 }
 
-.cart-bouncer-responsibilities-image {
+.cart-armed-pso-responsibilities-image {
   aspect-ratio: 16 / 10;
   object-fit: cover;
   object-position: center top;
 }
 
-.cart-bouncer-responsibilities-image-blend {
+.cart-armed-pso-responsibilities-image-blend {
   background: linear-gradient(
     180deg,
     rgba(30, 52, 33, 0) 65%,
@@ -412,11 +431,11 @@
 }
 
 /* Vertical Numbered List Items & Thin Dividers */
-.cart-bouncer-responsibilities-border {
+.cart-armed-pso-responsibilities-border {
   border-bottom-color: rgba(243, 239, 218, 0.15) !important;
 }
 
-.cart-bouncer-responsibilities-number {
+.cart-armed-pso-responsibilities-number {
   font-family: 'Libre Baskerville', serif;
   color: #f3efda;
   font-size: 1.35rem;
@@ -425,14 +444,14 @@
   opacity: 0.85;
 }
 
-.cart-bouncer-responsibilities-item-title {
+.cart-armed-pso-responsibilities-item-title {
   font-family: 'Libre Baskerville', serif;
   color: #f3efda;
   font-weight: 700;
   line-height: 1.35;
 }
 
-.cart-bouncer-responsibilities-item-desc {
+.cart-armed-pso-responsibilities-item-desc {
   font-family: 'Manrope', sans-serif;
   color: #f3efda;
   font-size: 0.875rem;
@@ -442,27 +461,28 @@
 
 /* Responsive Adjustments */
 @media (max-width: 991.98px) {
-  .cart-bouncer-responsibilities-image-wrap {
+  .cart-armed-pso-responsibilities-image-wrap {
     margin-bottom: 1.5rem;
   }
 }
 
 @media (max-width: 575.98px) {
-  .cart-bouncer-responsibilities-number {
+  .cart-armed-pso-responsibilities-number {
     font-size: 1.15rem;
     width: 26px;
   }
 }
-
-/* ================= Bouncer Suitable Environments ================= */
+/* ==========================================================================
+   CART SECURITY SOLUTIONS PVT. LTD. - ARMED PSO SUITABLE ENVIRONMENTS
+   ========================================================================== */
 
 /* Section Base Background (Light & open contrast after dark responsibilities) */
-.cart-bouncer-suitable {
+.cart-armed-pso-suitable-section {
   background-color: #ffffff;
 }
 
 /* Subtle Shield Watermark */
-.cart-bouncer-suitable-watermark {
+.cart-armed-pso-suitable-watermark {
   font-size: 28rem;
   line-height: 1;
   color: rgba(49, 90, 55, 0.03);
@@ -471,24 +491,24 @@
 }
 
 /* Section Header Typography */
-.cart-bouncer-suitable-header {
+.cart-armed-pso-suitable-header {
   max-width: 760px;
 }
 
-.cart-bouncer-suitable-line {
+.cart-armed-pso-suitable-line {
   width: 24px;
   height: 2px;
   background-color: #315a37;
 }
 
-.cart-bouncer-suitable-label {
+.cart-armed-pso-suitable-label {
   font-family: 'Manrope', sans-serif;
   color: #315a37;
   font-size: 0.8125rem;
   letter-spacing: 0.14em;
 }
 
-.cart-bouncer-suitable-title {
+.cart-armed-pso-suitable-title {
   font-family: 'Libre Baskerville', serif;
   color: #1e3421;
   font-weight: 700;
@@ -496,7 +516,7 @@
   font-size: clamp(1.75rem, 3.2vw, 2.5rem);
 }
 
-.cart-bouncer-suitable-desc {
+.cart-armed-pso-suitable-description {
   font-family: 'Manrope', sans-serif;
   color: #315a37;
   font-size: 0.95rem;
@@ -506,25 +526,25 @@
 
 /* Editorial Grid Dividers (Desktop & Tablet) */
 @media (min-width: 768px) {
-  .cart-bouncer-suitable-col.border-end-md {
+  .cart-armed-pso-suitable-col.border-end-md {
     border-right: 1px solid rgba(49, 90, 55, 0.12);
   }
-  .cart-bouncer-suitable-col.border-bottom-md {
+  .cart-armed-pso-suitable-col.border-bottom-md {
     border-bottom: 1px solid rgba(49, 90, 55, 0.12);
   }
 }
 
 @media (min-width: 992px) {
-  .cart-bouncer-suitable-col.border-end-lg {
+  .cart-armed-pso-suitable-col.border-end-lg {
     border-right: 1px solid rgba(49, 90, 55, 0.12);
   }
-  .cart-bouncer-suitable-col.border-bottom-lg {
+  .cart-armed-pso-suitable-col.border-bottom-lg {
     border-bottom: 1px solid rgba(49, 90, 55, 0.12);
   }
 }
 
 /* Item, Number & Icon Styling */
-.cart-bouncer-suitable-icon {
+.cart-armed-pso-suitable-icon {
   width: 56px;
   height: 56px;
   border-radius: 50%;
@@ -534,34 +554,34 @@
   transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
 }
 
-.cart-bouncer-suitable-item:hover .cart-bouncer-suitable-icon {
+.cart-armed-pso-suitable-item:hover .cart-armed-pso-suitable-icon {
   background-color: #1e3421;
   color: #f3efda;
   transform: scale(1.05);
 }
 
-.cart-bouncer-suitable-number {
+.cart-armed-pso-suitable-number {
   font-family: 'Libre Baskerville', serif;
   color: #315a37;
   font-size: 1.25rem;
   opacity: 0.85;
 }
 
-.cart-bouncer-suitable-item-title {
+.cart-armed-pso-suitable-item-title {
   font-family: 'Libre Baskerville', serif;
   color: #1e3421;
   font-weight: 700;
   line-height: 1.35;
 }
 
-.cart-bouncer-suitable-divider {
+.cart-armed-pso-suitable-divider {
   width: 24px;
   height: 1.5px;
   background-color: #315a37;
   opacity: 0.5;
 }
 
-.cart-bouncer-suitable-item-desc {
+.cart-armed-pso-suitable-item-desc {
   font-family: 'Manrope', sans-serif;
   color: #315a37;
   font-size: 0.875rem;
@@ -570,15 +590,15 @@
 
 /* Mobile Fallback */
 @media (max-width: 767.98px) {
-  .cart-bouncer-suitable-col {
+  .cart-armed-pso-suitable-col {
     border-bottom: 1px solid rgba(49, 90, 55, 0.1);
   }
 
-  .cart-bouncer-suitable-col:last-child {
+  .cart-armed-pso-suitable-col:last-child {
     border-bottom: none;
   }
 
-  .cart-bouncer-suitable-icon {
+  .cart-armed-pso-suitable-icon {
     width: 48px;
     height: 48px;
   }
