@@ -1533,7 +1533,7 @@ body {
 
 .cart-about-image,
 .cart-why-image {
-  aspect-ratio: 5 / 4;
+  aspect-ratio: 4 / 4;
   border-radius: 6px;
   box-shadow: none;
 }
@@ -2293,7 +2293,7 @@ body {
   .cart-why-image,
   .cart-services-image-link,
   .cart-services-card-feature .cart-services-image-link {
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 3 / 3;
   }
 
   .cart-services-card-body,
