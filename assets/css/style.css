@@ -214,17 +214,6 @@ body {
   object-position: 68% center;
 }
 
-/* Overlay: darker behind left-side text and lighter over the image detail. */
-.cart-hero-overlay {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  pointer-events: none;
-  background:
-    linear-gradient(90deg, rgba(39, 66, 91, 0.94) 0%, rgba(39, 66, 91, 0.82) 38%, rgba(39, 66, 91, 0.48) 68%, rgba(39, 66, 91, 0.18) 100%),
-    linear-gradient(180deg, rgba(39, 66, 91, 0.18) 0%, rgba(39, 66, 91, 0.08) 48%, rgba(39, 66, 91, 0.28) 100%);
-}
-
 /* Hero text: HTML content stays editable, responsive and search-friendly. */
 .cart-hero-content {
   position: absolute;
@@ -392,7 +381,7 @@ body {
   transform: translateY(-1px);
 }
 
-/* Mobile responsiveness: stronger overlay, smaller text, stacked CTAs and hidden arrows on small screens. */
+/* Mobile responsiveness: smaller text, stacked CTAs and hidden arrows on small screens. */
 @media (max-width: 1199.98px) {
   .cart-hero-slider .carousel-inner,
   .cart-hero-slide {
@@ -408,12 +397,6 @@ body {
   .cart-hero-slider .carousel-inner,
   .cart-hero-slide {
     min-height: 620px;
-  }
-
-  .cart-hero-overlay {
-    background:
-      linear-gradient(90deg, rgba(39, 66, 91, 0.95) 0%, rgba(39, 66, 91, 0.86) 58%, rgba(39, 66, 91, 0.56) 100%),
-      linear-gradient(180deg, rgba(39, 66, 91, 0.28) 0%, rgba(39, 66, 91, 0.08) 50%, rgba(39, 66, 91, 0.5) 100%);
   }
 
   .cart-hero-content {
@@ -437,12 +420,6 @@ body {
 
   .cart-hero-image {
     object-position: 72% center;
-  }
-
-  .cart-hero-overlay {
-    background:
-      linear-gradient(90deg, rgba(39, 66, 91, 0.96) 0%, rgba(39, 66, 91, 0.88) 70%, rgba(39, 66, 91, 0.66) 100%),
-      linear-gradient(180deg, rgba(39, 66, 91, 0.34) 0%, rgba(39, 66, 91, 0.1) 44%, rgba(39, 66, 91, 0.62) 100%);
   }
 
   .cart-hero-content {
@@ -1465,12 +1442,6 @@ body {
 
 .cart-hero-image {
   object-position: center;
-}
-
-.cart-hero-overlay {
-  background:
-    linear-gradient(90deg, rgba(39, 66, 91, 0.96) 0%, rgba(39, 66, 91, 0.86) 39%, rgba(39, 66, 91, 0.42) 70%, rgba(39, 66, 91, 0.1) 100%),
-    linear-gradient(180deg, rgba(39, 66, 91, 0.18) 0%, rgba(39, 66, 91, 0.08) 52%, rgba(39, 66, 91, 0.34) 100%);
 }
 
 .cart-hero-content {
