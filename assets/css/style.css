@@ -748,12 +748,12 @@ body {
 }
 
 .cart-services-image {
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
-  object-position: center center;
-  display: block;
-  transition: transform 0.3s ease;
+    width: 100%;
+    height: 274px;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
+    transition: transform 0.3s ease;      
 }
 
 .cart-services-card:hover .cart-services-image,
