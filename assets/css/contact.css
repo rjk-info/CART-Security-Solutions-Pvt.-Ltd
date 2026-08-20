@@ -172,3 +172,20 @@
     min-height: 320px;
   }
 }
+
+@media (max-width: 575.98px) {
+  .cart-contact-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cart-contact-icon {
+    margin-right: 0 !important;
+  }
+
+  .cart-contact-info,
+  .cart-contact-method-name,
+  .cart-contact-method-val {
+    text-align: center;
+  }
+}
