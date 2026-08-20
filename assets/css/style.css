@@ -928,6 +928,10 @@ body {
     font-size: clamp(1.82rem, 8vw, 2.2rem);
   }
 
+  .cart-services-image {
+    height: 345px;
+  }
+
   .cart-services-card-body {
     padding: 1rem;
   }
