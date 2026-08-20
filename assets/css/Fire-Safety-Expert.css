@@ -15,27 +15,14 @@
   z-index: 0;
 }
 
-/* Light Cream Directional Gradient Overlay */
+/* Hero overlay/tint removed so the banner image stays natural. */
 .cart-fire-safety-hero-mask {
-  background: linear-gradient(
-    90deg, 
-    #fbfaf5 0%, 
-    #fbfaf5 38%, 
-    rgba(243, 239, 218, 0.88) 60%, 
-    rgba(243, 239, 218, 0.25) 85%, 
-    rgba(243, 239, 218, 0) 100%
-  );
-  z-index: 1;
+  display: none;
 }
 
-/* Low-Opacity Shield Watermark */
+/* Decorative overlay removed from the hero image. */
 .cart-fire-safety-hero-watermark {
-  left: 5%;
-  font-size: 22rem;
-  line-height: 1;
-  color: rgba(54, 90, 120, 0.035);
-  pointer-events: none;
-  z-index: 1;
+  display: none !important;
 }
 
 /* Editorial Accent Line */
@@ -47,6 +34,7 @@
 
 /* Main Service Title */
 .cart-fire-safety-hero-title {
+  display: none;
   font-family: 'Libre Baskerville', serif;
   color: #27425B;
   font-weight: 700;
@@ -61,15 +49,6 @@
     min-height: 400px;
   }
 
-  .cart-fire-safety-hero-mask {
-    background: linear-gradient(
-      90deg, 
-      #fbfaf5 0%, 
-      #fbfaf5 45%, 
-      rgba(243, 239, 218, 0.82) 75%, 
-      rgba(243, 239, 218, 0.3) 100%
-    );
-  }
 }
 
 /* Responsive Mobile Refinements (320px - 575.98px) */
@@ -80,15 +59,6 @@
 
   .cart-fire-safety-hero-image {
     object-position: 80% center;
-  }
-
-  .cart-fire-safety-hero-mask {
-    background: linear-gradient(
-      90deg, 
-      rgba(251, 250, 245, 0.96) 0%, 
-      rgba(251, 250, 245, 0.88) 55%, 
-      rgba(243, 239, 218, 0.45) 100%
-    );
   }
 
   .cart-fire-safety-hero-line {

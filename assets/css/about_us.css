@@ -15,16 +15,9 @@
   z-index: 0;
 }
 
-/* Directional Gradient Overlay: Stronger on the left for contrast, open on right */
+/* Hero overlay/tint removed so the banner image stays natural. */
 .cart-about-hero-overlay {
-  background: linear-gradient(
-    90deg, 
-    rgba(39, 66, 91, 0.96) 0%, 
-    rgba(39, 66, 91, 0.88) 45%, 
-    rgba(39, 66, 91, 0.45) 85%, 
-    rgba(39, 66, 91, 0.25) 100%
-  );
-  z-index: 1;
+  display: none;
 }
 
 /* Breadcrumb Typography & Coloring */
@@ -100,14 +93,6 @@
     min-height: 400px;
   }
   
-  .cart-about-hero-overlay {
-    background: linear-gradient(
-      180deg, 
-      rgba(39, 66, 91, 0.92) 0%, 
-      rgba(39, 66, 91, 0.75) 60%, 
-      rgba(39, 66, 91, 0.95) 100%
-    );
-  }
 }
 
 @media (max-width: 575.98px) {
@@ -119,9 +104,6 @@
     object-position: 70% center;
   }
 
-  .cart-about-hero-overlay {
-    background: rgba(39, 66, 91, 0.88);
-  }
 }
 
 

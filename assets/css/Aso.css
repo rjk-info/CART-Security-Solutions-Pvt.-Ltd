@@ -15,31 +15,19 @@
   z-index: 0;
 }
 
-/* Light / Cream Gradient Overlay (Matching Security Guard & Gunman Hero Tone) */
+/* Hero overlay/tint removed so the banner image stays natural. */
 .cart-aso-hero-mask {
-  background: linear-gradient(
-    90deg, 
-    #fbfaf5 0%, 
-    #fbfaf5 38%, 
-    rgba(251, 250, 245, 0.85) 60%, 
-    rgba(251, 250, 245, 0.2) 85%, 
-    rgba(251, 250, 245, 0) 100%
-  );
-  z-index: 1;
+  display: none;
 }
 
-/* Low-Opacity Shield Watermark */
+/* Decorative overlay removed from the hero image. */
 .cart-aso-hero-watermark {
-  left: 5%;
-  font-size: 22rem;
-  line-height: 1;
-  color: rgba(54, 90, 120, 0.035);
-  pointer-events: none;
-  z-index: 1;
+  display: none !important;
 }
 
 /* Main Service Title */
 .cart-aso-hero-title {
+  display: none;
   font-family: 'Libre Baskerville', serif;
   color: #27425B;
   font-weight: 700;
@@ -54,15 +42,6 @@
     min-height: 380px;
   }
 
-  .cart-aso-hero-mask {
-    background: linear-gradient(
-      90deg, 
-      #fbfaf5 0%, 
-      #fbfaf5 45%, 
-      rgba(251, 250, 245, 0.8) 75%, 
-      rgba(251, 250, 245, 0.3) 100%
-    );
-  }
 }
 
 @media (max-width: 575.98px) {
@@ -74,14 +53,6 @@
     object-position: 75% center;
   }
 
-  .cart-aso-hero-mask {
-    background: linear-gradient(
-      90deg, 
-      rgba(251, 250, 245, 0.95) 0%, 
-      rgba(251, 250, 245, 0.88) 55%, 
-      rgba(251, 250, 245, 0.45) 100%
-    );
-  }
 }
 
 /* ==========================================================================

@@ -8,27 +8,13 @@
   background: #f3efda;
 }
 
-.cart-sg-hero-media::after {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  pointer-events: none;
-  content: "";
-  background: linear-gradient(
-    90deg,
-    rgba(243, 239, 218, 0.94) 0%,
-    rgba(243, 239, 218, 0.72) 34%,
-    rgba(243, 239, 218, 0.18) 64%,
-    rgba(243, 239, 218, 0) 100%
-  );
-}
-
 .cart-sg-hero-image {
   object-fit: cover;
   object-position: center center;
 }
 
 .cart-sg-hero-title {
+  display: none;
   color: #27425B;
   font-family: "Libre Baskerville", Georgia, serif;
   font-size: clamp(3.45rem, 5vw, 4.5rem);
@@ -57,16 +43,6 @@
 @media (max-width: 575.98px) {
   .cart-sg-hero-media {
     height: clamp(300px, 86vw, 360px);
-  }
-
-  .cart-sg-hero-media::after {
-    background: linear-gradient(
-      90deg,
-      rgba(243, 239, 218, 0.96) 0%,
-      rgba(243, 239, 218, 0.82) 48%,
-      rgba(243, 239, 218, 0.2) 78%,
-      rgba(243, 239, 218, 0) 100%
-    );
   }
 
   .cart-sg-hero-image {
@@ -575,4 +551,3 @@
     height: 48px;
   }
 }
-
